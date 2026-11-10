@@ -4,9 +4,9 @@
 
 **MAJLIS is a simulated crisis council of AI agents, each modelled on a government body. An agent may act only if it can cite the law that authorises the action; when it cannot, MAJLIS records the missing rule as a policy gap — typed with one of the brief's six gap types, such as "legislative gap" or "unclear responsibility" — and shows how other jurisdictions closed it.**
 
-<p align="center"><img src="docs/media/hero.gif" alt="An agent's action hits the policy shield, is blocked for lack of a citable mandate, and becomes a gap card with a verified global example" width="820"></p>
+<p align="center"><img src="docs/media/hero.png" alt="The MAJLIS analyst dashboard: verified audit chain, Y.3172 pipeline, who-knew-what-when timeline and the P-node gate log of blocked actions" width="820"></p>
 
-<p align="center"><a href="{{live_url}}"><b>▶ Open the live simulation — no install</b></a><br><img src="report/figures/qr_live.png" alt="QR code to the live simulation" width="120"></p>
+<p align="center"><a href="{{live_url}}dashboard.html"><b>▶ Open the analyst dashboard (complete interface) — no install</b></a> · <a href="{{live_url}}">live simulation (early 2D prototype)</a><br><img src="report/figures/qr_live.png" alt="QR code to the live simulation" width="120"></p>
 
 ## What it does
 

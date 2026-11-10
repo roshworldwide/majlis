@@ -36,6 +36,8 @@ export function prefersReducedMotion(): boolean {
 export function decideRenderer(): Decision {
   const q = params();
   if (q.get('lite') === '1' || q.get('2d') === '1') return { renderer: '2d', reason: 'lite mode requested (?lite=1)' };
+  // The 3D acts are an unfinished prototype: 2D is the default; 3D only on explicit request.
+  if (q.get('3d') !== '1' && q.get('force3d') !== '1') return { renderer: '2d', reason: 'default (3D prototype only with ?3d=1)' };
   const force = q.get('force3d') === '1';
   if (!force && prefersReducedMotion()) return { renderer: '2d', reason: 'prefers-reduced-motion' };
   if (!hasWebGL2(false)) return { renderer: '2d', reason: 'WebGL2 unavailable' };
