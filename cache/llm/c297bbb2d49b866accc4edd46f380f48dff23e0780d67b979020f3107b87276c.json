@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:pdata_retraining",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Telecom operators should establish clear data governance practices for reusing operational data, including subscriber location traces, to train AI models. This includes documenting the original purpose of data collection and ensuring that such reuse aligns with appropriate data management practices as outlined in [G1] and [G2].",
+  "rationale": "This recommendation ensures transparency and accountability while allowing for the lawful retraining of network AI models using operational telecom data, thereby closing the legislative gap identified."
+ }
+}

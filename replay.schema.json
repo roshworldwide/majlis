@@ -1,0 +1,661 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/roshworldwide/majlis/replay.schema.json",
+  "title": "MAJLIS replay",
+  "type": "object",
+  "required": [
+    "meta",
+    "agents",
+    "channels",
+    "facts",
+    "waves",
+    "timeline",
+    "kpis",
+    "gaps",
+    "citations",
+    "kb_points",
+    "audit",
+    "compare"
+  ],
+  "$defs": {
+    "event": {
+      "type": "object",
+      "required": [
+        "t",
+        "wave",
+        "type",
+        "agent",
+        "payload"
+      ],
+      "properties": {
+        "seq": {
+          "type": "integer"
+        },
+        "t": {
+          "type": "number",
+          "description": "simulation minute (T+0 = 22:30 fictional)"
+        },
+        "wave": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "inject",
+            "message",
+            "proposal",
+            "gate_pass",
+            "gate_block",
+            "gate_flag",
+            "belief",
+            "gap",
+            "adviser_qa",
+            "kpi",
+            "action"
+          ]
+        },
+        "agent": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "payload": {
+          "type": "object"
+        }
+      }
+    },
+    "timeline": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/event"
+      }
+    },
+    "kpis": {
+      "type": "object",
+      "required": [
+        "cells_asleep_pct",
+        "call_setup_success",
+        "ambulance_delta_min"
+      ],
+      "properties": {
+        "cells_asleep_pct": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "call_setup_success": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "emergency_call_success": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "ambulance_delta_min": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        }
+      }
+    },
+    "gap": {
+      "type": "object",
+      "required": [
+        "gap_id",
+        "type",
+        "title",
+        "global_examples",
+        "readiness_ids",
+        "y3172_nodes",
+        "t"
+      ],
+      "properties": {
+        "gap_id": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "unclear_responsibility",
+            "standards_gap",
+            "technology_gap",
+            "legislative_gap",
+            "coordination_problem",
+            "conflicting_objectives"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "trigger": {
+          "type": "string"
+        },
+        "global_examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "cite_id"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "cite_id": {
+                "type": "string"
+              },
+              "how": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "uae_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "absence_queries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "readiness_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "y3172_nodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recommendation": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string"
+        },
+        "t": {
+          "type": "number"
+        }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": [
+        "doc_id",
+        "title",
+        "article",
+        "page",
+        "quote",
+        "url",
+        "verified"
+      ],
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "chunk_id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "issuer": {
+          "type": "string"
+        },
+        "article": {
+          "type": "string"
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "quote": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "cluster": {
+          "enum": [
+            "uae",
+            "global",
+            "itu",
+            "other"
+          ]
+        },
+        "star_index": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "required": [
+        "href",
+        "root"
+      ],
+      "properties": {
+        "href": {
+          "type": "string"
+        },
+        "root": {
+          "type": "string"
+        },
+        "entries": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "run_id",
+        "scenario",
+        "reform",
+        "created_at",
+        "llm",
+        "audit_root",
+        "disclaimer"
+      ],
+      "properties": {
+        "run_id": {
+          "type": "string"
+        },
+        "scenario": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "reform": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "llm": {
+          "type": "object",
+          "required": [
+            "provider",
+            "model",
+            "mode"
+          ],
+          "properties": {
+            "provider": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "mode": {
+              "type": "string"
+            }
+          }
+        },
+        "audit_root": {
+          "type": "string"
+        },
+        "disclaimer": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "clock_origin": {
+          "type": "string"
+        },
+        "horizon_min": {
+          "type": "number"
+        },
+        "mock": {
+          "type": "boolean"
+        },
+        "quotable": {
+          "type": "string"
+        }
+      }
+    },
+    "agents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "name_ar",
+          "role_type",
+          "modelled_on",
+          "color",
+          "mandates"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_ar": {
+            "type": "string"
+          },
+          "role_type": {
+            "type": "string"
+          },
+          "modelled_on": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "mandates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "action_types",
+                "citations"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "action_types": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "citations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "channels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "to",
+          "legal",
+          "citation"
+        ],
+        "properties": {
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "legal": {
+            "type": "boolean"
+          },
+          "citation": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": {
+            "type": "string"
+          },
+          "latency_min": {
+            "type": "number"
+          },
+          "origin": {
+            "enum": [
+              "law",
+              "reform",
+              "missing"
+            ]
+          }
+        }
+      }
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "label_ar"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "label_ar": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "waves": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "t",
+          "visible_to",
+          "content"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "t": {
+            "type": "number"
+          },
+          "visible_to": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "content": {
+            "type": "string"
+          },
+          "hidden_fact": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "timeline": {
+      "$ref": "#/$defs/timeline"
+    },
+    "kpis": {
+      "$ref": "#/$defs/kpis"
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/gap"
+      }
+    },
+    "citations": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/citation"
+      }
+    },
+    "kb_points": {
+      "type": "object",
+      "required": [
+        "href",
+        "count",
+        "clusters"
+      ],
+      "properties": {
+        "href": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "clusters": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "uae",
+              "global",
+              "itu",
+              "other"
+            ]
+          }
+        },
+        "layout": {
+          "type": "string"
+        }
+      }
+    },
+    "audit": {
+      "$ref": "#/$defs/audit"
+    },
+    "compare": {
+      "type": "object",
+      "required": [
+        "baseline_run",
+        "reform_run",
+        "metrics"
+      ],
+      "properties": {
+        "baseline_run": {
+          "type": "string"
+        },
+        "reform_run": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "metrics": {
+          "type": "object"
+        },
+        "reform": {
+          "type": "object",
+          "required": [
+            "run_id",
+            "timeline",
+            "kpis",
+            "gaps"
+          ],
+          "properties": {
+            "run_id": {
+              "type": "string"
+            },
+            "timeline": {
+              "$ref": "#/$defs/timeline"
+            },
+            "kpis": {
+              "$ref": "#/$defs/kpis"
+            },
+            "gaps": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/gap"
+              }
+            },
+            "audit": {
+              "$ref": "#/$defs/audit"
+            }
+          }
+        }
+      }
+    },
+    "adviser_presets": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

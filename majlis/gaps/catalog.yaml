@@ -1,0 +1,416 @@
+- key: operator_ems_channel
+  type: coordination_problem
+  title: No channel between the network operator and emergency dispatch
+  description: When an AI-driven network fault degrades emergency-call delivery, the operator that knows the cause has no cited channel to warn emergency services, and emergency services cannot query network
+    status. Time-to-awareness becomes a function of informal routes.
+  absence_queries:
+  - operator notify emergency services ambulance network outage
+  - licensee inform emergency call centre service disruption
+  presence_terms:
+  - - emergency
+    - licensee
+    - notify
+  readiness:
+  - d7_m01
+  - d9_m08
+  - d13_m07
+  y3172_nodes:
+  - D
+  - P
+  - SINK
+  example_query: notify emergency call centres 911 special facilities of outage within minutes
+  global_examples:
+  - doc_id: US-47CFR-PART4
+    article: § 4.9(h)(4)
+    quote: shall provide a 911 outage notification to a potentially affected 911 special facility as soon as possible, but no later than within 30 minutes of discovering
+    how: 'US: providers must warn potentially affected 911 call centres within 30 minutes of discovering an outage'
+    label: 47 CFR § 4.9(h)
+  - doc_id: EU-EECC-2018
+    article: Article 108
+    quote: Member States shall ensure that providers of voice communications services take all necessary measures to ensure uninterrupted access to emergency
+    how: 'EU: providers must take all necessary measures for uninterrupted access to emergency services'
+    label: EECC Art. 108
+  recommendation_seed: 'Establish a pre-agreed, two-way liaison between operators of AI-driven networks and emergency services: operators warn potentially affected emergency call centres within minutes
+    of discovering an outage that may affect emergency-call delivery [G1], emergency services can query network status, and uninterrupted emergency access is an explicit resilience objective [G2].'
+  evidence_statement: No operator→emergency-service (or reverse) channel or duty was found in the ingested UAE corpus; the CDA information/cooperation duty (Decree-Law 35/2024 Art. 6) binds the Competent
+    Authority and Concerned Entities (government authorities), not licensees.
+  uae_evidence:
+  - doc_id: UAE-NCEMA-CDA-2024
+    article: Article 6(1)
+    quote: The Competent Authority and the Concerned Entities shall provide CDA with all information or data it requests related to civil defence work and measures
+- key: incident_lead
+  type: unclear_responsibility
+  title: Who leads when a telecom AI fault becomes a public emergency
+  description: The telecom regulator's powers cover the sector and licensees; the crisis authority's powers cover emergencies. For an AI-caused network failure that harms public safety, no cited instrument
+    designates the lead, so lead claims collide or nobody leads.
+  absence_queries:
+  - lead authority telecommunications network failure emergency coordination
+  - telecommunications emergency crisis lead authority powers
+  presence_terms:
+  - - telecommunication
+    - emergency
+    - lead
+  readiness:
+  - d7_m01
+  - d7_m05
+  - d8_m06
+  y3172_nodes:
+  - MLFO
+  - P
+  example_query: competent authority coordination incident response telecommunications emergency
+  global_examples:
+  - doc_id: EU-NIS2-2022
+    article: Article 9(2)
+    quote: it shall clearly indicate which of those authorities is to serve as the coordinator for the management of
+    how: 'EU: where several crisis authorities exist, one must be designated in advance as the coordinator'
+    label: NIS2 Art. 9(2)
+  - doc_id: EU-NIS2-2022
+    article: Article 9(1)
+    quote: Member States shall ensure coherence with the existing frameworks for general national crisis management
+    how: 'EU: cyber-crisis arrangements must be coherent with general national crisis management'
+    label: NIS2 Art. 9(1)
+  recommendation_seed: Designate in advance a lead authority for AI-caused incidents in critical communications networks, with an explicit escalation trigger (for example, when emergency services or public
+    safety are affected), while the sector regulator keeps technical-remediation powers over the operator [G1].
+  evidence_statement: The telecom law gives the regulator sector oversight (Art. 12) and national-security instructions only after Cabinet approval (Art. 10(a)(3)); the ingested crisis-authority instrument
+    (Decree-Law 35/2024) covers civil-defence coordination. No ingested instrument designates the lead for an AI-caused telecom failure that becomes a public emergency; NCEMA's founding law was not found
+    in the ingested public corpus (as of 10 Nov 2026).
+  uae_evidence:
+  - doc_id: UAE-TELECOM-LAW
+    article: Article 12
+    quote: The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations
+  - doc_id: UAE-TELECOM-LAW
+    article: Article 10(a)(3)
+    quote: Issue any general guidelines or instructions related to the Telecommunication Sector, based upon the requirements of the national security or international relations, after being approved by
+      the Cabinet
+  - doc_id: UAE-NCEMA-CDA-2024
+    article: Article 3(12)
+    quote: Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned
+      Entities
+- key: ai_incident_notification
+  type: legislative_gap
+  title: No AI-incident notification duty or deadline for AI-driven network operations
+  description: The operator becomes aware that its ML model is causing the outage, but no cited UAE instrument imposes a duty, recipient list or deadline for notifying an AI-caused incident in network operations;
+    notification is voluntary and late.
+  absence_queries:
+  - artificial intelligence incident notification telecommunications operator deadline
+  - report incident affecting network within hours licensee
+  - serious incident artificial intelligence system report authority
+  presence_terms:
+  - - artificial intelligence
+    - incident
+    - notif
+  - - incident
+    - report
+    - hours
+  readiness:
+  - d10_m06
+  - d10_m09
+  - d9_m08
+  y3172_nodes:
+  - P
+  - MLFO
+  - SINK
+  example_query: serious incident reporting deadline critical infrastructure early warning 24 hours
+  global_examples:
+  - doc_id: EU-NIS2-2022
+    article: Article 23(4)(a)
+    quote: without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning
+    how: 'EU: 24-hour early warning, 72-hour notification, one-month final report for significant incidents'
+    label: NIS2 Art. 23
+  - doc_id: EU-AIACT-2024
+    article: Article 73(3)
+    quote: shall be provided immediately, and not later than two days after the provider or, where applicable, the deployer becomes aware of that incident
+    how: 'EU: serious AI incidents disrupting critical infrastructure reported immediately, at most two days'
+    label: AI Act Art. 73
+  - doc_id: IN-TCSR-2024
+    article: rule 7(1)(a)
+    quote: within six hours of becoming aware of a security incident affecting its telecommunication network or telecommunication service, report the same to the Central Government
+    how: 'India: telecom security incidents reported within six hours'
+    label: India TCS Rules 2024, r.7
+  - doc_id: IN-TRAI-OUTAGE-2023
+    article: para (a)
+    quote: continuously for a period of more than four hours, within twenty four hours of their occurrence
+    how: 'India: district-wide outages over four hours reported to TRAI within 24 hours'
+    label: TRAI outage direction 2023
+  recommendation_seed: 'Introduce an event-driven AI-incident notification duty for AI systems that operate critical communications networks: a short early-warning deadline after awareness, a follow-up
+    report and a final root-cause report, covering AI-caused service-affecting incidents and not only cyber-attacks or personal-data breaches [G1][G2][G3].'
+  evidence_statement: UAE instruments in the corpus provide periodic QoS/availability reporting (quarterly, 30 days after quarter end), cyber-security incident reporting to sector regulators (IA Regulation
+    §2.3) and personal-data-breach notification (PDPL Art. 9, period set by executive regulations). No event-driven notification duty or deadline for AI-caused, service-affecting incidents was found in
+    the ingested public corpus (as of 10 Nov 2026).
+  uae_evidence:
+  - doc_id: UAE-TDRA-QOS-POLICY-2019
+    article: Section 8 (OCR)
+    quote: The QoS data shall be reported to the TRA no later than thirty (30) calendar days following the end of the reporting quarter
+  - doc_id: UAE-TDRA-IAR-2020
+    article: Section 2.3
+    quote: entities are required to submit UAE IA Regulation implementation progress and key cyber security information to sector regulators
+  - doc_id: UAE-PDPL-2021
+    article: Article 9(1)
+    quote: notify the Bureau of such breach or violation and the investigation rights within the period and in accordance with the measures and requirements set by the Executive Regulations
+- key: energy_vs_availability
+  type: conflicting_objectives
+  title: Energy-efficiency goals vs network availability during mass events
+  description: An ML energy-saving feature serves energy and decarbonisation objectives; during a mass event it degrades availability and emergency access. No cited rule sets priorities between the two
+    objectives or a safe-mode for declared mass-gathering zones.
+  absence_queries:
+  - energy efficiency network availability priority mass gathering
+  - energy saving telecommunications network quality of service
+  presence_terms:
+  - - energy
+    - availability
+    - priority
+  readiness:
+  - d13_m07
+  - d13_m06
+  - d5_m03
+  y3172_nodes:
+  - P
+  - M
+  example_query: revert to manual process automation network security availability
+  global_examples:
+  - doc_id: UK-TSCOP-2026-V1.1
+    article: para 2.70
+    quote: how easy it would be to revert back to a manual process
+    how: 'UK: automated network processes must be assessed for rollback and reversion to manual operation'
+    label: UK Telecoms Security CoP v1.1 §2.70
+  - doc_id: UK-TSCOP-2026-V1.1
+    article: para 2.71
+    quote: any automated processes shall ensure the resilience of the network is retained and there is a named business and operational owner
+    how: 'UK: automation must retain network resilience and have a named owner'
+    label: UK Telecoms Security CoP v1.1 §2.71
+  - doc_id: EU-EECC-2018
+    article: Article 108
+    quote: Member States shall take all necessary measures to ensure the fullest possible availability of voice communications services and internet access services provided over public electronic communications
+      networks in the event of catastrophic network breakdown
+    how: 'EU: fullest possible availability of voice and internet access in catastrophic breakdowns'
+    label: EECC Art. 108
+  recommendation_seed: Require operators of AI-driven energy-saving features to define a safe-mode that suspends them in declared mass-gathering zones or when emergency access is at risk, with availability
+    and emergency access taking priority over energy objectives during such events, and a named owner able to revert automation to a manual configuration [G1][G2].
+  evidence_statement: The corpus sets availability targets (TDRA QoS policy) and energy-efficiency objectives (UAE Energy Strategy 2050) but no rule on which prevails when an AI energy-saving feature degrades
+    availability during a mass event.
+  uae_evidence:
+  - doc_id: UAE-TELECOM-LAW
+    article: Article 13(2)
+    quote: Ensure that the telecommunications sector provides high quality and efficient services to subscribers
+  - doc_id: UAE-ENERGY-STRAT-2050
+    article: p.1
+    quote: Increase efficiency of energy and water consumption in highly intensive sectors in the UAE
+- key: ml_update_validation
+  type: standards_gap
+  title: No mandated pre-deployment validation of ML model updates, and no standard AI-incident interface from the ML pipeline
+  description: Model v2.3 went live without a sandbox-validation or change-notification record. Y.3172 defines an ML Sandbox and Y.3181 its architecture, but no cited instrument makes sandbox validation
+    of network-ML updates a requirement, and no standard interface carries AI-incident notices from the pipeline (P node / MLFO) to authorities.
+  absence_queries:
+  - validation testing of machine learning model updates before deployment network
+  - sandbox testing artificial intelligence before deployment requirement
+  presence_terms:
+  - - machine learning
+    - validation
+    - before deployment
+  readiness:
+  - d10_m01
+  - d7_m04
+  - d5_m01
+  y3172_nodes:
+  - ML Sandbox
+  - MLFO
+  - P
+  example_query: machine learning sandbox validation before deployment in the network
+  global_examples:
+  - doc_id: REF-T-REC-Y-3172-201906-I-PDF-E
+    article: clause 8
+    quote: An ML sandbox is an isolated domain which allows the hosting of separate ML pipelines to train, test and evaluate them before deploying them in a live network
+    how: ITU-T Y.3172 defines the ML sandbox for testing ML pipelines before live deployment
+    label: ITU-T Y.3172 (ML sandbox)
+  - doc_id: ITU-T-Y3181
+    article: clause 6
+    quote: the sandbox subsystem [ITU-T Y.3172] emerges as a promising solution for training, testing, and evaluating the performance of ML models before being deployed in live networks
+    how: ITU-T Y.3181 specifies the ML sandbox architecture for pre-deployment evaluation
+    label: ITU-T Y.3181
+  - doc_id: EU-AIACT-2024
+    article: Article 3(23)
+    quote: '''substantial modification'' means a change to an AI system after its placing on the market or putting into service which is not foreseen or planned in the initial conformity assessment'
+    how: 'EU: substantial modifications of AI systems trigger renewed assessment'
+    label: AI Act Art. 3(23)
+  recommendation_seed: Make ML-sandbox validation (ITU-T Y.3172 / Y.3181) a pre-deployment requirement for updates to network-operating ML models, treat significant model updates as notifiable changes,
+    and standardise an AI-incident notification interface from the ML pipeline (P node / MLFO) to authorities as a Y.3172-family supplement [G1][G2][G3].
+  evidence_statement: Y.3172/Y.3181 define the ML sandbox, but neither they nor any ingested UAE instrument make sandbox validation or change notification of network-ML updates a requirement, and no standard
+    interface carries AI-incident notices from the ML pipeline to authorities.
+  uae_evidence: []
+- key: offshore_model_logs
+  type: technology_gap
+  title: Vendor-held, offshore model and logs block forensics and rollback
+  description: Rollback of the faulty model requires the foreign vendor, and the model and its logs are hosted outside the country, delaying restoration and forensics; no cited requirement obliges in-country
+    rollback artefacts, log retention or escrow for network AI.
+  absence_queries:
+  - logs retention artificial intelligence vendor outside the state rollback
+  - transfer of personal data outside the state conditions
+  presence_terms:
+  - - log
+    - vendor
+    - rollback
+  readiness:
+  - d13_m07
+  - d10_m10
+  - d10_m09
+  y3172_nodes:
+  - M
+  - SINK
+  - MLFO
+  example_query: record keeping automatic logging high-risk AI system traceability
+  global_examples:
+  - doc_id: EU-AIACT-2024
+    article: Article 12(1)
+    quote: High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system
+    how: 'EU: high-risk AI systems must log events over their lifetime for traceability'
+    label: AI Act Art. 12
+  - doc_id: UK-TSCOP-2026-V1.1
+    article: para 2.70
+    quote: how easy it would be to roll back a failed change
+    how: 'UK: operators must assess how easily a failed automated change can be rolled back'
+    label: UK Telecoms Security CoP v1.1 §2.70
+  recommendation_seed: Require in-country rollback artefacts and retention of model and decision logs for AI systems operating critical networks, accessible to the operator and authorities without vendor
+    mediation, backed by contractual vendor-escrow obligations [G1][G2].
+  evidence_statement: PDPL Art. 22–23 regulate cross-border transfer of personal data, but no ingested instrument requires in-country rollback artefacts, log retention or vendor escrow for AI systems operating
+    critical networks.
+  uae_evidence:
+  - doc_id: UAE-PDPL-2021
+    article: Article 22
+    quote: Personal Data may be transferred to outside of the State in the following cases approved by the Bureau
+- key: pdata_retraining
+  type: legislative_gap
+  title: Unclear lawful basis for reusing subscriber location data to retrain network AI
+  description: Retraining data for the network model included subscriber location traces. Whether, and on which lawful basis, operational telecom data may be reused to train network AI models is not addressed
+    specifically in the cited corpus.
+  absence_queries:
+  - processing personal data training artificial intelligence model lawful basis
+  - location data subscribers telecommunications processing
+  presence_terms:
+  - - location
+    - artificial intelligence
+    - training
+  readiness:
+  - d1_m10
+  - d1_m09
+  - d1_m11
+  y3172_nodes:
+  - SRC
+  - C
+  - PP
+  example_query: data governance training validation testing data sets personal data
+  global_examples:
+  - doc_id: EU-AIACT-2024
+    article: Article 10(2)
+    quote: Training, validation and testing data sets shall be subject to data governance and management practices appropriate
+    how: 'EU: training/validation/testing data sets of high-risk AI must follow data-governance practices'
+    label: AI Act Art. 10
+  - doc_id: EU-AIACT-2024
+    article: Article 10(2)(b)
+    quote: data collection processes and the origin of data, and in the case of personal data, the original purpose of the data collection
+    how: 'EU: data governance for training data must cover the original purpose for which personal data were collected'
+    label: AI Act Art. 10(2)(b)
+  recommendation_seed: 'Issue guidance on secondary use of operational telecom data (such as subscriber location traces) for training network AI: when it is compatible with the original purpose, when anonymisation
+    or consent is required, and which data-governance practices apply to training data [G1].'
+  evidence_statement: PDPL Art. 5(2) allows later processing for a 'similar or close' purpose; whether retraining a network model on subscriber location traces qualifies is not addressed specifically in
+    the ingested corpus.
+  uae_evidence:
+  - doc_id: UAE-PDPL-2021
+    article: Article 5(2)
+    quote: It shall not be processed at any later time in a manner incompatible with such purpose. However, it may be processed if the purpose is similar or close to the purpose for which this data is collected
+- key: rumour_mandate
+  type: unclear_responsibility
+  title: No designated authority for public communication on AI-caused outages and rumour rebuttal
+  description: False cyberattack rumours spread while the cause is known to the operator; the cyber authority's mandate to issue public rebuttals could not be cited, and rumour law addresses offenders rather
+    than official communication.
+  absence_queries:
+  - official public statement false news crisis authority
+  - cybersecurity council public communication incident
+  presence_terms: []
+  readiness:
+  - d7_m01
+  - d2_m04
+  y3172_nodes:
+  - SINK
+  - MLFO
+  example_query: inform the public about incident significant cyber threat
+  global_examples:
+  - doc_id: EU-NIS2-2022
+    article: Article 23(7)
+    quote: may, after consulting the entity concerned, inform the public about the significant incident or require the entity to do so
+    how: 'EU: the CSIRT/competent authority may inform the public about a significant incident or require the entity to do so'
+    label: NIS2 Art. 23(7)
+  - doc_id: EU-EECC-2018
+    article: Article 110(1)
+    quote: public warnings are transmitted by providers of mobile number-based interpersonal communications services to the end-users concerned
+    how: 'EU: public warnings in major emergencies are pushed through mobile operators to affected users'
+    label: EECC Art. 110(1)
+  recommendation_seed: Designate the authority responsible for timely public communication about AI-caused network incidents, including rebuttal of false cyber-attack attribution, with access to the operator's
+    verified incident facts and power to require the operator to inform the public [G1].
+  evidence_statement: The rumour law penalises spreading false news (Federal Decree-Law 34/2021 Art. 52); the crisis authority runs a public alert system (Decree-Law 35/2024 Art. 3(8)). No ingested instrument
+    gives the cyber authority a mandate to publicly rebut false attribution of a network outage.
+  uae_evidence:
+  - doc_id: UAE-CYBERCRIME-2021
+    article: Article 52(1)
+    quote: false news or data, or false, tendentious, misleading or erroneous rumors or reports
+  - doc_id: UAE-NCEMA-CDA-2024
+    article: Article 3(8)
+    quote: Establish a public alert system to warn residents of potential risks
+- key: cyber_investigation_mandate
+  type: unclear_responsibility
+  title: Cyber authority's power to investigate an operator's AI incident not citable
+  description: The cyber authority opens an investigation into the operator, but its establishing instrument was not found in the ingested public corpus, so the action cannot be cited and is blocked.
+  absence_queries:
+  - cybersecurity council competences investigate incident
+  - national cybersecurity authority powers request information
+  presence_terms: []
+  readiness:
+  - d7_m01
+  - d7_m05
+  y3172_nodes:
+  - P
+  example_query: competent authority powers request information security incident telecommunications
+  global_examples:
+  - doc_id: EU-NIS2-2022
+    article: Article 32(2)(e)
+    quote: requests for information necessary to assess the cybersecurity risk-management measures adopted by the entity concerned
+    how: 'EU: competent authorities may request information from essential entities'
+    label: NIS2 Art. 32
+  - doc_id: UK-TSA-2021
+    article: s.105O (inserted into the Communications Act 2003)
+    quote: may by notice ("an assessment notice") impose on the provider a duty to do any of the following things
+    how: 'UK: the regulator can require a provider to carry out tests and assessments of its network security'
+    label: UK TSA 2021, CA 2003 s.105O
+  recommendation_seed: Publish the cyber authority's competences over telecom operators' AI incidents (information requests, inspections, coordination with the sector regulator) so that investigations rest
+    on a citable mandate [G1].
+  evidence_statement: The UAE Cybersecurity Council's establishing instrument was not found in the ingested public corpus (as of 10 Nov 2026), so its investigative powers over a telecom operator cannot
+    be cited.
+  uae_evidence: []
+- key: missing_channel
+  type: coordination_problem
+  title: Missing legal channel between authorities
+  description: A message between two authorities had no cited legal channel and travelled informally.
+  absence_queries:
+  - coordination between federal authorities information sharing emergency
+  presence_terms: []
+  readiness:
+  - d7_m01
+  - d7_m04
+  y3172_nodes:
+  - D
+  example_query: cooperation and information sharing between competent authorities
+  global_examples: []
+  recommendation_seed: ''
+- key: information_powers
+  type: coordination_problem
+  title: Information-request or directive power not citable
+  description: An authority requested information from, or issued a directive to, the operator without a citable power.
+  absence_queries:
+  - authority request information licensee powers
+  presence_terms: []
+  readiness:
+  - d7_m01
+  y3172_nodes:
+  - P
+  example_query: power to require information from providers
+  global_examples: []
+  recommendation_seed: ''

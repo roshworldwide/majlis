@@ -1,0 +1,55 @@
+# MAJLIS reform pack — a DOMAIN-LEVEL DESIGN PROPOSAL for the replay, not law.
+# Each rule is modelled on cited global examples (quotes verified at load time).
+# Numbers such as "60 simulated minutes" are MAJLIS design parameters, NOT the
+# cited jurisdictions' rules.
+reform_id: uae_reform_pack
+title: "AI-driven network operations reform pack (design proposal)"
+rules:
+  - id: RF1
+    title: "AI-incident flash notice"
+    summary: >
+      When the operator becomes aware that an AI system is causing (or likely causing) a service-affecting incident,
+      it sends a flash notice within 60 simulated minutes to the telecom regulator, the crisis authority and the cyber
+      authority, and immediately to emergency services when emergency-call delivery may be affected; emergency
+      services get a status-query line back to the operator.
+    design_parameter: "60 minutes (regulator/crisis/cyber) and immediate (emergency services) are MAJLIS design parameters"
+    global_basis:
+      - {doc_id: EU-NIS2-2022, article: "Article 23(4)(a)", quote: "without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning"}
+      - {doc_id: EU-AIACT-2024, article: "Article 73(3)", quote: "shall be provided immediately, and not later than two days after the provider or, where applicable, the deployer becomes aware of that incident"}
+      - {doc_id: US-47CFR-PART4, article: "§ 4.9(h)(4)", quote: "shall provide a 911 outage notification to a potentially affected 911 special facility as soon as possible, but no later than within 30 minutes of discovering"}
+    adds_mandates:
+      - {mandate_id: M-A1-RF1-FLASH, agent: A1, title: "AI-incident flash notice duty (reform RF1)", action_types: [duty_notify_incident, notify_incident]}
+    adds_channels:
+      - {channel_id: CH-RF1-A1-A2, from: A1, to: A2, type: "RF1 flash notice", latency_min: 5}
+      - {channel_id: CH-RF1-A1-A3, from: A1, to: A3, type: "RF1 flash notice", latency_min: 5}
+      - {channel_id: CH-RF1-A1-A5, from: A1, to: A5, type: "RF1 flash notice", latency_min: 5}
+      - {channel_id: CH-RF1-A1-A4, from: A1, to: A4, type: "RF1 emergency-service notice", latency_min: 5}
+      - {channel_id: CH-RF1-A4-A1, from: A4, to: A1, type: "RF1 emergency-service status query", latency_min: 5}
+  - id: RF2
+    title: "Mass-event safe-mode"
+    summary: >
+      ML energy-saving is suspended in declared mass-gathering zones, and the operator must be able to revert network
+      automation to a manual/safe configuration locally; during declared mass events availability and emergency access
+      take priority over energy-efficiency objectives.
+    design_parameter: "safe-mode activation within 5 simulated minutes is a MAJLIS design parameter"
+    global_basis:
+      - {doc_id: UK-TSCOP-2026-V1.1, article: "para 2.70", quote: "how easy it would be to revert back to a manual process"}
+      - {doc_id: UK-TSCOP-2026-V1.1, article: "para 2.71", quote: "any automated processes shall ensure the resilience of the network is retained and there is a named business and operational owner"}
+      - {doc_id: EU-EECC-2018, article: "Article 108", quote: "Member States shall take all necessary measures to ensure the fullest possible availability of voice communications services and internet access services provided over public electronic communications networks in the event of catastrophic network breakdown"}
+    adds_mandates:
+      - {mandate_id: M-A1-RF2-SAFEMODE, agent: A1, title: "Mass-event safe-mode (reform RF2)", action_types: [ml_safe_mode]}
+    priority_rules:
+      - {action_types: [ml_safe_mode], objective_order: [public_safety, service_availability, energy_efficiency]}
+  - id: RF3
+    title: "Pre-deployment ML sandbox validation and change notification"
+    summary: >
+      Updates to network ML models are validated in an ML sandbox before deployment, notified to the regulator (change
+      register), and shipped with an in-country rollback artefact and log retention, so rollback and forensics do not
+      depend on an offshore vendor.
+    design_parameter: "local rollback within 10 simulated minutes is a MAJLIS design parameter"
+    global_basis:
+      - {doc_id: REF-T-REC-Y-3172-201906-I-PDF-E, article: "clause 8 (ML sandbox)", quote: "An ML sandbox is an isolated domain which allows the hosting of separate ML pipelines to train, test and evaluate them before deploying them in a live network"}
+      - {doc_id: ITU-T-Y3181, article: "clause 6", quote: "the sandbox subsystem [ITU-T Y.3172] emerges as a promising solution for training, testing, and evaluating the performance of ML models before being deployed in live networks"}
+      - {doc_id: EU-AIACT-2024, article: "Article 12(1)", quote: "High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system"}
+    adds_mandates:
+      - {mandate_id: M-A1-RF3-ROLLBACK, agent: A1, title: "Local rollback artefact + change notification (reform RF3)", action_types: [local_rollback]}

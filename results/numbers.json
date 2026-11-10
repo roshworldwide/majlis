@@ -1,0 +1,849 @@
+{
+ "as_of": "10 Nov 2026",
+ "kb": {
+  "documents": 100,
+  "documents_by_collection": {
+   "kb_global_examples": 18,
+   "kb_usecase": 7,
+   "kb_uae": 13,
+   "kb_main": 62
+  },
+  "uae_documents": 13,
+  "global_documents": 18,
+  "itu_documents": 2,
+  "reference_documents": 67,
+  "chunks": 4919,
+  "chunks_by_collection": {
+   "kb_global_examples": 1308,
+   "kb_usecase": 915,
+   "kb_uae": 379,
+   "kb_main": 2281,
+   "kb_framework": 19,
+   "kb_mandates": 17
+  },
+  "ocr_chunks": 46,
+  "mandates": 17
+ },
+ "kb_eval": {
+  "n_questions": 61,
+  "k": 5,
+  "dense_backend": "nomic-embed-text",
+  "unreachable_gold": [],
+  "retrievers": {
+   "bm25": {
+    "hit@1": 0.852,
+    "hit@3": 0.934,
+    "hit@5": 0.984,
+    "mrr": 0.902,
+    "hit@5_by_layer": {
+     "uae": 1.0,
+     "global": 0.964,
+     "itu": 1.0
+    }
+   },
+   "dense": {
+    "hit@1": 0.77,
+    "hit@3": 0.803,
+    "hit@5": 0.918,
+    "mrr": 0.817,
+    "hit@5_by_layer": {
+     "uae": 0.88,
+     "global": 0.964,
+     "itu": 0.875
+    }
+   },
+   "hybrid": {
+    "hit@1": 0.803,
+    "hit@3": 0.934,
+    "hit@5": 0.951,
+    "mrr": 0.872,
+    "hit@5_by_layer": {
+     "uae": 0.92,
+     "global": 0.964,
+     "itu": 1.0
+    }
+   }
+  }
+ },
+ "determinism": {
+  "replay_roots": {
+   "golden": "2e5fc864cd0d07744ec4a1cac1e1049679382c66148e45fbe9008d3b5d3c6289",
+   "golden_replay2": "2e5fc864cd0d07744ec4a1cac1e1049679382c66148e45fbe9008d3b5d3c6289",
+   "golden_replay3": "2e5fc864cd0d07744ec4a1cac1e1049679382c66148e45fbe9008d3b5d3c6289"
+  },
+  "identical": true,
+  "fresh_live_vs_golden": {
+   "structural_events_a": 81,
+   "structural_events_b": 81,
+   "structural_differences": 0,
+   "outcome_metrics_identical": true,
+   "gaps_identical": true,
+   "citation_coverage": [
+    0.931,
+    0.931
+   ],
+   "invalid_quotes": [
+    7,
+    7
+   ],
+   "note": "structural = facts, messages, blocks, actions, KPIs, gaps; LLM prose is expected to differ"
+  }
+ },
+ "baseline": {
+  "metrics": {
+   "time_to_awareness": {
+    "A1": {
+     "F_ROOT": 0,
+     "F_EMERG": 45,
+     "F_RUMOUR": null,
+     "F_HARM": null,
+     "F_XBORDER": 40,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A2": {
+     "F_ROOT": 25,
+     "F_EMERG": null,
+     "F_RUMOUR": 20,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A3": {
+     "F_ROOT": 35,
+     "F_EMERG": 20,
+     "F_RUMOUR": null,
+     "F_HARM": 40,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": 60
+    },
+    "A4": {
+     "F_ROOT": 35,
+     "F_EMERG": 10,
+     "F_RUMOUR": null,
+     "F_HARM": 30,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A5": {
+     "F_ROOT": 40,
+     "F_EMERG": null,
+     "F_RUMOUR": 20,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A6": {
+     "F_ROOT": 70,
+     "F_EMERG": 70,
+     "F_RUMOUR": null,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": 50,
+     "F_LEAD": null
+    }
+   },
+   "awareness_convergence_min": 40,
+   "suppressed_waves": [],
+   "copilot_rca_lead_min": 15,
+   "coordination_messages": 16,
+   "messages_legal": 13,
+   "messages_informal": 3,
+   "missing_channels": 2,
+   "missing_channel_pairs": [
+    "A1→A4",
+    "A4→A1"
+   ],
+   "conflicting_actions": 1,
+   "blocked_actions": 4,
+   "would_block_actions_if_gate_on": 4,
+   "rerouted_messages": 3,
+   "gaps_by_type": {
+    "conflicting_objectives": 1,
+    "coordination_problem": 1,
+    "legislative_gap": 2,
+    "standards_gap": 1,
+    "unclear_responsibility": 3,
+    "technology_gap": 1
+   },
+   "gaps_total": 9,
+   "citation_coverage": 0.931,
+   "claims_total": 102,
+   "claims_supported": 95,
+   "unsupported_claims_caught": 7,
+   "unsupported_claims_passed": 0,
+   "invalid_quotes": 7,
+   "redacted_normative_claims": 0,
+   "iap_count": 2,
+   "service_restored_min": 70,
+   "degraded_minutes": 75,
+   "lead_claims": [
+    {
+     "agent": "A3",
+     "t": 40
+    }
+   ],
+   "rumour_rebuttal_min": null,
+   "adviser_questions": 11,
+   "llm_calls": 33
+  },
+  "audit": {
+   "ok": true,
+   "entries": 270,
+   "root": "2e5fc864cd0d07744ec4a1cac1e1049679382c66148e45fbe9008d3b5d3c6289"
+  },
+  "llm": "ollama:qwen2.5:3b",
+  "llm_stats": {
+   "calls": 13,
+   "cache_hits": 13,
+   "live_calls": 0,
+   "repairs": 0,
+   "fallbacks": 0,
+   "seconds": 0.0
+  },
+  "gate_stats": {
+   "checked": 36,
+   "blocked": 7,
+   "would_block": 7,
+   "flagged": 1,
+   "g1_fail": 7,
+   "g2_fail": 4,
+   "g3_fail": 3,
+   "g4_flag": 1,
+   "g5_fail": 0,
+   "claims_checked": 2,
+   "claims_cited": 2
+  },
+  "gaps": [
+   {
+    "gap_id": "GAP-01",
+    "type": "conflicting_objectives",
+    "title": "Energy-efficiency goals vs network availability during mass events",
+    "examples": [
+     "UK Telecoms Security CoP v1.1 §2.70",
+     "UK Telecoms Security CoP v1.1 §2.71",
+     "EECC Art. 108"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-02",
+    "type": "coordination_problem",
+    "title": "No channel between the network operator and emergency dispatch",
+    "examples": [
+     "47 CFR § 4.9(h)",
+     "EECC Art. 108"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-03",
+    "type": "legislative_gap",
+    "title": "No AI-incident notification duty or deadline for AI-driven network operations",
+    "examples": [
+     "NIS2 Art. 23",
+     "AI Act Art. 73",
+     "India TCS Rules 2024, r.7",
+     "TRAI outage direction 2023"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-04",
+    "type": "standards_gap",
+    "title": "No mandated pre-deployment validation of ML model updates, and no standard AI-incident interface from the ML pipeline",
+    "examples": [
+     "ITU-T Y.3172 (ML sandbox)",
+     "ITU-T Y.3181",
+     "AI Act Art. 3(23)"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-05",
+    "type": "unclear_responsibility",
+    "title": "Cyber authority's power to investigate an operator's AI incident not citable",
+    "examples": [
+     "NIS2 Art. 32",
+     "UK TSA 2021, CA 2003 s.105O"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-06",
+    "type": "unclear_responsibility",
+    "title": "Who leads when a telecom AI fault becomes a public emergency",
+    "examples": [
+     "NIS2 Art. 9(2)",
+     "NIS2 Art. 9(1)"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-07",
+    "type": "technology_gap",
+    "title": "Vendor-held, offshore model and logs block forensics and rollback",
+    "examples": [
+     "AI Act Art. 12",
+     "UK Telecoms Security CoP v1.1 §2.70"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-08",
+    "type": "unclear_responsibility",
+    "title": "No designated authority for public communication on AI-caused outages and rumour rebuttal",
+    "examples": [
+     "NIS2 Art. 23(7)",
+     "EECC Art. 110(1)"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-09",
+    "type": "legislative_gap",
+    "title": "Unclear lawful basis for reusing subscriber location data to retrain network AI",
+    "examples": [
+     "AI Act Art. 10",
+     "AI Act Art. 10(2)(b)"
+    ],
+    "confidence": "high"
+   }
+  ],
+  "adviser": {
+   "questions": 11,
+   "quotes_total": 77,
+   "quotes_valid": 77
+  }
+ },
+ "reform": {
+  "metrics": {
+   "time_to_awareness": {
+    "A1": {
+     "F_ROOT": 0,
+     "F_EMERG": null,
+     "F_RUMOUR": null,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A2": {
+     "F_ROOT": 5,
+     "F_EMERG": null,
+     "F_RUMOUR": 20,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A3": {
+     "F_ROOT": 5,
+     "F_EMERG": null,
+     "F_RUMOUR": null,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": 60
+    },
+    "A4": {
+     "F_ROOT": 5,
+     "F_EMERG": null,
+     "F_RUMOUR": null,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A5": {
+     "F_ROOT": 5,
+     "F_EMERG": null,
+     "F_RUMOUR": 20,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A6": {
+     "F_ROOT": 70,
+     "F_EMERG": null,
+     "F_RUMOUR": null,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": 50,
+     "F_LEAD": null
+    }
+   },
+   "awareness_convergence_min": 5,
+   "suppressed_waves": [
+    "W1",
+    "W2",
+    "W4",
+    "W5"
+   ],
+   "copilot_rca_lead_min": 15,
+   "coordination_messages": 10,
+   "messages_legal": 10,
+   "messages_informal": 0,
+   "missing_channels": 0,
+   "missing_channel_pairs": [],
+   "conflicting_actions": 0,
+   "blocked_actions": 3,
+   "would_block_actions_if_gate_on": 3,
+   "rerouted_messages": 0,
+   "gaps_by_type": {
+    "unclear_responsibility": 3,
+    "legislative_gap": 1
+   },
+   "gaps_total": 4,
+   "citation_coverage": 0.987,
+   "claims_total": 77,
+   "claims_supported": 76,
+   "unsupported_claims_caught": 1,
+   "unsupported_claims_passed": 0,
+   "invalid_quotes": 1,
+   "redacted_normative_claims": 0,
+   "iap_count": 1,
+   "service_restored_min": 5,
+   "degraded_minutes": 10,
+   "lead_claims": [
+    {
+     "agent": "A3",
+     "t": 60
+    }
+   ],
+   "rumour_rebuttal_min": null,
+   "adviser_questions": 9,
+   "llm_calls": 20
+  },
+  "audit": {
+   "ok": true,
+   "entries": 167,
+   "root": "b343d2552bc5dc7560a76f184f45df96e6526447860cc3de2b1c1a7328e44fd6"
+  },
+  "llm": "ollama:qwen2.5:3b",
+  "llm_stats": {
+   "calls": 7,
+   "cache_hits": 7,
+   "live_calls": 0,
+   "repairs": 0,
+   "fallbacks": 0,
+   "seconds": 0.0
+  },
+  "gate_stats": {
+   "checked": 25,
+   "blocked": 3,
+   "would_block": 3,
+   "flagged": 0,
+   "g1_fail": 1,
+   "g2_fail": 3,
+   "g3_fail": 0,
+   "g4_flag": 0,
+   "g5_fail": 0,
+   "claims_checked": 2,
+   "claims_cited": 2
+  },
+  "gaps": [
+   {
+    "gap_id": "GAP-01",
+    "type": "unclear_responsibility",
+    "title": "Who leads when a telecom AI fault becomes a public emergency",
+    "examples": [
+     "NIS2 Art. 9(2)",
+     "NIS2 Art. 9(1)"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-02",
+    "type": "unclear_responsibility",
+    "title": "Cyber authority's power to investigate an operator's AI incident not citable",
+    "examples": [
+     "NIS2 Art. 32",
+     "UK TSA 2021, CA 2003 s.105O"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-03",
+    "type": "unclear_responsibility",
+    "title": "No designated authority for public communication on AI-caused outages and rumour rebuttal",
+    "examples": [
+     "NIS2 Art. 23(7)",
+     "EECC Art. 110(1)"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-04",
+    "type": "legislative_gap",
+    "title": "Unclear lawful basis for reusing subscriber location data to retrain network AI",
+    "examples": [
+     "AI Act Art. 10",
+     "AI Act Art. 10(2)(b)"
+    ],
+    "confidence": "high"
+   }
+  ],
+  "adviser": {
+   "questions": 9,
+   "quotes_total": 63,
+   "quotes_valid": 63
+  }
+ },
+ "nogate": {
+  "metrics": {
+   "time_to_awareness": {
+    "A1": {
+     "F_ROOT": 0,
+     "F_EMERG": null,
+     "F_RUMOUR": null,
+     "F_HARM": null,
+     "F_XBORDER": 40,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A2": {
+     "F_ROOT": 25,
+     "F_EMERG": null,
+     "F_RUMOUR": 20,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A3": {
+     "F_ROOT": 35,
+     "F_EMERG": 20,
+     "F_RUMOUR": null,
+     "F_HARM": 40,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": 60
+    },
+    "A4": {
+     "F_ROOT": 10,
+     "F_EMERG": 10,
+     "F_RUMOUR": null,
+     "F_HARM": 30,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A5": {
+     "F_ROOT": 40,
+     "F_EMERG": null,
+     "F_RUMOUR": 20,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": null,
+     "F_LEAD": null
+    },
+    "A6": {
+     "F_ROOT": 70,
+     "F_EMERG": null,
+     "F_RUMOUR": null,
+     "F_HARM": null,
+     "F_XBORDER": null,
+     "F_PDATA": 50,
+     "F_LEAD": null
+    }
+   },
+   "awareness_convergence_min": 40,
+   "suppressed_waves": [],
+   "copilot_rca_lead_min": 15,
+   "coordination_messages": 15,
+   "messages_legal": 13,
+   "messages_informal": 0,
+   "missing_channels": 2,
+   "missing_channel_pairs": [
+    "A1→A4",
+    "A5→A1"
+   ],
+   "conflicting_actions": 2,
+   "blocked_actions": 0,
+   "would_block_actions_if_gate_on": 4,
+   "rerouted_messages": 2,
+   "gaps_by_type": {
+    "conflicting_objectives": 1,
+    "coordination_problem": 2,
+    "legislative_gap": 2,
+    "standards_gap": 1,
+    "unclear_responsibility": 3,
+    "technology_gap": 1
+   },
+   "gaps_total": 10,
+   "citation_coverage": 0.951,
+   "claims_total": 102,
+   "claims_supported": 97,
+   "unsupported_claims_caught": 0,
+   "unsupported_claims_passed": 5,
+   "invalid_quotes": 5,
+   "redacted_normative_claims": 0,
+   "iap_count": 2,
+   "service_restored_min": 70,
+   "degraded_minutes": 75,
+   "lead_claims": [
+    {
+     "agent": "A2",
+     "t": 25
+    },
+    {
+     "agent": "A3",
+     "t": 40
+    }
+   ],
+   "rumour_rebuttal_min": 40,
+   "adviser_questions": 11,
+   "llm_calls": 34
+  },
+  "audit": {
+   "ok": true,
+   "entries": 272,
+   "root": "eeb2fb1cb2a8ad6538c7b134d0ae4bfe985916b21aa1c495ae3ee3342c02a689"
+  },
+  "llm": "ollama:qwen2.5:3b",
+  "llm_stats": {
+   "calls": 13,
+   "cache_hits": 13,
+   "live_calls": 0,
+   "repairs": 0,
+   "fallbacks": 0,
+   "seconds": 0.0
+  },
+  "gate_stats": {
+   "checked": 34,
+   "blocked": 0,
+   "would_block": 6,
+   "flagged": 1,
+   "g1_fail": 5,
+   "g2_fail": 4,
+   "g3_fail": 2,
+   "g4_flag": 1,
+   "g5_fail": 0,
+   "claims_checked": 2,
+   "claims_cited": 2
+  },
+  "gaps": [
+   {
+    "gap_id": "GAP-01",
+    "type": "conflicting_objectives",
+    "title": "Energy-efficiency goals vs network availability during mass events",
+    "examples": [
+     "UK Telecoms Security CoP v1.1 §2.70",
+     "UK Telecoms Security CoP v1.1 §2.71",
+     "EECC Art. 108"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-02",
+    "type": "coordination_problem",
+    "title": "No channel between the network operator and emergency dispatch",
+    "examples": [
+     "47 CFR § 4.9(h)",
+     "EECC Art. 108"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-03",
+    "type": "legislative_gap",
+    "title": "No AI-incident notification duty or deadline for AI-driven network operations",
+    "examples": [
+     "NIS2 Art. 23",
+     "AI Act Art. 73",
+     "India TCS Rules 2024, r.7",
+     "TRAI outage direction 2023"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-04",
+    "type": "standards_gap",
+    "title": "No mandated pre-deployment validation of ML model updates, and no standard AI-incident interface from the ML pipeline",
+    "examples": [
+     "ITU-T Y.3172 (ML sandbox)",
+     "ITU-T Y.3181",
+     "AI Act Art. 3(23)"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-05",
+    "type": "unclear_responsibility",
+    "title": "Cyber authority's power to investigate an operator's AI incident not citable",
+    "examples": [
+     "NIS2 Art. 32",
+     "UK TSA 2021, CA 2003 s.105O"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-06",
+    "type": "coordination_problem",
+    "title": "Missing legal channel between authorities",
+    "examples": [
+     "EU-EECC-2018"
+    ],
+    "confidence": "low"
+   },
+   {
+    "gap_id": "GAP-07",
+    "type": "unclear_responsibility",
+    "title": "Who leads when a telecom AI fault becomes a public emergency",
+    "examples": [
+     "NIS2 Art. 9(2)",
+     "NIS2 Art. 9(1)"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-08",
+    "type": "technology_gap",
+    "title": "Vendor-held, offshore model and logs block forensics and rollback",
+    "examples": [
+     "AI Act Art. 12",
+     "UK Telecoms Security CoP v1.1 §2.70"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-09",
+    "type": "unclear_responsibility",
+    "title": "No designated authority for public communication on AI-caused outages and rumour rebuttal",
+    "examples": [
+     "NIS2 Art. 23(7)",
+     "EECC Art. 110(1)"
+    ],
+    "confidence": "high"
+   },
+   {
+    "gap_id": "GAP-10",
+    "type": "legislative_gap",
+    "title": "Unclear lawful basis for reusing subscriber location data to retrain network AI",
+    "examples": [
+     "AI Act Art. 10",
+     "AI Act Art. 10(2)(b)"
+    ],
+    "confidence": "high"
+   }
+  ],
+  "adviser": {
+   "questions": 11,
+   "quotes_total": 77,
+   "quotes_valid": 77
+  }
+ },
+ "deltas": {
+  "A4_F_ROOT": [
+   35,
+   5
+  ],
+  "A3_F_ROOT": [
+   35,
+   5
+  ],
+  "A5_F_ROOT": [
+   40,
+   5
+  ],
+  "A2_F_ROOT": [
+   25,
+   5
+  ],
+  "root_cause_convergence_min": [
+   40,
+   5
+  ],
+  "service_restored_min": [
+   70,
+   5
+  ],
+  "degraded_minutes": [
+   75,
+   10
+  ],
+  "blocked_actions": [
+   4,
+   3
+  ],
+  "conflicting_actions": [
+   1,
+   0
+  ],
+  "missing_channels": [
+   2,
+   0
+  ],
+  "gaps_total": [
+   9,
+   4
+  ]
+ },
+ "ablation": {
+  "gate_on_caught": 7,
+  "gate_off_passed": 5,
+  "gate_off_out_of_mandate_actions_executed": 4,
+  "gate_on_blocked_actions": 4,
+  "gate_off_lead_conflicts": 2,
+  "gate_on_citation_coverage": 0.931,
+  "gate_off_citation_coverage": 0.951
+ },
+ "expected_vs_actual": {
+  "held": 9,
+  "total": 9,
+  "items": [
+   {
+    "run": "baseline",
+    "expected": "A1 identifies the ML model as root cause before customer complaints (copilot RCA)",
+    "held": true
+   },
+   {
+    "run": "baseline",
+    "expected": "A4 learns the root cause late or never: no legal operator-to-emergency-service channel",
+    "held": true
+   },
+   {
+    "run": "baseline",
+    "expected": "At least one action is blocked by the P node for lack of a citable mandate",
+    "held": true
+   },
+   {
+    "run": "baseline",
+    "expected": "Energy-efficiency vs availability conflict is flagged",
+    "held": true
+   },
+   {
+    "run": "baseline",
+    "expected": "Lead authority contested or unclear",
+    "held": true
+   },
+   {
+    "run": "reform",
+    "expected": "Flash notice (RF1) delivers the root cause to A2, A3, A4, A5 within minutes",
+    "held": true
+   },
+   {
+    "run": "reform",
+    "expected": "Mass-event safe-mode (RF2) restores service without waiting for the vendor",
+    "held": true
+   },
+   {
+    "run": "reform",
+    "expected": "Local rollback artefact (RF3) removes the offshore dependency",
+    "held": true
+   },
+   {
+    "run": "reform",
+    "expected": "Lead ambiguity remains (not addressed by RF1-RF3)",
+    "held": true
+   }
+  ]
+ },
+ "live_url": "https://roshworldwide.github.io/majlis/"
+}

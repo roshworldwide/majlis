@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:ai_incident_notification",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Establish a mandatory AI-incident notification duty for operators, requiring them to notify significant incidents within 24 hours of becoming aware. This aligns with EU practices as outlined in [G1] and ensures timely response similar to India’s telecom security incident reporting mechanism in [G3].",
+  "rationale": "Implementing this recommendation will ensure that critical telecom networks are monitored effectively, allowing for quicker resolution of issues and minimizing potential damage from AI-driven outages. The 24-hour notification period is consistent with global standards and provides a balanced approach between immediate response and thorough investigation."
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:cyber_investigation_mandate",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Establish a clear legal framework granting the cyber authority the power to investigate AI-driven operations in critical telecom networks, including the right to request necessary information. This should mirror mechanisms seen in [G1] and [G2], ensuring that such actions are legally binding and enforceable.",
+  "rationale": "By explicitly stating the authority's powers, as demonstrated by Article 32(2)(e) of EU-NIS2-2022 and s.105O of UK-TSA-2021, the policy ensures that investigations into AI-driven operations can proceed without legal ambiguity or blockage."
+ }
+}

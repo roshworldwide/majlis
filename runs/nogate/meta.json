@@ -1,0 +1,35 @@
+{
+ "run_id": "nogate",
+ "scenario": "uae_nye_cells",
+ "reform": null,
+ "gate": false,
+ "llm": "ollama:qwen2.5:3b",
+ "llm_adviser": "ollama:qwen2.5:7b",
+ "llm_stats": {
+  "calls": 13,
+  "cache_hits": 13,
+  "live_calls": 0,
+  "repairs": 0,
+  "fallbacks": 0,
+  "seconds": 0.0
+ },
+ "llm_adviser_stats": {
+  "calls": 21,
+  "cache_hits": 21,
+  "live_calls": 0,
+  "repairs": 0,
+  "fallbacks": 0,
+  "seconds": 0.0
+ },
+ "retrieval_stats": {
+  "queries": 76,
+  "cache_hits": 76,
+  "misses": 0
+ },
+ "audit_root": "eeb2fb1cb2a8ad6538c7b134d0ae4bfe985916b21aa1c495ae3ee3342c02a689",
+ "audit_entries": 272,
+ "label": "FICTIONAL SIMULATION — events, numbers and outcomes are scenario parameters, not predictions",
+ "mandates_loaded": 8,
+ "channels_loaded": 9,
+ "registry_rejected": []
+}

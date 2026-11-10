@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A3:35",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "[U1] The authority is mandated to operate the public alert system as per UAE-NCEMA-CDA-2024 Article 3(8) and should consider activating it for informing residents of potential risks. [G2] Other EU member states are required to inform end-users about public warning systems via SMS, which can serve as a model for T+35 (W4).",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "quote": "authority, modelled on NCEMA (incl. its Civil Defence Authority)). Operate the public alert system. Permitted action types: public_alert. Legal basis: - UAE-NCEMA-CDA-2024 Article 3(8) (p.1): \"Establish a public alert system to warn residents of potential risks\"",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "quote": "implications. Residual risk - defined as risk remaining after risk treatment (Source: ISO GUIDE 73) - directly impacts end users or affected individuals and communities.",
+    "how_they_closed_it": "Documenting residual risks will call for the system provider to fully consider the risks of deploying the AI product and will inform end users about potential negative impacts of interacting with the system."
+   }
+  ],
+  "gap": "The specific details on how to activate and manage the public alert system are not provided in the given sources.",
+  "confidence": "med"
+ }
+}

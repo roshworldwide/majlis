@@ -1,0 +1,35 @@
+{
+ "run_id": "golden_fresh_live",
+ "scenario": "uae_nye_cells",
+ "reform": null,
+ "gate": true,
+ "llm": "ollama:qwen2.5:3b",
+ "llm_adviser": "ollama:qwen2.5:7b",
+ "llm_stats": {
+  "calls": 13,
+  "cache_hits": 0,
+  "live_calls": 13,
+  "repairs": 0,
+  "fallbacks": 0,
+  "seconds": 320.0004930496216
+ },
+ "llm_adviser_stats": {
+  "calls": 20,
+  "cache_hits": 0,
+  "live_calls": 20,
+  "repairs": 0,
+  "fallbacks": 0,
+  "seconds": 452.09930539131165
+ },
+ "retrieval_stats": {
+  "queries": 74,
+  "cache_hits": 74,
+  "misses": 0
+ },
+ "audit_root": "bf32b15adc8b8bb56efbb97c992522b8d4e78373bea4c54f9c14e275129d0877",
+ "audit_entries": 270,
+ "label": "FICTIONAL SIMULATION — events, numbers and outcomes are scenario parameters, not predictions",
+ "mandates_loaded": 8,
+ "channels_loaded": 9,
+ "registry_rejected": []
+}

@@ -1,0 +1,647 @@
+[
+ {
+  "gap_id": "GAP-01",
+  "key": "incident_lead",
+  "type": "unclear_responsibility",
+  "domain": "AI-driven operation of critical telecom networks",
+  "title": "Who leads when a telecom AI fault becomes a public emergency",
+  "description": "The telecom regulator's powers cover the sector and licensees; the crisis authority's powers cover emergencies. For an AI-caused network failure that harms public safety, no cited instrument designates the lead, so lead claims collide or nobody leads.",
+  "trigger": "W3 (T+20): no cited mandate of A2 covers action type 'claim_incident_lead'",
+  "t": 20,
+  "occurrences": [
+   {
+    "t": 20,
+    "wave": "W3",
+    "rule": "G2",
+    "agent": "A2",
+    "target": null,
+    "action_type": "claim_incident_lead",
+    "reason": "no cited mandate of A2 covers action type 'claim_incident_lead'"
+   }
+  ],
+  "affected_readiness_metrics": [
+   "d7_m01",
+   "d7_m05",
+   "d8_m06"
+  ],
+  "y3172_nodes": [
+   "MLFO",
+   "P"
+  ],
+  "recommendation_seed": "Designate in advance a lead authority for AI-caused incidents in critical communications networks, with an explicit escalation trigger (for example, when emergency services or public safety are affected), while the sector regulator keeps technical-remediation powers over the operator [G1].",
+  "evidence": {
+   "gate": [
+    {
+     "t": 20,
+     "wave": "W3",
+     "rule": "G2",
+     "agent": "A2",
+     "target": null,
+     "action_type": "claim_incident_lead",
+     "reason": "no cited mandate of A2 covers action type 'claim_incident_lead'"
+    }
+   ],
+   "uae_citations": [
+    {
+     "doc_id": "UAE-TELECOM-LAW",
+     "chunk_id": "UAE-TELECOM-LAW::0005",
+     "article": "Article 12",
+     "page": 8,
+     "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+     "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+    },
+    {
+     "doc_id": "UAE-TELECOM-LAW",
+     "chunk_id": "UAE-TELECOM-LAW::0004",
+     "article": "Article 10(a)(3)",
+     "page": 6,
+     "quote": "Issue any general guidelines or instructions related to the Telecommunication Sector, based upon the requirements of the national security or international relations, after being approved by the Cabinet",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+     "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+    },
+    {
+     "doc_id": "UAE-NCEMA-CDA-2024",
+     "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+     "article": "Article 3(12)",
+     "page": 1,
+     "quote": "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned Entities",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+     "title": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority"
+    }
+   ],
+   "absence": {
+    "queries": [
+     "lead authority telecommunications network failure emergency coordination",
+     "telecommunications emergency crisis lead authority powers"
+    ],
+    "hits": [
+     {
+      "query": "lead authority telecommunications network failure emergency coordination",
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0014",
+      "article": "Article 42",
+      "page": 18,
+      "score": 0.03178,
+      "snippet": "Article (42) The Authority will be solely responsible for issuing permits and licenses for telecommunications equipment that is part of the telecommunications network or is used within the network or used to provide tele"
+     },
+     {
+      "query": "lead authority telecommunications network failure emergency coordination",
+      "doc_id": "UAE-TDRA-IAR-2020",
+      "chunk_id": "UAE-TDRA-IAR-2020::0087",
+      "article": "",
+      "page": 98,
+      "score": 0.03002,
+      "snippet": "Supporting utilities shall: 1) be tested for any malfunctioning 2) ensure protection and uninterrupted power supply on information systems 3) provide emergency lighting in case of main power failure 4) have up-to-date ut"
+     },
+     {
+      "query": "lead authority telecommunications network failure emergency coordination",
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0001",
+      "article": "Article 1",
+      "page": 1,
+      "score": 0.02963,
+      "snippet": "Article (1) In this Decree-Law the following words and expressions shall have the meaning set out opposite unless the context shall require otherwise: State : United Arab Emirates. Government : Government of the United A"
+     },
+     {
+      "query": "telecommunications emergency crisis lead authority powers",
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 11",
+      "page": 8,
+      "score": 0.0315,
+      "snippet": "Article (11) (Repealed by Federal Decree-Law No. 5 of 2008) The High Committee may decide to remove a director prior to the end of his term of office for any of the following reasons: 1. The Director has been convicted o"
+     },
+     {
+      "query": "telecommunications emergency crisis lead authority powers",
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0010",
+      "article": "Article 25",
+      "page": 13,
+      "score": 0.03062,
+      "snippet": "Article (25) Subject to any applicable transitional provisions in this Decree-Law, ETISALAT may not carry out functions formerly exercised under Federal Law No. (1) of 1991 regarding the Emirates Telecommunications Corpo"
+     },
+     {
+      "query": "telecommunications emergency crisis lead authority powers",
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0014",
+      "article": "Article 42",
+      "page": 18,
+      "score": 0.02976,
+      "snippet": "Article (42) The Authority will be solely responsible for issuing permits and licenses for telecommunications equipment that is part of the telecommunications network or is used within the network or used to provide tele"
+     }
+    ],
+    "presence_found": []
+   },
+   "statement": "The telecom law gives the regulator sector oversight (Art. 12) and national-security instructions only after Cabinet approval (Art. 10(a)(3)); the ingested crisis-authority instrument (Decree-Law 35/2024) covers civil-defence coordination. No ingested instrument designates the lead for an AI-caused telecom failure that becomes a public emergency; NCEMA's founding law was not found in the ingested public corpus (as of 10 Nov 2026)."
+  },
+  "global_examples": [
+   {
+    "doc_id": "EU-NIS2-2022",
+    "chunk_id": "EU-NIS2-2022::0069",
+    "article": "Article 9(2)",
+    "page": 37,
+    "quote": "it shall clearly indicate which of those authorities is to serve as the coordinator for the management of",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+    "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)",
+    "how": "EU: where several crisis authorities exist, one must be designated in advance as the coordinator",
+    "label": "NIS2 Art. 9(2)",
+    "curated": true,
+    "retrieval_rank": null
+   },
+   {
+    "doc_id": "EU-NIS2-2022",
+    "chunk_id": "EU-NIS2-2022::0069",
+    "article": "Article 9(1)",
+    "page": 37,
+    "quote": "Member States shall ensure coherence with the existing frameworks for general national crisis management",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+    "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)",
+    "how": "EU: cyber-crisis arrangements must be coherent with general national crisis management",
+    "label": "NIS2 Art. 9(1)",
+    "curated": true,
+    "retrieval_rank": null
+   }
+  ],
+  "domain_recommendation": "Establish a clear coordination framework where one authority is designated as the primary coordinator for managing AI-driven critical telecom network emergencies, ensuring coherence with existing national crisis management frameworks. This coordinator should be clearly indicated in advance to avoid lead claims collisions or leadership voids.",
+  "recommendation_llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "5832aaa314445cf1",
+   "tag": "reco:incident_lead",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "confidence": {
+   "level": "high",
+   "reason": "2 verified global examples; absence queries found no covering UAE provision"
+  }
+ },
+ {
+  "gap_id": "GAP-02",
+  "key": "cyber_investigation_mandate",
+  "type": "unclear_responsibility",
+  "domain": "AI-driven operation of critical telecom networks",
+  "title": "Cyber authority's power to investigate an operator's AI incident not citable",
+  "description": "The cyber authority opens an investigation into the operator, but its establishing instrument was not found in the ingested public corpus, so the action cannot be cited and is blocked.",
+  "trigger": "W3 (T+20): no cited mandate of A5 covers action type 'investigate_cyber_incident'",
+  "t": 20,
+  "occurrences": [
+   {
+    "t": 20,
+    "wave": "W3",
+    "rule": "G2",
+    "agent": "A5",
+    "target": "A1",
+    "action_type": "investigate_cyber_incident",
+    "reason": "no cited mandate of A5 covers action type 'investigate_cyber_incident'"
+   }
+  ],
+  "affected_readiness_metrics": [
+   "d7_m01",
+   "d7_m05"
+  ],
+  "y3172_nodes": [
+   "P"
+  ],
+  "recommendation_seed": "Publish the cyber authority's competences over telecom operators' AI incidents (information requests, inspections, coordination with the sector regulator) so that investigations rest on a citable mandate [G1].",
+  "evidence": {
+   "gate": [
+    {
+     "t": 20,
+     "wave": "W3",
+     "rule": "G2",
+     "agent": "A5",
+     "target": "A1",
+     "action_type": "investigate_cyber_incident",
+     "reason": "no cited mandate of A5 covers action type 'investigate_cyber_incident'"
+    }
+   ],
+   "uae_citations": [],
+   "absence": {
+    "queries": [
+     "cybersecurity council competences investigate incident",
+     "national cybersecurity authority powers request information"
+    ],
+    "hits": [
+     {
+      "query": "cybersecurity council competences investigate incident",
+      "doc_id": "UAE-TDRA-IAR-2020",
+      "chunk_id": "UAE-TDRA-IAR-2020::0161",
+      "article": "",
+      "page": 198,
+      "score": 0.03252,
+      "snippet": "Review and test the incident response plan in defined frequency; d. Update the incident response plan to address system/organizational changes or problems encountered during plan implementation, execution, or testing; e."
+     },
+     {
+      "query": "cybersecurity council competences investigate incident",
+      "doc_id": "UAE-TDRA-IAR-2020",
+      "chunk_id": "UAE-TDRA-IAR-2020::0162",
+      "article": "",
+      "page": 198,
+      "score": 0.03132,
+      "snippet": "Results of the assessment and decision should be recorded in detail for the purpose of future reference and verification. An attack is classified as an incident if the attack is directed against information assets, has a"
+     },
+     {
+      "query": "cybersecurity council competences investigate incident",
+      "doc_id": "UAE-TDRA-IAR-2020",
+      "chunk_id": "UAE-TDRA-IAR-2020::0163",
+      "article": "",
+      "page": 198,
+      "score": 0.03058,
+      "snippet": "Entities should participate in sector, national, and international exercises to further test incident response capabilities. Sub-Control Control Sub-Control The entity shall provide an incident response support resource "
+     },
+     {
+      "query": "national cybersecurity authority powers request information",
+      "doc_id": "UAE-TDRA-IAR-2020",
+      "chunk_id": "UAE-TDRA-IAR-2020::0187",
+      "article": "Annex F",
+      "page": 240,
+      "score": 0.02393,
+      "snippet": "For example: cryptographic devices, firewalls, routers, switches and hubs Protection against an individual falsely denying having performed a particular action. Provides the capability to determine whether a given indivi"
+     },
+     {
+      "query": "national cybersecurity authority powers request information",
+      "doc_id": "UAE-TDRA-IAR-2020",
+      "chunk_id": "UAE-TDRA-IAR-2020::0003",
+      "article": "",
+      "page": 5,
+      "score": 0.02363,
+      "snippet": "Mitigating cyber threats, and ensuring the development of a secure national information and communications infrastructure, and cyberspace, is a strategic priority for the UAE. To this end, TRATRA developed the UAE IA Reg"
+     },
+     {
+      "query": "national cybersecurity authority powers request information",
+      "doc_id": "UAE-PDPL-2021",
+      "chunk_id": "UAE-PDPL-2021::0012",
+      "article": "Article 14",
+      "page": 18,
+      "score": 0.02236,
+      "snippet": "Article (14) Right to Request Transfer of Personal Data 1. The Data Subject shall have the right to receive his/her personal data that has been provided to the Controller for processing, in an orderly and machine-readabl"
+     }
+    ],
+    "presence_found": []
+   },
+   "statement": "The UAE Cybersecurity Council's establishing instrument was not found in the ingested public corpus (as of 10 Nov 2026), so its investigative powers over a telecom operator cannot be cited."
+  },
+  "global_examples": [
+   {
+    "doc_id": "EU-NIS2-2022",
+    "chunk_id": "EU-NIS2-2022::0098",
+    "article": "Article 32(2)(e)",
+    "page": 56,
+    "quote": "requests for information necessary to assess the cybersecurity risk-management measures adopted by the entity concerned",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+    "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)",
+    "how": "EU: competent authorities may request information from essential entities",
+    "label": "NIS2 Art. 32",
+    "curated": true,
+    "retrieval_rank": null
+   },
+   {
+    "doc_id": "UK-TSA-2021",
+    "chunk_id": "UK-TSA-2021::0013",
+    "article": "s.105O (inserted into the Communications Act 2003)",
+    "page": 14,
+    "quote": "may by notice (\"an assessment notice\") impose on the provider a duty to do any of the following things",
+    "url": "https://www.legislation.gov.uk/ukpga/2021/31/pdfs/ukpga_20210031_en.pdf",
+    "title": "Telecommunications (Security) Act 2021 (c. 31)",
+    "how": "UK: the regulator can require a provider to carry out tests and assessments of its network security",
+    "label": "UK TSA 2021, CA 2003 s.105O",
+    "curated": true,
+    "retrieval_rank": null
+   }
+  ],
+  "domain_recommendation": "Establish a clear legal framework granting the cyber authority the power to investigate AI-driven operations in critical telecom networks, including the right to request necessary information. This should mirror mechanisms seen in [G1] and [G2], ensuring that such actions are legally binding and enforceable.",
+  "recommendation_llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "67c2e269456f2284",
+   "tag": "reco:cyber_investigation_mandate",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "confidence": {
+   "level": "high",
+   "reason": "2 verified global examples; absence queries found no covering UAE provision"
+  }
+ },
+ {
+  "gap_id": "GAP-03",
+  "key": "rumour_mandate",
+  "type": "unclear_responsibility",
+  "domain": "AI-driven operation of critical telecom networks",
+  "title": "No designated authority for public communication on AI-caused outages and rumour rebuttal",
+  "description": "False cyberattack rumours spread while the cause is known to the operator; the cyber authority's mandate to issue public rebuttals could not be cited, and rumour law addresses offenders rather than official communication.",
+  "trigger": "W3 (T+20): no cited mandate of A5 covers action type 'public_rumour_rebuttal'",
+  "t": 20,
+  "occurrences": [
+   {
+    "t": 20,
+    "wave": "W3",
+    "rule": "G2",
+    "agent": "A5",
+    "target": null,
+    "action_type": "public_rumour_rebuttal",
+    "reason": "no cited mandate of A5 covers action type 'public_rumour_rebuttal'"
+   }
+  ],
+  "affected_readiness_metrics": [
+   "d7_m01",
+   "d2_m04"
+  ],
+  "y3172_nodes": [
+   "SINK",
+   "MLFO"
+  ],
+  "recommendation_seed": "Designate the authority responsible for timely public communication about AI-caused network incidents, including rebuttal of false cyber-attack attribution, with access to the operator's verified incident facts and power to require the operator to inform the public [G1].",
+  "evidence": {
+   "gate": [
+    {
+     "t": 20,
+     "wave": "W3",
+     "rule": "G2",
+     "agent": "A5",
+     "target": null,
+     "action_type": "public_rumour_rebuttal",
+     "reason": "no cited mandate of A5 covers action type 'public_rumour_rebuttal'"
+    }
+   ],
+   "uae_citations": [
+    {
+     "doc_id": "UAE-CYBERCRIME-2021",
+     "chunk_id": "UAE-CYBERCRIME-2021::0023",
+     "article": "Article 52(1)",
+     "page": 27,
+     "quote": "false news or data, or false, tendentious, misleading or erroneous rumors or reports",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1526/download",
+     "title": "Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrimes"
+    },
+    {
+     "doc_id": "UAE-NCEMA-CDA-2024",
+     "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+     "article": "Article 3(8)",
+     "page": 1,
+     "quote": "Establish a public alert system to warn residents of potential risks",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+     "title": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority"
+    }
+   ],
+   "absence": {
+    "queries": [
+     "official public statement false news crisis authority",
+     "cybersecurity council public communication incident"
+    ],
+    "hits": [
+     {
+      "query": "official public statement false news crisis authority",
+      "doc_id": "UAE-CYBERCRIME-2021",
+      "chunk_id": "UAE-CYBERCRIME-2021::0023",
+      "article": "Article 51",
+      "page": 27,
+      "score": 0.03279,
+      "snippet": "Article (51) Cyberbegging Whoever commits the crime of begging using any ITE through mendicity or any other form or means shall be punished with imprisonment for not more than (3) three months and/ or a fine of not less "
+     },
+     {
+      "query": "official public statement false news crisis authority",
+      "doc_id": "UAE-CYBERCRIME-2021",
+      "chunk_id": "UAE-CYBERCRIME-2021::0020",
+      "article": "Article 43",
+      "page": 24,
+      "score": 0.03002,
+      "snippet": "Article (43) Defamation and Slander Whoever uses an information network, ITE, or an information system and insults another or attributes a quality to him that would make that person subject to punishment or contempt by t"
+     },
+     {
+      "query": "official public statement false news crisis authority",
+      "doc_id": "UAE-CYBERCRIME-2021",
+      "chunk_id": "UAE-CYBERCRIME-2021::0024",
+      "article": "Article 53",
+      "page": 28,
+      "score": 0.02946,
+      "snippet": "Article (53) Making Available and Refraining from Removing Illegal Content Whoever uses a website or electronic account to commit any of the following acts shall be punished with a fine of not less than (AED 300,000) thr"
+     },
+     {
+      "query": "cybersecurity council public communication incident",
+      "doc_id": "UAE-TDRA-IAR-2020",
+      "chunk_id": "UAE-TDRA-IAR-2020::0161",
+      "article": "",
+      "page": 198,
+      "score": 0.03279,
+      "snippet": "Review and test the incident response plan in defined frequency; d. Update the incident response plan to address system/organizational changes or problems encountered during plan implementation, execution, or testing; e."
+     },
+     {
+      "query": "cybersecurity council public communication incident",
+      "doc_id": "UAE-TDRA-IAR-2020",
+      "chunk_id": "UAE-TDRA-IAR-2020::0162",
+      "article": "",
+      "page": 198,
+      "score": 0.03151,
+      "snippet": "Results of the assessment and decision should be recorded in detail for the purpose of future reference and verification. An attack is classified as an incident if the attack is directed against information assets, has a"
+     },
+     {
+      "query": "cybersecurity council public communication incident",
+      "doc_id": "UAE-TDRA-IAR-2020",
+      "chunk_id": "UAE-TDRA-IAR-2020::0160",
+      "article": "",
+      "page": 198,
+      "score": 0.03126,
+      "snippet": "7- Defines the resources and management support needed to effectively maintain and mature an incident response capability; and 8- Is reviewed and approved by defined personnel or roles; Control Sub-Control The entity sha"
+     }
+    ],
+    "presence_found": []
+   },
+   "statement": "The rumour law penalises spreading false news (Federal Decree-Law 34/2021 Art. 52); the crisis authority runs a public alert system (Decree-Law 35/2024 Art. 3(8)). No ingested instrument gives the cyber authority a mandate to publicly rebut false attribution of a network outage."
+  },
+  "global_examples": [
+   {
+    "doc_id": "EU-NIS2-2022",
+    "chunk_id": "EU-NIS2-2022::0090",
+    "article": "Article 23(7)",
+    "page": 49,
+    "quote": "may, after consulting the entity concerned, inform the public about the significant incident or require the entity to do so",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+    "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)",
+    "how": "EU: the CSIRT/competent authority may inform the public about a significant incident or require the entity to do so",
+    "label": "NIS2 Art. 23(7)",
+    "curated": true,
+    "retrieval_rank": 3
+   },
+   {
+    "doc_id": "EU-EECC-2018",
+    "chunk_id": "EU-EECC-2018::0246",
+    "article": "Article 110(1)",
+    "page": 148,
+    "quote": "public warnings are transmitted by providers of mobile number-based interpersonal communications services to the end-users concerned",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L1972",
+    "title": "Directive (EU) 2018/1972 of the European Parliament and of the Council of 11 December 2018 establishing the European Electronic Communications Code (Recast)",
+    "how": "EU: public warnings in major emergencies are pushed through mobile operators to affected users",
+    "label": "EECC Art. 110(1)",
+    "curated": true,
+    "retrieval_rank": null
+   }
+  ],
+  "domain_recommendation": "Establish a clear mandate for the competent authority to issue public communications regarding AI-caused outages, similar to [G1], allowing it to inform the public or require relevant entities to do so. This should include provisions for transmitting public warnings through communication service providers, akin to [G2].",
+  "recommendation_llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "de484f17b50373b8",
+   "tag": "reco:rumour_mandate",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "confidence": {
+   "level": "high",
+   "reason": "2 verified global examples; absence queries found no covering UAE provision"
+  }
+ },
+ {
+  "gap_id": "GAP-04",
+  "key": "pdata_retraining",
+  "type": "legislative_gap",
+  "domain": "AI-driven operation of critical telecom networks",
+  "title": "Unclear lawful basis for reusing subscriber location data to retrain network AI",
+  "description": "Retraining data for the network model included subscriber location traces. Whether, and on which lawful basis, operational telecom data may be reused to train network AI models is not addressed specifically in the cited corpus.",
+  "trigger": "W6 (T+50): retraining data included subscriber location traces",
+  "t": 50,
+  "occurrences": [
+   {
+    "t": 50,
+    "wave": "W6",
+    "rule": "trigger",
+    "agent": "A8",
+    "target": null,
+    "action_type": "pdata_retraining",
+    "reason": "retraining data included subscriber location traces"
+   }
+  ],
+  "affected_readiness_metrics": [
+   "d1_m10",
+   "d1_m09",
+   "d1_m11"
+  ],
+  "y3172_nodes": [
+   "SRC",
+   "C",
+   "PP"
+  ],
+  "recommendation_seed": "Issue guidance on secondary use of operational telecom data (such as subscriber location traces) for training network AI: when it is compatible with the original purpose, when anonymisation or consent is required, and which data-governance practices apply to training data [G1].",
+  "evidence": {
+   "gate": [],
+   "uae_citations": [
+    {
+     "doc_id": "UAE-PDPL-2021",
+     "chunk_id": "UAE-PDPL-2021::0006",
+     "article": "Article 5(2)",
+     "page": 8,
+     "quote": "It shall not be processed at any later time in a manner incompatible with such purpose. However, it may be processed if the purpose is similar or close to the purpose for which this data is collected",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "title": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data"
+    }
+   ],
+   "absence": {
+    "queries": [
+     "processing personal data training artificial intelligence model lawful basis",
+     "location data subscribers telecommunications processing"
+    ],
+    "hits": [
+     {
+      "query": "processing personal data training artificial intelligence model lawful basis",
+      "doc_id": "UAE-PDPL-2021",
+      "chunk_id": "UAE-PDPL-2021::0006",
+      "article": "Article 5",
+      "page": 8,
+      "score": 0.03252,
+      "snippet": "Article (5) Personal Data Processing Controls Personal Data shall be processed according to the following controls: 1. Processing shall be carried out in a fair, transparent and lawful manner. 2. Personal Data shall be c"
+     },
+     {
+      "query": "processing personal data training artificial intelligence model lawful basis",
+      "doc_id": "UAE-PDPL-2021",
+      "chunk_id": "UAE-PDPL-2021::0002",
+      "article": "Article 1",
+      "page": 3,
+      "score": 0.03202,
+      "snippet": "It processes it under their supervision and in accordance with their instructions Data Protection Officer : Any Natural or Legal Person appointed by the Controller or Processor, that undertakes the tasks of ascertaining "
+     },
+     {
+      "query": "processing personal data training artificial intelligence model lawful basis",
+      "doc_id": "UAE-PDPL-2021",
+      "chunk_id": "UAE-PDPL-2021::0008",
+      "article": "Article 8",
+      "page": 11,
+      "score": 0.03077,
+      "snippet": "Article (8) The Processor's General Obligations The Processor shall abide by the following: 1. Carry out the processing in accordance with the instructions of the Controller and contracts and agreements concluded between"
+     },
+     {
+      "query": "location data subscribers telecommunications processing",
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0002",
+      "article": "Article 1",
+      "page": 3,
+      "score": 0.03226,
+      "snippet": "Telecommunications Services : Delivering, broadcasting, converting or receiving, through the Telecommunications Network, the following: 1. Wire and wireless communications. 2. Voice, music and other audio material. 3. Vi"
+     },
+     {
+      "query": "location data subscribers telecommunications processing",
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0006",
+      "article": "Article 14",
+      "page": 9,
+      "score": 0.03125,
+      "snippet": "Article (14) Subject to Articles (3) and (12) of this Decree-Law the Authority shall be solely responsible for issuing regulations, directives, decisions and guidelines in relation to the following: 1. Charges and fees c"
+     },
+     {
+      "query": "location data subscribers telecommunications processing",
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 11",
+      "page": 8,
+      "score": 0.03009,
+      "snippet": "Article (11) (Repealed by Federal Decree-Law No. 5 of 2008) The High Committee may decide to remove a director prior to the end of his term of office for any of the following reasons: 1. The Director has been convicted o"
+     }
+    ],
+    "presence_found": []
+   },
+   "statement": "PDPL Art. 5(2) allows later processing for a 'similar or close' purpose; whether retraining a network model on subscriber location traces qualifies is not addressed specifically in the ingested corpus."
+  },
+  "global_examples": [
+   {
+    "doc_id": "EU-AIACT-2024",
+    "chunk_id": "EU-AIACT-2024::0120",
+    "article": "Article 10(2)",
+    "page": 57,
+    "quote": "Training, validation and testing data sets shall be subject to data governance and management practices appropriate",
+    "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+    "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)",
+    "how": "EU: training/validation/testing data sets of high-risk AI must follow data-governance practices",
+    "label": "AI Act Art. 10",
+    "curated": true,
+    "retrieval_rank": 2
+   },
+   {
+    "doc_id": "EU-AIACT-2024",
+    "chunk_id": "EU-AIACT-2024::0120",
+    "article": "Article 10(2)(b)",
+    "page": 57,
+    "quote": "data collection processes and the origin of data, and in the case of personal data, the original purpose of the data collection",
+    "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+    "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)",
+    "how": "EU: data governance for training data must cover the original purpose for which personal data were collected",
+    "label": "AI Act Art. 10(2)(b)",
+    "curated": true,
+    "retrieval_rank": 2
+   }
+  ],
+  "domain_recommendation": "Telecom operators should establish clear data governance practices for reusing operational data, including subscriber location traces, to train AI models. This includes documenting the original purpose of data collection and ensuring that such reuse aligns with appropriate data management practices as outlined in [G1] and [G2].",
+  "recommendation_llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "c297bbb2d49b866a",
+   "tag": "reco:pdata_retraining",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "confidence": {
+   "level": "high",
+   "reason": "2 verified global examples; absence queries found no covering UAE provision"
+  }
+ }
+]

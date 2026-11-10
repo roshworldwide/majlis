@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:energy_vs_availability",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Establish a safe-mode protocol for critical telecom networks during mass events, allowing manual reversion of automated energy-saving features to prioritize network availability and emergency access. This protocol should be clearly defined with a named business owner and regular testing to ensure resilience, as per [G1] and [G2].",
+  "rationale": "[G1] highlights the importance of having a mechanism for reverting to manual processes when necessary. [G2] emphasizes the need for network resilience and accountability in automated systems. [G3] underscores the critical requirement for maintaining full availability during catastrophic events, which should be extended to planned mass gatherings as well."
+ }
+}

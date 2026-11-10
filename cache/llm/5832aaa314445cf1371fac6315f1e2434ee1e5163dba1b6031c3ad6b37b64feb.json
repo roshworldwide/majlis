@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:incident_lead",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Establish a clear coordination framework where one authority is designated as the primary coordinator for managing AI-driven critical telecom network emergencies, ensuring coherence with existing national crisis management frameworks. This coordinator should be clearly indicated in advance to avoid lead claims collisions or leadership voids.",
+  "rationale": "[G1] [G2] By designating a single coordinator and aligning cyber-crisis arrangements with broader national emergency response mechanisms, the policy ensures effective and unified command during critical incidents, thereby minimizing confusion and enhancing public safety."
+ }
+}

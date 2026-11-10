@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:cyber_investigation_mandate",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "A global policy recommendation could be: Establish a clear framework where cyber authorities have explicit powers to investigate AI-driven operations within critical telecom networks. This should include provisions similar to those found in [G1], such as the ability to request necessary information for assessing cybersecurity risk-management measures, ensuring that these entities are held accountable and protected against potential misuse of AI technologies.",
+  "rationale": "This recommendation parallels existing EU guidelines on cyber authorities' investigative powers, providing a robust framework that can be applied globally. It ensures accountability while also recognizing the evolving nature of AI technology in critical sectors."
+ }
+}

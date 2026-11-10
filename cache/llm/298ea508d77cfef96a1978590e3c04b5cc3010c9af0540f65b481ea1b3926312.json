@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A2:5",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "[U1] mandates that entities like A1 must submit progress and key cyber security information to sector regulators such as T2. [G2] provides a similar framework for notifying changes in contractual conditions with clear guidelines on notification methods, which can be applied to the cessation of a model.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "quote": "Channel CH-A1-A2-IA-REPORT: A1 → A2 (entity → sector regulator (cyber-security information)). Legal basis: - UAE-TDRA-IAR-2020 Section 2.3 (p.1): \"entities are required to submit UAE IA Regulation implementation progress and key cyber security information to sector regulators\"",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "quote": "details submitted pursuant to the first subparagraph of this paragraph without delay, and, in any event, within two weeks of the date of the change.",
+    "how_they_closed_it": "Member States may establish national mechanisms for entities to register themselves."
+   }
+  ],
+  "gap": "The specific timeframe for A1's cessation is not provided by either source.",
+  "confidence": "med"
+ }
+}

@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: majlis
+Version: 0.1.0
+Summary: MAJLIS — a mandate-gated multi-agent crisis council for policy gaps in AI-driven telecom networks (ITU AI for Good Lab Hackathon: UAE)
+Author: Roshan Raj
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2
+Requires-Dist: typer>=0.12
+Requires-Dist: rich>=13
+Requires-Dist: httpx>=0.27
+Requires-Dist: pyyaml>=6
+Requires-Dist: chromadb<1.1,>=0.5
+Requires-Dist: rank-bm25>=0.2.2
+Requires-Dist: pymupdf>=1.24
+Requires-Dist: pypdf>=4
+Requires-Dist: beautifulsoup4>=4.12
+Requires-Dist: lxml>=5
+Requires-Dist: numpy>=1.26
+Requires-Dist: scikit-learn>=1.4
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: python-docx>=1.1
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"

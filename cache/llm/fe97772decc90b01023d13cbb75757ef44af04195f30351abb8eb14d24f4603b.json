@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:cyber_investigation_mandate",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Develop a clear legal framework that explicitly authorizes the cyber authority to investigate AI-driven operations within critical telecom networks, including the right to request necessary information from operators. This should mirror provisions found in [G1], such as Article 32(2)(e) of EU-NIS2-2022, which allows competent authorities to request information for assessing cybersecurity risk-management measures.",
+  "rationale": "This recommendation ensures that the cyber authority has a citable basis for its actions, thereby closing the gap in responsibility and enabling effective oversight. It aligns with global standards set by the EU-NIS2-2022, enhancing consistency and legal clarity."
+ }
+}

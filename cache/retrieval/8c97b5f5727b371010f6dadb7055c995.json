@@ -1,0 +1,1 @@
+{"query": "What is the most appropriate initial step in addressing this network incident?", "k": 3, "collections": ["kb_uae"], "mode": "hybrid", "hits": [{"chunk_id": "UAE-TDRA-IAR-2020::0160", "score": 0.032266, "rank": 1}, {"chunk_id": "UAE-TDRA-IAR-2020::0163", "score": 0.031281, "rank": 2}, {"chunk_id": "UAE-TDRA-IAR-2020::0159", "score": 0.030769, "rank": 3}]}

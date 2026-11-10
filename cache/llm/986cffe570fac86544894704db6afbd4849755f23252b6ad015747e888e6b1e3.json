@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A4:10",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "U1.2",
+  "uae_basis": [
+   {
+    "source": "U1.2",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1.1",
+    "quote": "",
+    "how_they_closed_it": "<All people in your organisation, from the most senior to the most junior, follow appropriate cyber security training paths."
+   }
+  ],
+  "gap": "",
+  "confidence": "med"
+ }
+}

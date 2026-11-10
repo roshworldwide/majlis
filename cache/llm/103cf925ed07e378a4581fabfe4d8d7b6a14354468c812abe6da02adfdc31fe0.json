@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:incident_lead",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "A global domain-level policy recommendation could be: Establish a dedicated Cyber Emergency Response Team (CERT) under an umbrella organization that includes representatives from telecom regulators, crisis authorities, and industry stakeholders. This team would coordinate responses to AI-driven critical telecom network failures during emergencies, ensuring clear lines of responsibility and effective coordination.",
+  "rationale": "[G1] EU-NIS2-2022 Article 1(2)(a) underscores the need for designated competent authorities and cyber crisis management authorities in cybersecurity incidents. By creating a CERT that integrates these roles, we can address the gap of unclear responsibility when AI causes public emergencies affecting telecom networks."
+ }
+}

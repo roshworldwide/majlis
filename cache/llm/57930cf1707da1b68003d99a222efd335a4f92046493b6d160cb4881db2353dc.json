@@ -1,0 +1,19 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A5:20",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "{\"source\": \"[U1.2]\"}",
+  "uae_basis": [
+   {
+    "source": "[U1.2]",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [],
+  "gap": "",
+  "confidence": "med"
+ }
+}

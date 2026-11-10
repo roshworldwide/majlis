@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A5:20",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "[U1] According to Article 52 of Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrimes, the competent authorities have the mandate to publicly rebut false rumors or reports that are contrary to official announcements during a network outage.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "quote": "an offensive manner or contrary to the truth. Part Two Crimes of Spreading Rumors and False News Article (52) Spreading Rumors and False News 1. Whoever uses the information network or any ITE to announce, disseminate, redisseminate, circulate, or recirculate false news or data, or false, tendentious, misleading or erroneous rumors or reports, or rumors or reports contrary to what has been announced officially, or broadcasts any provocative advertisements that would incite or provoke the public opinion, disturb the public peace, spread terror among people, or cause harm to the",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G2",
+    "quote": "(i) 988 Special facility outage notification. All cable, satellite, wireless, wireline, interconnected VoIP, and covered 988 service providers shall notify any official at a 988 special facility who has been designated by the affected 988 special facility as the provider's contact person(s) for communications outages at the facility of any outage that potentially affects that 988 special facility (as defined in § 4.5(f)) in the following manner:",
+    "how_they_closed_it": "All providers are required to notify designated officials about potential outages affecting specific facilities."
+   }
+  ],
+  "gap": "The provided examples do not directly address the mandate for public rebuttal during a network outage.",
+  "confidence": "med"
+ }
+}

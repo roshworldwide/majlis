@@ -1,0 +1,30 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A4:30",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "[U1] The ambulance service can request information about network status from the operator through the channel CH-A2-A3-CDA-INFO as mandated by UAE-NCEMA-CDA-2024 Article 6(1), and [G2] Member States should ensure that PSAPs are able to retrieve caller location information, which could be relevant for obtaining network-status information during emergencies.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "quote": ":emergency communication is set up. Member States should ensure that, where available, the handset-derived caller location information is made available to the most appropriate PSAP.",
+    "how_they_closed_it": "This directive ensures availability of caller location information for emergency services."
+   },
+   {
+    "source": "G2",
+    "quote": ":Member States should consider the PSAP's ability to handle emergency communications in more than one language. Where the number-based interpersonal communications service is not provided over a connection which is managed to give a specified quality of service, the service provider might not be able to ensure that emergency calls made through their service are routed to the most appropriate PSAP with the same reliability.",
+    "how_they_closed_it": "This directive addresses language and technical issues in ensuring reliable emergency call routing."
+   }
+  ],
+  "gap": "The provided examples from global sources do not directly address obtaining network-status information for ambulances, which is specific to the UAE context.",
+  "confidence": "med"
+ }
+}

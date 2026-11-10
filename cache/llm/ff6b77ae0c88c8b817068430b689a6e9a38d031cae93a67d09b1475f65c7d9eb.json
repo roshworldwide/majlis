@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:pdata_retraining",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Telecom operators should establish specific data governance practices for reusing operational subscriber location data to train AI models, ensuring it aligns with appropriate data management standards. This includes defining clear procedures for obtaining consent or meeting other lawful bases such as public interest, where applicable.",
+  "rationale": "[G1] Similar to the EU's requirement for high-risk AI systems, telecom networks should have robust data governance practices in place for retraining network models. This ensures compliance with broader principles of data management and privacy protection."
+ }
+}

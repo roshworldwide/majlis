@@ -1,0 +1,9 @@
+# Declared objectives per agent (used by gate rule G4: objective-conflict check).
+# Objectives are role descriptions for the simulation; where a cited basis exists it is listed.
+agents:
+  A1: {objectives: [{id: service_availability}, {id: energy_efficiency}]}
+  A2: {objectives: [{id: service_availability}, {id: consumer_protection}]}
+  A3: {objectives: [{id: public_safety}]}
+  A4: {objectives: [{id: public_safety}, {id: patient_outcomes}]}
+  A5: {objectives: [{id: cyber_resilience}, {id: public_trust}]}
+  A6: {objectives: [{id: privacy}]}

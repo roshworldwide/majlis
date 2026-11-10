@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:offshore_model_logs",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Critical telecom networks should implement an in-country escrow system for AI models and their logs to facilitate timely forensics and rollback. This ensures that all necessary artefacts are available within the jurisdiction, enhancing traceability and operational resilience [G1].",
+  "rationale": "By mandating an in-country escrow mechanism, the policy aligns with the EU's requirement for logging events throughout a system’s lifetime [G1] and addresses the UK's emphasis on the ease of rolling back failed changes [G2], thereby improving security and operational efficiency."
+ }
+}

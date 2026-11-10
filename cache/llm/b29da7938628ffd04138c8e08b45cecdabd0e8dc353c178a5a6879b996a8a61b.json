@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:pdata_retraining",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Policy should be developed requiring telecom operators to adhere to data governance practices similar to those outlined in EU-AIACT-2024 Article 10(2) for retraining network AI models, ensuring that subscriber location traces are used lawfully and transparently.",
+  "rationale": "[G1] EU-AIACT-2024 Article 10(2): 'Training, validation and testing data sets shall be subject to data governance and management practices appropriate' — EU: training/validation/testing data sets of high-risk AI must follow data-governance practices"
+ }
+}

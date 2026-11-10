@@ -1,0 +1,1 @@
+{"query": "operator notify emergency services ambulance network outage", "k": 3, "collections": ["kb_uae"], "mode": "hybrid", "hits": [{"chunk_id": "UAE-TDRA-QOS-POLICY-2019::0012", "score": 0.032787, "rank": 1}, {"chunk_id": "UAE-TDRA-QOS-POLICY-2019::0013", "score": 0.032258, "rank": 2}, {"chunk_id": "UAE-TDRA-IAR-2020::0087", "score": 0.030366, "rank": 3}]}

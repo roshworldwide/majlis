@@ -1,0 +1,1 @@
+{"query": "Can the operator transfer network logs containing subscriber data to the foreign vendor for rollback forensics?", "k": 2, "collections": ["kb_mandates"], "mode": "hybrid", "hits": [{"chunk_id": "MAJLIS-MANDATES-UAE::M-A1-QOS-REPORTING", "score": 0.032787, "rank": 1}, {"chunk_id": "MAJLIS-MANDATES-UAE::M-A6-BREACH", "score": 0.032002, "rank": 2}]}

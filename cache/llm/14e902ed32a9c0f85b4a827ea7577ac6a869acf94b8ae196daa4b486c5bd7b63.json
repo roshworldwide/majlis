@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:rumour_mandate",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "A global policy recommendation could be: Establish a dedicated entity within existing cybersecurity frameworks, such as the EU's CSIRTs (Computer Security Incident Response Teams), to handle public communication regarding AI-driven outages and false cyberattack rumours. This entity would have the authority to inform the public about significant incidents or require entities like telecom operators to do so, aligning with Article 23(7) of EU-NIS2-2022 [G1].",
+  "rationale": "This recommendation addresses the gap by providing a clear and enforceable mechanism for public communication regarding AI-driven outages. It leverages existing frameworks like the EU's CSIRTs, ensuring that such communications are part of their mandate, thereby closing the responsibility gap without creating new legal obligations."
+ }
+}

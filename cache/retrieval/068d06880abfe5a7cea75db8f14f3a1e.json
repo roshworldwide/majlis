@@ -1,0 +1,1 @@
+{"query": "What is the most appropriate initial step in addressing this network incident?", "k": 2, "collections": ["kb_mandates"], "mode": "hybrid", "hits": [{"chunk_id": "MAJLIS-MANDATES-UAE::M-A1-QOS-REPORTING", "score": 0.030886, "rank": 1}, {"chunk_id": "MAJLIS-MANDATES-UAE::CH-A1-A6-BREACH", "score": 0.016393, "rank": 2}]}

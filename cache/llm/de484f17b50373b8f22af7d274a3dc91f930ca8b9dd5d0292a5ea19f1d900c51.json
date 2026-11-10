@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:rumour_mandate",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Establish a clear mandate for the competent authority to issue public communications regarding AI-caused outages, similar to [G1], allowing it to inform the public or require relevant entities to do so. This should include provisions for transmitting public warnings through communication service providers, akin to [G2].",
+  "rationale": "This recommendation ensures a designated authority can address and correct false rumours promptly, maintaining public trust and safety during outages. It leverages existing mechanisms for effective communication."
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:rumour_mandate",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Establish a clear mandate for the competent authority to issue public communications regarding AI-caused outages, similar to Article 23(7) of EU-NIS2-2022. This authority should be able to inform the public or require the operator to do so after consulting with the entity concerned.",
+  "rationale": "[G1] demonstrates that a competent authority can have the power to communicate publicly about significant incidents, including those caused by AI in critical telecom networks. Such a mechanism ensures timely and accurate information dissemination, mitigating the spread of false rumours."
+ }
+}

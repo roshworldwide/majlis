@@ -1,0 +1,99 @@
+{
+ "time_to_awareness": {
+  "A1": {
+   "F_ROOT": 0,
+   "F_EMERG": null,
+   "F_RUMOUR": null,
+   "F_HARM": null,
+   "F_XBORDER": null,
+   "F_PDATA": null,
+   "F_LEAD": null
+  },
+  "A2": {
+   "F_ROOT": 5,
+   "F_EMERG": null,
+   "F_RUMOUR": 20,
+   "F_HARM": null,
+   "F_XBORDER": null,
+   "F_PDATA": null,
+   "F_LEAD": null
+  },
+  "A3": {
+   "F_ROOT": 5,
+   "F_EMERG": null,
+   "F_RUMOUR": null,
+   "F_HARM": null,
+   "F_XBORDER": null,
+   "F_PDATA": null,
+   "F_LEAD": 60
+  },
+  "A4": {
+   "F_ROOT": 5,
+   "F_EMERG": null,
+   "F_RUMOUR": null,
+   "F_HARM": null,
+   "F_XBORDER": null,
+   "F_PDATA": null,
+   "F_LEAD": null
+  },
+  "A5": {
+   "F_ROOT": 5,
+   "F_EMERG": null,
+   "F_RUMOUR": 20,
+   "F_HARM": null,
+   "F_XBORDER": null,
+   "F_PDATA": null,
+   "F_LEAD": null
+  },
+  "A6": {
+   "F_ROOT": 70,
+   "F_EMERG": null,
+   "F_RUMOUR": null,
+   "F_HARM": null,
+   "F_XBORDER": null,
+   "F_PDATA": 50,
+   "F_LEAD": null
+  }
+ },
+ "awareness_convergence_min": 5,
+ "suppressed_waves": [
+  "W1",
+  "W2",
+  "W4",
+  "W5"
+ ],
+ "copilot_rca_lead_min": 15,
+ "coordination_messages": 10,
+ "messages_legal": 10,
+ "messages_informal": 0,
+ "missing_channels": 0,
+ "missing_channel_pairs": [],
+ "conflicting_actions": 0,
+ "blocked_actions": 3,
+ "would_block_actions_if_gate_on": 3,
+ "rerouted_messages": 0,
+ "gaps_by_type": {
+  "unclear_responsibility": 3,
+  "legislative_gap": 1
+ },
+ "gaps_total": 4,
+ "citation_coverage": 0.987,
+ "claims_total": 77,
+ "claims_supported": 76,
+ "unsupported_claims_caught": 1,
+ "unsupported_claims_passed": 0,
+ "invalid_quotes": 1,
+ "redacted_normative_claims": 0,
+ "iap_count": 1,
+ "service_restored_min": 5,
+ "degraded_minutes": 10,
+ "lead_claims": [
+  {
+   "agent": "A3",
+   "t": 60
+  }
+ ],
+ "rumour_rebuttal_min": null,
+ "adviser_questions": 9,
+ "llm_calls": 20
+}

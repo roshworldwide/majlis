@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:incident_lead",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Establish a Cyber Crisis Management Authority (CCMA) with clear lead responsibilities for AI-driven telecom network emergencies, ensuring it can coordinate with existing regulatory bodies and crisis management authorities. This CCMA should be designated in advance as per [G1] EU-NIS2-2022 Article 1(2)(a).",
+  "rationale": "This recommendation ensures a dedicated authority is responsible for AI-driven telecom network emergencies, preventing lead claims collisions or leadership voids by aligning with the established practice of designating competent authorities and cyber crisis management bodies in advance."
+ }
+}

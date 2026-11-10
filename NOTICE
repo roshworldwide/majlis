@@ -1,0 +1,25 @@
+MAJLIS — third-party notices
+
+1. ITU AI Readiness reference code — github.com/CrashingGuru/ITUAIReadiness (commit 84010da)
+   MIT License, Copyright (c) 2026 Vishnu Ram OV.
+   Reused: the knowledge-base approach (ChromaDB collections kb_main / kb_framework / kb_usecase /
+   kb_decisions, document_category tagging, nomic-embed-text via Ollama), the framework file
+   data/framework/dimensions.json (vendored unchanged as majlis/kb/dimensions.json) and the
+   reference InputDocs, which are re-ingested in place and not redistributed by this repository.
+   scripts/load_into_ituaireadiness.py imports the reference code's KnowledgeBase and embed_texts.
+
+2. Source documents (laws, regulations, strategies, standards) belong to their publishers.
+   This repository ships metadata, chunk text and URLs (kb/export/), never the original files.
+   EU texts: reuse under Commission Decision 2011/833/EU. UK: Open Government Licence v3.0.
+   US federal: public domain. ITU-T Recommendations: free download, ITU copyright.
+   UAE and other official documents: public access; redistribution terms not stated.
+   See kb/export/manifest.csv for the URL, retrieval date, SHA-256 and licence note of every document.
+
+3. Fonts bundled by the web Experience (web/): Inter, IBM Plex Mono, IBM Plex Sans Arabic —
+   SIL Open Font License 1.1 (via @fontsource packages).
+
+4. Models (not redistributed): qwen2.5:3b (Qwen, Apache-2.0) and nomic-embed-text (Nomic, Apache-2.0),
+   pulled by the user through Ollama.
+
+AI assistance: this repository was built with Claude Code (Anthropic). Design decisions,
+source verification rules and the final review are the author's responsibility.

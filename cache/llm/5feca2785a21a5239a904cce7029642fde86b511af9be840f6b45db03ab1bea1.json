@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A2:25",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "[U1] The entity should develop incident policy, plan, and procedures to rectify the incident. They must also investigate incidents, determine their cause, recommend security controls for prevention, handle reporting internally and externally, and protect collected evidence [U2]. Global examples suggest that after an incident, organizations should conduct a root cause analysis (G2) or post-incident analysis (G3), take remedial actions to prevent future occurrences, document lessons learned from each incident including near misses, and use these insights to improve security measures.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "quote": "be involved if the attach was originated by an employee • Communication might be involved to become the public face for incidents that became public. Here are some of the primary responsibilities of the CSIRT: • Develop incident policy, plan, and procedures",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "quote": "line with the lessons learned. Exercises test all parts of your response cycle relating to your essential functions (e.g. restoration of normal function levels). Principle D2 Lessons Learned When an incident occurs, steps are taken to understand its root causes and to ensure appropriate remediating action is taken.",
+    "how_they_closed_it": "Understand the root cause and take remedial actions"
+   }
+  ],
+  "gap": "The UAE examples do not provide specific guidance on conducting exercises or improving response plans.",
+  "confidence": "med"
+ }
+}

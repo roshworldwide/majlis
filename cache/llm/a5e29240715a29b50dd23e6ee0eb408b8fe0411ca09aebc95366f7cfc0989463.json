@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:cyber_investigation_mandate",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "The cyber authority should be granted clear and explicit powers under international cybersecurity frameworks to investigate AI-driven operations of critical telecom networks. This can be achieved by aligning the cyber authority's investigative powers with existing EU-NIS2-2022 Article 32(2)(e) which allows competent authorities to request information for assessing risk-management measures, thereby providing a legal foundation for their actions.",
+  "rationale": "[G1] EU-NIS2-2022 Article 32(2)(e) provides a precedent where competent authorities have the authority to request necessary information from essential entities. By extending this principle to include AI-driven operations of critical telecom networks, it ensures that cyber authorities can effectively investigate and address potential cybersecurity risks."
+ }
+}

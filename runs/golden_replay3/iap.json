@@ -1,0 +1,373 @@
+[
+ {
+  "iap_id": "IAP-1",
+  "t": 30,
+  "label": "mid-crisis (harm detected)",
+  "tasks": [
+   {
+    "who": "A1",
+    "what": "keep_ml_energy_saving",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A1",
+    "what": "request_vendor_rollback",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A1",
+    "what": "notify_incident → A4",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A4",
+    "what": "notify_incident → A3",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+10"
+   },
+   {
+    "who": "A4",
+    "what": "query_status → A1",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+10"
+   },
+   {
+    "who": "A1",
+    "what": "notify_incident → A2",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+15"
+   },
+   {
+    "who": "A2",
+    "what": "request_information → A1",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 12",
+      "page": 8,
+      "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+      "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+     }
+    ],
+    "by_when": "T+20"
+   },
+   {
+    "who": "A3",
+    "what": "request_information → A2",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-NCEMA-CDA-2024",
+      "chunk_id": "UAE-NCEMA-CDA-2024::0005",
+      "article": "Article 6(1)",
+      "page": 1,
+      "quote": "The Competent Authority and the Concerned Entities shall provide CDA with all information or data it requests related to civil defence work and measures",
+      "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+      "title": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority"
+     }
+    ],
+    "by_when": "T+20"
+   },
+   {
+    "who": "A5",
+    "what": "investigate_cyber_incident → A1",
+    "status": "blocked (G2) — needs legal basis",
+    "legal_basis": [],
+    "by_when": "T+60"
+   },
+   {
+    "who": "A2",
+    "what": "issue_directive → A1",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 12",
+      "page": 8,
+      "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+      "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+     }
+    ],
+    "by_when": "T+25"
+   },
+   {
+    "who": "A2",
+    "what": "notify_incident → A3",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+25"
+   },
+   {
+    "who": "A2",
+    "what": "share_information → A5",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 12",
+      "page": 8,
+      "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+      "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+     }
+    ],
+    "by_when": "T+25"
+   },
+   {
+    "who": "A2",
+    "what": "claim_incident_lead",
+    "status": "blocked (G2) — needs legal basis",
+    "legal_basis": [],
+    "by_when": "T+60"
+   },
+   {
+    "who": "A4",
+    "what": "notify_incident → A3",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+30"
+   },
+   {
+    "who": "A4",
+    "what": "ambulance_surge_deployment",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+30"
+   }
+  ],
+  "service_restored_estimate": 45
+ },
+ {
+  "iap_id": "IAP-2",
+  "t": 90,
+  "label": "debrief (W8)",
+  "tasks": [
+   {
+    "who": "A1",
+    "what": "keep_ml_energy_saving",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A1",
+    "what": "request_vendor_rollback",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A1",
+    "what": "notify_incident → A4",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A4",
+    "what": "notify_incident → A3",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+10"
+   },
+   {
+    "who": "A4",
+    "what": "query_status → A1",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+10"
+   },
+   {
+    "who": "A1",
+    "what": "notify_incident → A2",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+15"
+   },
+   {
+    "who": "A2",
+    "what": "request_information → A1",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 12",
+      "page": 8,
+      "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+      "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+     }
+    ],
+    "by_when": "T+20"
+   },
+   {
+    "who": "A3",
+    "what": "request_information → A2",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-NCEMA-CDA-2024",
+      "chunk_id": "UAE-NCEMA-CDA-2024::0005",
+      "article": "Article 6(1)",
+      "page": 1,
+      "quote": "The Competent Authority and the Concerned Entities shall provide CDA with all information or data it requests related to civil defence work and measures",
+      "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+      "title": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority"
+     }
+    ],
+    "by_when": "T+20"
+   },
+   {
+    "who": "A5",
+    "what": "investigate_cyber_incident → A1",
+    "status": "blocked (G2) — needs legal basis",
+    "legal_basis": [],
+    "by_when": "T+120"
+   },
+   {
+    "who": "A2",
+    "what": "issue_directive → A1",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 12",
+      "page": 8,
+      "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+      "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+     }
+    ],
+    "by_when": "T+25"
+   },
+   {
+    "who": "A2",
+    "what": "notify_incident → A3",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+25"
+   },
+   {
+    "who": "A2",
+    "what": "share_information → A5",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 12",
+      "page": 8,
+      "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+      "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+     }
+    ],
+    "by_when": "T+25"
+   },
+   {
+    "who": "A2",
+    "what": "claim_incident_lead",
+    "status": "blocked (G2) — needs legal basis",
+    "legal_basis": [],
+    "by_when": "T+120"
+   },
+   {
+    "who": "A4",
+    "what": "notify_incident → A3",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+30"
+   },
+   {
+    "who": "A4",
+    "what": "ambulance_surge_deployment",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+30"
+   },
+   {
+    "who": "A3",
+    "what": "share_information → A4",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-NCEMA-CDA-2024",
+      "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+      "article": "Article 3(12)",
+      "page": 1,
+      "quote": "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned Entities",
+      "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+      "title": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority"
+     }
+    ],
+    "by_when": "T+35"
+   },
+   {
+    "who": "A1",
+    "what": "cross_border_log_transfer → vendor",
+    "status": "blocked (G2) — needs legal basis",
+    "legal_basis": [],
+    "by_when": "T+120"
+   },
+   {
+    "who": "A3",
+    "what": "activate_crisis_coordination",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-NCEMA-CDA-2024",
+      "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+      "article": "Article 3(12)",
+      "page": 1,
+      "quote": "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned Entities",
+      "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+      "title": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority"
+     }
+    ],
+    "by_when": "T+40"
+   },
+   {
+    "who": "A5",
+    "what": "public_rumour_rebuttal",
+    "status": "blocked (G2) — needs legal basis",
+    "legal_basis": [],
+    "by_when": "T+120"
+   },
+   {
+    "who": "A6",
+    "what": "examine_complaint → A1",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-PDPL-2021",
+      "chunk_id": "UAE-PDPL-2021::0018",
+      "article": "Article 24(2)",
+      "page": 26,
+      "quote": "shall examine such complaints in coordination with the Controller and the Processor",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+      "title": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data"
+     }
+    ],
+    "by_when": "T+50"
+   }
+  ],
+  "service_restored_estimate": 70
+ }
+]

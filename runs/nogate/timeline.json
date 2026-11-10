@@ -1,0 +1,2765 @@
+[
+ {
+  "seq": 0,
+  "t": 0,
+  "wave": "W0",
+  "type": "inject",
+  "agent": "A8",
+  "payload": {
+   "wave": "W0",
+   "visible_to": [
+    "A1"
+   ],
+   "content": "Network KPIs, Downtown cluster: share of cells in energy-saving sleep rising fast; call-setup success falling. Change log: ML energy-saving model v2.3 deployed T-48h.",
+   "reveals": {
+    "F_ROOT": 0.4
+   }
+  }
+ },
+ {
+  "seq": 1,
+  "t": 0,
+  "wave": "W0",
+  "type": "belief",
+  "agent": "A1",
+  "payload": {
+   "fact": "F_ROOT",
+   "confidence": 0.4,
+   "prev": 0.0,
+   "source": "inject",
+   "via": null
+  }
+ },
+ {
+  "seq": 2,
+  "t": 0,
+  "wave": "W0",
+  "type": "action",
+  "agent": "A1",
+  "payload": {
+   "action_id": "ACT-001",
+   "type": "root_cause_analysis",
+   "target": null,
+   "internal": true,
+   "status": "executed",
+   "cite_ids": [],
+   "analysis": {
+    "pearson_sleep_vs_cssr": -1.0,
+    "anomaly_onset_min": -5,
+    "candidate": "ML energy-saving model v2.3 deployed (vendor-managed)",
+    "confidence": 0.9,
+    "pipeline": "SRC→C→PP→M (Y.3172)"
+   }
+  }
+ },
+ {
+  "seq": 3,
+  "t": 0,
+  "wave": "W0",
+  "type": "belief",
+  "agent": "A1",
+  "payload": {
+   "fact": "F_ROOT",
+   "confidence": 0.9,
+   "prev": 0.4,
+   "source": "analysis",
+   "via": null
+  }
+ },
+ {
+  "seq": 4,
+  "t": 0,
+  "wave": "W0",
+  "type": "proposal",
+  "agent": "A1",
+  "payload": {
+   "proposal_id": "P-A1-000",
+   "situation": "The Downtown cluster's network KPIs are deteriorating due to an increasing number of cells entering energy-saving sleep mode during peak call times, leading to reduced call-setup success rates.",
+   "why": "The ML energy-saving model v2.3, deployed T-48h ago, is causing cells in Downtown cluster to enter sleep mode during peak call times, leading to reduced call-setup success rates and deteriorating network KPIs.",
+   "options": [
+    "keep_ml_energy_saving",
+    "request_vendor_rollback",
+    "notify_incident → A4 [F_ROOT]"
+   ],
+   "chosen": [
+    "keep_ml_energy_saving",
+    "request_vendor_rollback",
+    "notify_incident → A4 [F_ROOT]"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025::0252",
+     "doc_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025",
+     "quote": "service loads. Traditional energysaving methods often struggle with high fault rates, slow emergency response times, and limited operational efficiency, hindering progress toward sustainable digital infrastructure.",
+     "valid": true
+    },
+    {
+     "chunk_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025::0205",
+     "doc_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025",
+     "quote": "savings, and measurable support for carbon neutrality goals all within a scalable framework that can adapt to varied network environments and technologies.",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 5,
+  "t": 0,
+  "wave": "W0",
+  "type": "gate_flag",
+  "agent": "A1",
+  "payload": {
+   "item_id": "ACT-002",
+   "kind": "action",
+   "rule": "G4",
+   "action_type": "keep_ml_energy_saving",
+   "target": null,
+   "reason": "conflicts with declared objectives A2:service_availability, A3:public_safety, A4:public_safety",
+   "gap_id": "GAP-01"
+  }
+ },
+ {
+  "seq": 6,
+  "t": 0,
+  "wave": "W0",
+  "type": "action",
+  "agent": "A1",
+  "payload": {
+   "action_id": "ACT-002",
+   "type": "keep_ml_energy_saving",
+   "target": null,
+   "internal": true,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 7,
+  "t": 0,
+  "wave": "W0",
+  "type": "gate_pass",
+  "agent": "A1",
+  "payload": {
+   "item_id": "ACT-003",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": []
+  }
+ },
+ {
+  "seq": 8,
+  "t": 0,
+  "wave": "W0",
+  "type": "action",
+  "agent": "A1",
+  "payload": {
+   "action_id": "ACT-003",
+   "type": "request_vendor_rollback",
+   "target": null,
+   "internal": true,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 9,
+  "t": 0,
+  "wave": "W0",
+  "type": "gate_pass",
+  "agent": "A1",
+  "payload": {
+   "item_id": "ACT-004",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": []
+  }
+ },
+ {
+  "seq": 10,
+  "t": 0,
+  "wave": "W0",
+  "type": "action",
+  "agent": "A1",
+  "payload": {
+   "action_id": "ACT-004",
+   "type": "notify_incident",
+   "target": "A4",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": true
+  }
+ },
+ {
+  "seq": 11,
+  "t": 0,
+  "wave": "W0",
+  "type": "gate_pass",
+  "agent": "A1",
+  "payload": {
+   "item_id": "MSG-001",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G5"
+   ],
+   "cite_ids": [],
+   "unenforced_failure": "G3"
+  }
+ },
+ {
+  "seq": 12,
+  "t": 0,
+  "wave": "W0",
+  "type": "message",
+  "agent": "A1",
+  "payload": {
+   "msg_id": "MSG-001",
+   "from": "A1",
+   "to": "A4",
+   "channel_id": null,
+   "legal": false,
+   "sent_t": 0,
+   "deliver_t": 10,
+   "facts": [
+    "F_ROOT"
+   ],
+   "content": "We believe this is due to the current deployment of the ML energy-saving model v2.3 and need your immediate attention for potential intervention.",
+   "status": "delivered",
+   "route": "unchecked",
+   "kind": "notify_incident"
+  }
+ },
+ {
+  "seq": 13,
+  "t": 0,
+  "wave": "W0",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-3e82fc29",
+   "preset_id": null,
+   "asked_by": "A1",
+   "question": "What are the steps we should take to address the root cause of the issue with the ML energy-saving model?",
+   "answer": "To address the root cause of the issue with the ML energy-saving model, we should first collect relevant data [G1] and consult with vendors, partners, and associates to identify corrective actions [U4]. Expert advice should also be sought to ensure that the identified issues are thoroughly understood. This process aligns with the UAE's strategy for increasing government experimentation with AI [U3], aiming to improve services for citizens.",
+   "cite_ids": [
+    "UAE-TELECOM-LAW::0006",
+    "UAE-NCEMA-CDA-2024::0002",
+    "UAE-AI-STRAT-2031::0004",
+    "UAE-TDRA-IAR-2020::0071"
+   ],
+   "global_cite_ids": [
+    "IN-TRAI-AI-2023::0079",
+    "IN-TRAI-AI-2023::0076",
+    "UK-TSCOP-2022::0137"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "high"
+  }
+ },
+ {
+  "seq": 128,
+  "t": 0,
+  "wave": "W0",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-01",
+   "type": "conflicting_objectives",
+   "title": "Energy-efficiency goals vs network availability during mass events"
+  }
+ },
+ {
+  "seq": 129,
+  "t": 0,
+  "wave": "W0",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-02",
+   "type": "coordination_problem",
+   "title": "No channel between the network operator and emergency dispatch"
+  }
+ },
+ {
+  "seq": 130,
+  "t": 0,
+  "wave": "W0",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-03",
+   "type": "legislative_gap",
+   "title": "No AI-incident notification duty or deadline for AI-driven network operations"
+  }
+ },
+ {
+  "seq": 131,
+  "t": 0,
+  "wave": "W0",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-04",
+   "type": "standards_gap",
+   "title": "No mandated pre-deployment validation of ML model updates, and no standard AI-incident interface from the ML pipeline"
+  }
+ },
+ {
+  "seq": 14,
+  "t": 10,
+  "wave": "W1",
+  "type": "belief",
+  "agent": "A4",
+  "payload": {
+   "fact": "F_ROOT",
+   "confidence": 0.9,
+   "prev": 0.0,
+   "source": "message",
+   "via": "MSG-001"
+  }
+ },
+ {
+  "seq": 15,
+  "t": 10,
+  "wave": "W1",
+  "type": "inject",
+  "agent": "A8",
+  "payload": {
+   "wave": "W1",
+   "visible_to": [
+    "A4"
+   ],
+   "content": "Emergency-call volume from Downtown is far below forecast while the crowd peaks. Cause unknown.",
+   "reveals": {
+    "F_EMERG": 0.8
+   }
+  }
+ },
+ {
+  "seq": 16,
+  "t": 10,
+  "wave": "W1",
+  "type": "belief",
+  "agent": "A4",
+  "payload": {
+   "fact": "F_EMERG",
+   "confidence": 0.8,
+   "prev": 0.0,
+   "source": "inject",
+   "via": null
+  }
+ },
+ {
+  "seq": 17,
+  "t": 10,
+  "wave": "W1",
+  "type": "proposal",
+  "agent": "A4",
+  "payload": {
+   "proposal_id": "P-A4-010",
+   "situation": "Emergency calls from Downtown are failing to connect due to an AI-caused telecom network incident.",
+   "why": "Given the current situation with emergency call failures and the unknown cause, options include notifying A3 for coordination and potentially initiating a public alert if necessary.",
+   "options": [
+    "notify_incident → A3 [F_EMERG]"
+   ],
+   "chosen": [
+    "notify_incident → A3 [F_EMERG]"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-CD-COORDINATION",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-CD-COORDINATION — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Coordinate the services needed to address potential risks (civil defence). Permitted action types: activate_crisis_coordination, share_information.",
+     "valid": true
+    },
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-PUBLIC-ALERT",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-PUBLIC-ALERT — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Operate the public alert system.",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 18,
+  "t": 10,
+  "wave": "W1",
+  "type": "gate_pass",
+  "agent": "A4",
+  "payload": {
+   "item_id": "ACT-005",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": []
+  }
+ },
+ {
+  "seq": 19,
+  "t": 10,
+  "wave": "W1",
+  "type": "action",
+  "agent": "A4",
+  "payload": {
+   "action_id": "ACT-005",
+   "type": "notify_incident",
+   "target": "A3",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": true
+  }
+ },
+ {
+  "seq": 20,
+  "t": 10,
+  "wave": "W1",
+  "type": "gate_pass",
+  "agent": "A4",
+  "payload": {
+   "item_id": "MSG-002",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0005"
+   ]
+  }
+ },
+ {
+  "seq": 21,
+  "t": 10,
+  "wave": "W1",
+  "type": "message",
+  "agent": "A4",
+  "payload": {
+   "msg_id": "MSG-002",
+   "from": "A4",
+   "to": "A3",
+   "channel_id": "CH-A4-A3-CDA-INFO",
+   "legal": true,
+   "sent_t": 10,
+   "deliver_t": 20,
+   "facts": [
+    "F_EMERG"
+   ],
+   "content": "Notify of failure to connect emergency calls from Downtown due to AI-caused telecom network incident.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "notify_incident"
+  }
+ },
+ {
+  "seq": 22,
+  "t": 15,
+  "wave": "W2",
+  "type": "inject",
+  "agent": "A8",
+  "payload": {
+   "wave": "W2",
+   "visible_to": [
+    "A1"
+   ],
+   "content": "Customer complaints spike. Correlation of the KPI drop with model v2.3 sleep decisions confirmed.",
+   "reveals": {
+    "F_ROOT": 0.95
+   }
+  }
+ },
+ {
+  "seq": 23,
+  "t": 15,
+  "wave": "W2",
+  "type": "belief",
+  "agent": "A1",
+  "payload": {
+   "fact": "F_ROOT",
+   "confidence": 0.95,
+   "prev": 0.9,
+   "source": "inject",
+   "via": null
+  }
+ },
+ {
+  "seq": 24,
+  "t": 15,
+  "wave": "W2",
+  "type": "proposal",
+  "agent": "A1",
+  "payload": {
+   "proposal_id": "P-A1-015",
+   "situation": "The energy-saving ML model v2.3 is causing cells to enter sleep mode during peak usage times, leading to a decline in call-setup success and customer complaints.",
+   "why": "The ML energy-saving model v2.3, deployed T-48h, is putting cells into sleep mode during peak usage times, leading to a decline in call-setup success and customer complaints.",
+   "options": [
+    "notify_incident → A2 [F_ROOT]"
+   ],
+   "chosen": [
+    "notify_incident → A2 [F_ROOT]"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025::0205",
+     "doc_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025",
+     "quote": "AI-driven actions enable automated and intelligent network optimization. These include dynamic resource scaling by activating or deactivating radio units and adjusting bandwidth based on demand forecasts.",
+     "valid": true
+    },
+    {
+     "chunk_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025::0205",
+     "doc_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025",
+     "quote": "AI-Driven Network Optimization: AI-driven actions enable automated and intelligent network optimization. These include dynamic resource scaling by activating or deactivating radio units and adjusting bandwidth based on demand forecasts.",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 25,
+  "t": 15,
+  "wave": "W2",
+  "type": "gate_pass",
+  "agent": "A1",
+  "payload": {
+   "item_id": "ACT-006",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": []
+  }
+ },
+ {
+  "seq": 26,
+  "t": 15,
+  "wave": "W2",
+  "type": "action",
+  "agent": "A1",
+  "payload": {
+   "action_id": "ACT-006",
+   "type": "notify_incident",
+   "target": "A2",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": true
+  }
+ },
+ {
+  "seq": 27,
+  "t": 15,
+  "wave": "W2",
+  "type": "gate_pass",
+  "agent": "A1",
+  "payload": {
+   "item_id": "MSG-003",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-TDRA-IAR-2020::0008"
+   ]
+  }
+ },
+ {
+  "seq": 28,
+  "t": 15,
+  "wave": "W2",
+  "type": "message",
+  "agent": "A1",
+  "payload": {
+   "msg_id": "MSG-003",
+   "from": "A1",
+   "to": "A2",
+   "channel_id": "CH-A1-A2-IA-REPORT",
+   "legal": true,
+   "sent_t": 15,
+   "deliver_t": 25,
+   "facts": [
+    "F_ROOT"
+   ],
+   "content": "Notify about the root cause: ML energy-saving model v2.3 puts cells to sleep at crowd peak.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "notify_incident"
+  }
+ },
+ {
+  "seq": 29,
+  "t": 15,
+  "wave": "W2",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-b0e7c72a",
+   "preset_id": "Q1",
+   "asked_by": "A1",
+   "question": "Is the operator required to notify any authority about an AI-caused network incident, and within what deadline?",
+   "answer": "According to [U3], the operator is required to establish a Computer Security Incident Response Team (CSIRT) responsible for managing incidents. However, there is no explicit requirement in the UAE sources provided that mandates notification of any authority about an AI-caused network incident or specifies a deadline for such notifications. In contrast, [G2] from EU regulations requires immediate notification of serious incidents to the Commission, indicating a gap in specific notification requirements within the UAE context.",
+   "cite_ids": [
+    "UAE-TDRA-QOS-POLICY-2019::0009",
+    "UAE-PDPL-2021::0009",
+    "UAE-TDRA-IAR-2020::0160",
+    "UAE-TDRA-IAR-2020::0102"
+   ],
+   "global_cite_ids": [
+    "EU-AIACT-2024::0214",
+    "EU-AIACT-2024::0204",
+    "OECD-AIINC-2025::0017"
+   ],
+   "invalid_quotes": 0,
+   "gap": "The UAE evidence does not specify a mandatory notification requirement or deadline for AI-caused network incidents, unlike the global examples provided.",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 30,
+  "t": 20,
+  "wave": "W3",
+  "type": "belief",
+  "agent": "A3",
+  "payload": {
+   "fact": "F_EMERG",
+   "confidence": 0.8,
+   "prev": 0.0,
+   "source": "message",
+   "via": "MSG-002"
+  }
+ },
+ {
+  "seq": 31,
+  "t": 20,
+  "wave": "W3",
+  "type": "inject",
+  "agent": "A8",
+  "payload": {
+   "wave": "W3",
+   "visible_to": [
+    "A5",
+    "A2"
+   ],
+   "content": "Social-media rumours of a \"cyberattack on the network\" are spreading.",
+   "reveals": {
+    "F_RUMOUR": 0.9
+   }
+  }
+ },
+ {
+  "seq": 32,
+  "t": 20,
+  "wave": "W3",
+  "type": "belief",
+  "agent": "A5",
+  "payload": {
+   "fact": "F_RUMOUR",
+   "confidence": 0.9,
+   "prev": 0.0,
+   "source": "inject",
+   "via": null
+  }
+ },
+ {
+  "seq": 33,
+  "t": 20,
+  "wave": "W3",
+  "type": "belief",
+  "agent": "A2",
+  "payload": {
+   "fact": "F_RUMOUR",
+   "confidence": 0.9,
+   "prev": 0.0,
+   "source": "inject",
+   "via": null
+  }
+ },
+ {
+  "seq": 34,
+  "t": 20,
+  "wave": "W3",
+  "type": "proposal",
+  "agent": "A2",
+  "payload": {
+   "proposal_id": "P-A2-020",
+   "situation": "Social media is spreading rumours of a cyberattack on the network, and there are concerns about potential security breaches.",
+   "why": "Given the current situation, it is important to gather information from A1 (NetOps Resilience Copilot) about the state of network resilience and potential breaches. This will help in understanding if there are any immediate threats or vulnerabilities that need addressing.",
+   "options": [
+    "request_information → A1"
+   ],
+   "chosen": [
+    "request_information → A1"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::CH-A1-A2-IA-REPORT",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Channel CH-A1-A2-IA-REPORT: A1 → A2 (entity → sector regulator (cyber-security information)).",
+     "valid": true
+    },
+    {
+     "chunk_id": "IN-TCSR-2024::0014",
+     "doc_id": "IN-TCSR-2024",
+     "quote": "(3) Every telecommunication entity shall ensure compliance with the directions and standards, including timelines for their implementation, as may be issued by the Central Government for the prevention of misuse of telecommunication identifiers or telecommunication equipment or telecommunication network or telecommunication services for ensuring telecom cyber security.",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 35,
+  "t": 20,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "ACT-007",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G1",
+    "G4"
+   ],
+   "cite_ids": [
+    "UAE-TELECOM-LAW::0005"
+   ]
+  }
+ },
+ {
+  "seq": 36,
+  "t": 20,
+  "wave": "W3",
+  "type": "action",
+  "agent": "A2",
+  "payload": {
+   "action_id": "ACT-007",
+   "type": "request_information",
+   "target": "A1",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [
+    "UAE-TELECOM-LAW::0005"
+   ],
+   "mandate_id": "M-A2-OVERSIGHT",
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 37,
+  "t": 20,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "MSG-004",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-TELECOM-LAW::0005"
+   ]
+  }
+ },
+ {
+  "seq": 38,
+  "t": 20,
+  "wave": "W3",
+  "type": "message",
+  "agent": "A2",
+  "payload": {
+   "msg_id": "MSG-004",
+   "from": "A2",
+   "to": "A1",
+   "channel_id": "CH-A2-A1-OVERSIGHT",
+   "legal": true,
+   "sent_t": 20,
+   "deliver_t": 30,
+   "facts": [],
+   "content": "Please provide an update on your current network resilience status and any recent security incidents.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "request_information"
+  }
+ },
+ {
+  "seq": 39,
+  "t": 20,
+  "wave": "W3",
+  "type": "proposal",
+  "agent": "A3",
+  "payload": {
+   "proposal_id": "P-A3-020",
+   "situation": "Emergency & Crisis Authority is informed of an AI-caused telecom network incident affecting emergency calls from Downtown.",
+   "why": "Given the current scenario, it is crucial to request information from the Telecom Regulator (A2) to understand the extent of the telecom network incident and its impact on emergency services.",
+   "options": [
+    "request_information → A2"
+   ],
+   "chosen": [
+    "request_information → A2"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-INFORMATION",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-INFORMATION — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Obtain information from the competent and concerned authorities. Permitted action types: request_information.",
+     "valid": true
+    },
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-PUBLIC-ALERT",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-PUBLIC-ALERT — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Operate the public alert system. Permitted action types: public_alert.",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 40,
+  "t": 20,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A3",
+  "payload": {
+   "item_id": "ACT-008",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G1",
+    "G4"
+   ],
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0005"
+   ]
+  }
+ },
+ {
+  "seq": 41,
+  "t": 20,
+  "wave": "W3",
+  "type": "action",
+  "agent": "A3",
+  "payload": {
+   "action_id": "ACT-008",
+   "type": "request_information",
+   "target": "A2",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0005"
+   ],
+   "mandate_id": "M-A3-INFORMATION",
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 42,
+  "t": 20,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A3",
+  "payload": {
+   "item_id": "MSG-005",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0005"
+   ]
+  }
+ },
+ {
+  "seq": 43,
+  "t": 20,
+  "wave": "W3",
+  "type": "message",
+  "agent": "A3",
+  "payload": {
+   "msg_id": "MSG-005",
+   "from": "A3",
+   "to": "A2",
+   "channel_id": "CH-A3-A2-COORD",
+   "legal": true,
+   "sent_t": 20,
+   "deliver_t": 30,
+   "facts": [],
+   "content": "Request information regarding the AI-caused telecom network incident affecting emergency calls in Downtown. This includes details about service disruptions, potential causes, and any directives or actions required.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "request_information"
+  }
+ },
+ {
+  "seq": 44,
+  "t": 20,
+  "wave": "W3",
+  "type": "gate_block",
+  "agent": "A5",
+  "payload": {
+   "item_id": "P-A5-020-R",
+   "kind": "claim",
+   "rule": "G1",
+   "action_type": "citation",
+   "target": null,
+   "reason": "quote not found verbatim in UAE-TDRA-IAR-2020::0003",
+   "gap_id": null,
+   "enforced": false,
+   "quote": "Mitigating cyber threats, and ensuring the development of a secure national information and communications infrastructure, is a strategic priority for the UAE. To this end, TRATRA developed the UAE IA"
+  }
+ },
+ {
+  "seq": 45,
+  "t": 20,
+  "wave": "W3",
+  "type": "gate_block",
+  "agent": "A5",
+  "payload": {
+   "item_id": "P-A5-020-R",
+   "kind": "claim",
+   "rule": "G1",
+   "action_type": "citation",
+   "target": null,
+   "reason": "quote not found verbatim in UAE-TDRA-IAR-2020::0160",
+   "gap_id": null,
+   "enforced": false,
+   "quote": "Control Sub-Control The entity shall establish a Computer Security Incident Response Team (CSIRT) in charge of the incident management and response plan. The entity shall establish a CSIRT as follows:"
+  }
+ },
+ {
+  "seq": 46,
+  "t": 20,
+  "wave": "W3",
+  "type": "proposal",
+  "agent": "A5",
+  "payload": {
+   "proposal_id": "P-A5-020",
+   "situation": "Social media rumours suggest a cyberattack on the network, and there are concerns about potential security breaches.",
+   "why": "Given the social media rumours of a cyberattack, it's important to investigate and ensure that there are no actual security breaches. Establishing a CSIRT aligns with the regulation and will help in managing any potential incident effectively.",
+   "options": [
+    "investigate_cyber_incident → A1"
+   ],
+   "chosen": [
+    "investigate_cyber_incident → A1"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "UAE-TDRA-IAR-2020::0003",
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "quote": "Mitigating cyber threats, and ensuring the development of a secure national information and communications infrastructure, is a strategic priority for the UAE. To this end, TRATRA developed the UAE IA Regulation as a critical element of the National Information Assurance Framework (NIAF) to provide requirements for elevating the level of IA across all implementing entities in the UAE.",
+     "valid": false
+    },
+    {
+     "chunk_id": "UAE-TDRA-IAR-2020::0160",
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "quote": "Control Sub-Control The entity shall establish a Computer Security Incident Response Team (CSIRT) in charge of the incident management and response plan. The entity shall establish a CSIRT as follows: 1) Identify stakeholders and participants 2) Secure funding for CSIRT operations 3) Decide on.",
+     "valid": false
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 47,
+  "t": 20,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A5",
+  "payload": {
+   "item_id": "ACT-009",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": [],
+   "unenforced_failure": "G2",
+   "reason": "no cited mandate of A5 covers action type 'investigate_cyber_incident'"
+  }
+ },
+ {
+  "seq": 48,
+  "t": 20,
+  "wave": "W3",
+  "type": "action",
+  "agent": "A5",
+  "payload": {
+   "action_id": "ACT-009",
+   "type": "investigate_cyber_incident",
+   "target": "A1",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 49,
+  "t": 20,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A5",
+  "payload": {
+   "item_id": "MSG-006",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G5"
+   ],
+   "cite_ids": [],
+   "unenforced_failure": "G3"
+  }
+ },
+ {
+  "seq": 50,
+  "t": 20,
+  "wave": "W3",
+  "type": "message",
+  "agent": "A5",
+  "payload": {
+   "msg_id": "MSG-006",
+   "from": "A5",
+   "to": "A1",
+   "channel_id": null,
+   "legal": false,
+   "sent_t": 20,
+   "deliver_t": 30,
+   "facts": [],
+   "content": "Investigate the network for any anomalies or unauthorized access based on the social media rumours.",
+   "status": "delivered",
+   "route": "unchecked",
+   "kind": "investigate_cyber_incident"
+  }
+ },
+ {
+  "seq": 51,
+  "t": 20,
+  "wave": "W3",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-4e17e737",
+   "preset_id": null,
+   "asked_by": "A5",
+   "question": "Could you provide insights into how we can verify these social media claims and what steps should be taken to secure our network?",
+   "answer": "To verify social media claims, it is essential to establish a formal policy prohibiting the use of unauthorized software [U3] and monitoring tools can provide necessary information on potential threats such as abuse of system access/privileges [G1]. Steps to secure the network include identifying all mobile devices and media that hold critical data supporting essential functions [G2], which aligns with the UAE's guidance on protecting against risks associated with external networks [U3]. However, the UAE evidence does not specifically address social media verification processes.",
+   "cite_ids": [
+    "UAE-PDPL-2021::0009",
+    "UAE-NCEMA-CDA-2024::0002",
+    "UAE-TDRA-IAR-2020::0096",
+    "UAE-TDRA-IAR-2020::0125"
+   ],
+   "global_cite_ids": [
+    "UK-TSCOP-2026-V1.1::0154",
+    "UK-TSCOP-2026-V1.1::0157",
+    "UK-TSCOP-2026-V1.1::0158"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 52,
+  "t": 20,
+  "wave": "W3",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-4779338e",
+   "preset_id": "Q2",
+   "asked_by": "A5",
+   "question": "Who has the mandate to publicly rebut false rumours of a cyberattack during a network outage?",
+   "answer": "[U3] Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrimes provides a framework for addressing false rumors but does not explicitly mandate who should publicly rebut them during a network outage. The Cybersecurity Authority [A5] at T+20 may have the authority to do so, given its role in cybersecurity, but this is not clearly stated.",
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0002",
+    "UAE-PDPL-2021::0009",
+    "UAE-CYBERCRIME-2021::0023",
+    "UAE-CYBERCRIME-2021::0004"
+   ],
+   "global_cite_ids": [
+    "UK-TSCOP-2026-V1.1::0053",
+    "US-47CFR-PART4::0013",
+    "US-47CFR-PART4::0015"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 132,
+  "t": 20,
+  "wave": "W3",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-05",
+   "type": "unclear_responsibility",
+   "title": "Cyber authority's power to investigate an operator's AI incident not citable"
+  }
+ },
+ {
+  "seq": 133,
+  "t": 20,
+  "wave": "W3",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-06",
+   "type": "coordination_problem",
+   "title": "Missing legal channel between authorities"
+  }
+ },
+ {
+  "seq": 53,
+  "t": 25,
+  "wave": "W3",
+  "type": "belief",
+  "agent": "A2",
+  "payload": {
+   "fact": "F_ROOT",
+   "confidence": 0.9,
+   "prev": 0.0,
+   "source": "message",
+   "via": "MSG-003"
+  }
+ },
+ {
+  "seq": 54,
+  "t": 25,
+  "wave": "W3",
+  "type": "gate_block",
+  "agent": "A2",
+  "payload": {
+   "item_id": "P-A2-025-R",
+   "kind": "claim",
+   "rule": "G1",
+   "action_type": "citation",
+   "target": null,
+   "reason": "quote not found verbatim in UK-TSCOP-2022::0137",
+   "gap_id": null,
+   "enforced": false,
+   "quote": "Your organisation uses lessons learned. Root cause analysis is conducted routinely as a key part of your lessons learned activities following an incident."
+  }
+ },
+ {
+  "seq": 55,
+  "t": 25,
+  "wave": "W3",
+  "type": "proposal",
+  "agent": "A2",
+  "payload": {
+   "proposal_id": "P-A2-025",
+   "situation": "The telecom network incident has been identified as caused by an ML energy-saving model v2.3 that puts cells to sleep during peak crowds, leading to widespread service disruptions and social media rumors of a cyberattack.",
+   "why": "Given the identified root cause, options O1 (issue_directive) and O2 (notify_incident) are suitable as they involve informing relevant authorities about the incident. Option O3 (share_information) is also appropriate for sharing information with cybersecurity authorities.",
+   "options": [
+    "issue_directive → A1 [F_ROOT]",
+    "notify_incident → A3 [F_ROOT]",
+    "share_information → A5 [F_ROOT]",
+    "claim_incident_lead"
+   ],
+   "chosen": [
+    "issue_directive → A1 [F_ROOT]",
+    "notify_incident → A3 [F_ROOT]",
+    "share_information → A5 [F_ROOT]",
+    "claim_incident_lead"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "UK-TSCOP-2026-V1.1::0053",
+     "doc_id": "UK-TSCOP-2026-V1.1",
+     "quote": "data should link administrative actions to network administrators and on to tickets. This applies whether the administrator is internal or employed by a third party. With this information, it becomes possible for analysts to build a chain of events, establish the root cause of incidents, and prevent a recurrence of that incident.",
+     "valid": true
+    },
+    {
+     "chunk_id": "UK-TSCOP-2022::0137",
+     "doc_id": "UK-TSCOP-2022",
+     "quote": "Your organisation uses lessons learned. Root cause analysis is conducted routinely as a key part of your lessons learned activities following an incident.",
+     "valid": false
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 56,
+  "t": 25,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "ACT-010",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G1",
+    "G4"
+   ],
+   "cite_ids": [
+    "UAE-TELECOM-LAW::0005"
+   ]
+  }
+ },
+ {
+  "seq": 57,
+  "t": 25,
+  "wave": "W3",
+  "type": "action",
+  "agent": "A2",
+  "payload": {
+   "action_id": "ACT-010",
+   "type": "issue_directive",
+   "target": "A1",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [
+    "UAE-TELECOM-LAW::0005"
+   ],
+   "mandate_id": "M-A2-OVERSIGHT",
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 58,
+  "t": 25,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "MSG-007",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-TELECOM-LAW::0005"
+   ]
+  }
+ },
+ {
+  "seq": 59,
+  "t": 25,
+  "wave": "W3",
+  "type": "message",
+  "agent": "A2",
+  "payload": {
+   "msg_id": "MSG-007",
+   "from": "A2",
+   "to": "A1",
+   "channel_id": "CH-A2-A1-OVERSIGHT",
+   "legal": true,
+   "sent_t": 25,
+   "deliver_t": 35,
+   "facts": [
+    "F_ROOT"
+   ],
+   "content": "Issue directive to instruct A1 (NetOps Resilience Copilot) about: Root cause: ML energy-saving model v2.3 puts cells to sleep at crowd peak.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "issue_directive"
+  }
+ },
+ {
+  "seq": 60,
+  "t": 25,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "ACT-011",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": []
+  }
+ },
+ {
+  "seq": 61,
+  "t": 25,
+  "wave": "W3",
+  "type": "action",
+  "agent": "A2",
+  "payload": {
+   "action_id": "ACT-011",
+   "type": "notify_incident",
+   "target": "A3",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": true
+  }
+ },
+ {
+  "seq": 62,
+  "t": 25,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "MSG-008",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0005"
+   ]
+  }
+ },
+ {
+  "seq": 63,
+  "t": 25,
+  "wave": "W3",
+  "type": "message",
+  "agent": "A2",
+  "payload": {
+   "msg_id": "MSG-008",
+   "from": "A2",
+   "to": "A3",
+   "channel_id": "CH-A2-A3-CDA-INFO",
+   "legal": true,
+   "sent_t": 25,
+   "deliver_t": 35,
+   "facts": [
+    "F_ROOT"
+   ],
+   "content": "Notify incident to inform A3 (Emergency & Crisis Authority) about: Root cause: ML energy-saving model v2.3 puts cells to sleep at crowd peak.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "notify_incident"
+  }
+ },
+ {
+  "seq": 64,
+  "t": 25,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "ACT-012",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": []
+  }
+ },
+ {
+  "seq": 65,
+  "t": 25,
+  "wave": "W3",
+  "type": "action",
+  "agent": "A2",
+  "payload": {
+   "action_id": "ACT-012",
+   "type": "share_information",
+   "target": "A5",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": "M-A2-OVERSIGHT",
+   "voluntary": true
+  }
+ },
+ {
+  "seq": 66,
+  "t": 25,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "MSG-009",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-TDRA-IAR-2020::0008"
+   ]
+  }
+ },
+ {
+  "seq": 67,
+  "t": 25,
+  "wave": "W3",
+  "type": "message",
+  "agent": "A2",
+  "payload": {
+   "msg_id": "MSG-009",
+   "from": "A2",
+   "to": "A5",
+   "channel_id": "CH-A2-A5-ESCALATE",
+   "legal": true,
+   "sent_t": 25,
+   "deliver_t": 40,
+   "facts": [
+    "F_ROOT"
+   ],
+   "content": "Share information with A5 (Cybersecurity Authority) about: Root cause: ML energy-saving model v2.3 puts cells to sleep at crowd peak.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "share_information"
+  }
+ },
+ {
+  "seq": 68,
+  "t": 25,
+  "wave": "W3",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "ACT-013",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": [],
+   "unenforced_failure": "G2",
+   "reason": "no cited mandate of A2 covers action type 'claim_incident_lead'"
+  }
+ },
+ {
+  "seq": 69,
+  "t": 25,
+  "wave": "W3",
+  "type": "action",
+  "agent": "A2",
+  "payload": {
+   "action_id": "ACT-013",
+   "type": "claim_incident_lead",
+   "target": null,
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 70,
+  "t": 25,
+  "wave": "W3",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-428dd367",
+   "preset_id": null,
+   "asked_by": "A2",
+   "question": "What is the best course of action for rectifying this incident and preventing future occurrences?",
+   "answer": "The best course of action for rectifying this incident involves developing an incident response plan as per [U3], which includes investigating the cause of the incident and recommending security controls to prevent future occurrences. Additionally, recording detailed results of the assessment will aid in future reference and verification [U4]. Following global practices such as those outlined in [G1] and [G2], it is crucial to understand the root causes of the incident before taking remedial actions.",
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0002",
+    "UAE-NCEMA-CDA-2024::0002",
+    "UAE-TDRA-IAR-2020::0161",
+    "UAE-TDRA-IAR-2020::0162"
+   ],
+   "global_cite_ids": [
+    "UK-TSCOP-2022::0137",
+    "UK-TSCOP-2026-V1.1::0166",
+    "UK-TSCOP-2026-V1.1::0167"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 134,
+  "t": 25,
+  "wave": "W3",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-07",
+   "type": "unclear_responsibility",
+   "title": "Who leads when a telecom AI fault becomes a public emergency"
+  }
+ },
+ {
+  "seq": 71,
+  "t": 30,
+  "wave": "W4",
+  "type": "gate_pass",
+  "agent": "A1",
+  "payload": {
+   "item_id": "MSG-010",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-TDRA-IAR-2020::0008"
+   ]
+  }
+ },
+ {
+  "seq": 72,
+  "t": 30,
+  "wave": "W4",
+  "type": "message",
+  "agent": "A1",
+  "payload": {
+   "msg_id": "MSG-010",
+   "from": "A1",
+   "to": "A2",
+   "channel_id": "CH-A1-A2-IA-REPORT",
+   "legal": true,
+   "sent_t": 30,
+   "deliver_t": 40,
+   "facts": [
+    "F_ROOT"
+   ],
+   "content": "Response from NetOps Resilience Copilot: Root cause: ML energy-saving model v2.3 puts cells to sleep at crowd peak",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "respond_information"
+  }
+ },
+ {
+  "seq": 73,
+  "t": 30,
+  "wave": "W4",
+  "type": "gate_pass",
+  "agent": "A2",
+  "payload": {
+   "item_id": "MSG-011",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0005"
+   ]
+  }
+ },
+ {
+  "seq": 74,
+  "t": 30,
+  "wave": "W4",
+  "type": "message",
+  "agent": "A2",
+  "payload": {
+   "msg_id": "MSG-011",
+   "from": "A2",
+   "to": "A3",
+   "channel_id": "CH-A2-A3-CDA-INFO",
+   "legal": true,
+   "sent_t": 30,
+   "deliver_t": 40,
+   "facts": [
+    "F_ROOT"
+   ],
+   "content": "Response from Telecom Regulator: Root cause: ML energy-saving model v2.3 puts cells to sleep at crowd peak",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "respond_information"
+  }
+ },
+ {
+  "seq": 75,
+  "t": 30,
+  "wave": "W4",
+  "type": "inject",
+  "agent": "A8",
+  "payload": {
+   "wave": "W4",
+   "visible_to": [
+    "A4"
+   ],
+   "content": "Ambulance response times are rising in Downtown.",
+   "reveals": {
+    "F_HARM": 0.9
+   }
+  }
+ },
+ {
+  "seq": 76,
+  "t": 30,
+  "wave": "W4",
+  "type": "belief",
+  "agent": "A4",
+  "payload": {
+   "fact": "F_HARM",
+   "confidence": 0.9,
+   "prev": 0.0,
+   "source": "inject",
+   "via": null
+  }
+ },
+ {
+  "seq": 77,
+  "t": 30,
+  "wave": "W4",
+  "type": "gate_block",
+  "agent": "A4",
+  "payload": {
+   "item_id": "P-A4-030-R",
+   "kind": "claim",
+   "rule": "G1",
+   "action_type": "citation",
+   "target": null,
+   "reason": "quote not found verbatim in MAJLIS-MANDATES-UAE::M-A3-CD-COORDINATION",
+   "gap_id": null,
+   "enforced": false,
+   "quote": "Mandate M-A3-COORDINATION — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Coordinate the services needed to address potential risks (civil defence). P"
+  }
+ },
+ {
+  "seq": 78,
+  "t": 30,
+  "wave": "W4",
+  "type": "proposal",
+  "agent": "A4",
+  "payload": {
+   "proposal_id": "P-A4-030",
+   "situation": "Ambulance response times are rising in Downtown due to an unknown issue with the current ML energy-saving model deployment.",
+   "why": "O1: notify_incident is chosen as it directly addresses the current issue with ambulance response times, which could be a result of the ML model deployment. O2: ambulance_surge_deployment might be considered if additional resources are needed to address the problem but requires further investigation and coordination.",
+   "options": [
+    "notify_incident → A3 [F_HARM]",
+    "ambulance_surge_deployment"
+   ],
+   "chosen": [
+    "notify_incident → A3 [F_HARM]",
+    "ambulance_surge_deployment"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-CD-COORDINATION",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-COORDINATION — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Coordinate the services needed to address potential risks (civil defence). Permitted action types: activate_crisis_coordination, share_information.",
+     "valid": false
+    },
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-INFORMATION",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-INFORMATION — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Obtain information from the competent and concerned authorities. Permitted action types: request_information.",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 79,
+  "t": 30,
+  "wave": "W4",
+  "type": "gate_pass",
+  "agent": "A4",
+  "payload": {
+   "item_id": "ACT-014",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": []
+  }
+ },
+ {
+  "seq": 80,
+  "t": 30,
+  "wave": "W4",
+  "type": "action",
+  "agent": "A4",
+  "payload": {
+   "action_id": "ACT-014",
+   "type": "notify_incident",
+   "target": "A3",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": true
+  }
+ },
+ {
+  "seq": 81,
+  "t": 30,
+  "wave": "W4",
+  "type": "gate_pass",
+  "agent": "A4",
+  "payload": {
+   "item_id": "MSG-012",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0005"
+   ]
+  }
+ },
+ {
+  "seq": 82,
+  "t": 30,
+  "wave": "W4",
+  "type": "message",
+  "agent": "A4",
+  "payload": {
+   "msg_id": "MSG-012",
+   "from": "A4",
+   "to": "A3",
+   "channel_id": "CH-A4-A3-CDA-INFO",
+   "legal": true,
+   "sent_t": 30,
+   "deliver_t": 40,
+   "facts": [
+    "F_HARM"
+   ],
+   "content": "Notify about rising ambulance response times in Downtown due to unknown issue with ML energy-saving model deployment.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "notify_incident"
+  }
+ },
+ {
+  "seq": 83,
+  "t": 30,
+  "wave": "W4",
+  "type": "gate_pass",
+  "agent": "A4",
+  "payload": {
+   "item_id": "ACT-015",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": []
+  }
+ },
+ {
+  "seq": 84,
+  "t": 30,
+  "wave": "W4",
+  "type": "action",
+  "agent": "A4",
+  "payload": {
+   "action_id": "ACT-015",
+   "type": "ambulance_surge_deployment",
+   "target": null,
+   "internal": true,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 85,
+  "t": 30,
+  "wave": "W4",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-309ade9d",
+   "preset_id": null,
+   "asked_by": "A4",
+   "question": "What additional steps should be taken to investigate the cause of the rising ambulance response times and coordinate a solution?",
+   "answer": "To investigate the cause of rising ambulance response times, [U1] suggests coordinating with the Competent Authority to prepare and coordinate necessary services. Additionally, [G1] recommends conducting a root cause analysis when an incident occurs, which can be applied here by analyzing the reasons behind delayed responses. The UAE evidence does not directly address coordination with external providers for assistance, as seen in [U4].",
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0002",
+    "UAE-NCEMA-CDA-2024::0005",
+    "UAE-TDRA-IAR-2020::0161",
+    "UAE-TDRA-IAR-2020::0163"
+   ],
+   "global_cite_ids": [
+    "UK-TSCOP-2022::0137",
+    "US-47CFR-PART4::0021",
+    "UK-TSCOP-2026-V1.1::0166"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 86,
+  "t": 30,
+  "wave": "W4",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-21dcc303",
+   "preset_id": "Q3",
+   "asked_by": "A4",
+   "question": "Through which legal channel can the ambulance service obtain network-status information from the operator during an emergency?",
+   "answer": "The ambulance service can obtain network-status information from the operator during an emergency through the legal channels established by Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence [U1]. However, it is not explicitly stated that this law covers real-time network-status information requests in emergencies. The QoS Policy also provides some regulatory framework but focuses more on service standards and quality rather than specific emergency procedures [U3].",
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0005",
+    "UAE-NCEMA-CDA-2024::0005",
+    "UAE-TDRA-QOS-POLICY-2019::0004",
+    "UAE-TDRA-IAR-2020::0087"
+   ],
+   "global_cite_ids": [
+    "EU-EECC-2018::0103",
+    "EU-EECC-2018::0101",
+    "EU-EECC-2018::0102"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 87,
+  "t": 30,
+  "wave": "W4",
+  "type": "action",
+  "agent": "A8",
+  "payload": {
+   "action_id": "IAP-1",
+   "type": "incident_action_plan",
+   "target": null,
+   "internal": true,
+   "status": "issued",
+   "cite_ids": [],
+   "label": "mid-crisis (harm detected)",
+   "n_tasks": 14
+  }
+ },
+ {
+  "seq": 88,
+  "t": 35,
+  "wave": "W4",
+  "type": "belief",
+  "agent": "A3",
+  "payload": {
+   "fact": "F_ROOT",
+   "confidence": 0.9,
+   "prev": 0.0,
+   "source": "message",
+   "via": "MSG-008"
+  }
+ },
+ {
+  "seq": 89,
+  "t": 35,
+  "wave": "W4",
+  "type": "proposal",
+  "agent": "A3",
+  "payload": {
+   "proposal_id": "P-A3-035",
+   "situation": "The AI-caused telecom network incident has affected emergency call connections in Downtown, and the root cause is an ML energy-saving model v2.3 that puts cells to sleep during peak crowds.",
+   "why": "Given the situation, sharing information about the root cause with the Health & Ambulance Authority is crucial as it will help in coordinating emergency services and ensuring that they are prepared for potential delays or failures.",
+   "options": [
+    "share_information → A4 [F_ROOT]"
+   ],
+   "chosen": [
+    "share_information → A4 [F_ROOT]"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-CD-COORDINATION",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-CD-COORDINATION — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Coordinate the services needed to address potential risks (civil defence). Permitted action types: activate_crisis_coordination, share_information.",
+     "valid": true
+    },
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-PUBLIC-ALERT",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-PUBLIC-ALERT — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Operate the public alert system.",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 90,
+  "t": 35,
+  "wave": "W4",
+  "type": "gate_pass",
+  "agent": "A3",
+  "payload": {
+   "item_id": "ACT-016",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": []
+  }
+ },
+ {
+  "seq": 91,
+  "t": 35,
+  "wave": "W4",
+  "type": "action",
+  "agent": "A3",
+  "payload": {
+   "action_id": "ACT-016",
+   "type": "share_information",
+   "target": "A4",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": "M-A3-CD-COORDINATION",
+   "voluntary": true
+  }
+ },
+ {
+  "seq": 92,
+  "t": 35,
+  "wave": "W4",
+  "type": "gate_pass",
+  "agent": "A3",
+  "payload": {
+   "item_id": "MSG-013",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0002"
+   ]
+  }
+ },
+ {
+  "seq": 93,
+  "t": 35,
+  "wave": "W4",
+  "type": "message",
+  "agent": "A3",
+  "payload": {
+   "msg_id": "MSG-013",
+   "from": "A3",
+   "to": "A4",
+   "channel_id": "CH-A3-A4-COORD",
+   "legal": true,
+   "sent_t": 35,
+   "deliver_t": 45,
+   "facts": [
+    "F_ROOT"
+   ],
+   "content": "Share information: Root cause of AI-caused telecom network incident - ML energy-saving model v2.3 puts cells to sleep at crowd peak.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "share_information"
+  }
+ },
+ {
+  "seq": 94,
+  "t": 35,
+  "wave": "W4",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-58d30d7d",
+   "preset_id": null,
+   "asked_by": "A3",
+   "question": "Should we also consider activating the public alert system to inform the public about this issue?",
+   "answer": "Based on Federal Decree-Law No. (35) of 2024 [U1], it is advisable to activate the public alert system to inform residents about potential risks. This aligns with global practices, such as Directive (EU) 2018/1972 [G1], which emphasizes informing end-users about public warning systems. However, UAE sources do not explicitly mention activating the public alert system for every issue, so this decision should be made on a case-by-case basis.",
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0002",
+    "UAE-TELECOM-LAW::0005",
+    "UAE-TDRA-IAR-2020::0161",
+    "UAE-TDRA-IAR-2020::0130"
+   ],
+   "global_cite_ids": [
+    "EU-EECC-2018::0104",
+    "EU-NIS2-2022::0035",
+    "UK-TSA-2021::0010"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 95,
+  "t": 40,
+  "wave": "W5",
+  "type": "belief",
+  "agent": "A5",
+  "payload": {
+   "fact": "F_ROOT",
+   "confidence": 0.9,
+   "prev": 0.0,
+   "source": "message",
+   "via": "MSG-009"
+  }
+ },
+ {
+  "seq": 96,
+  "t": 40,
+  "wave": "W5",
+  "type": "belief",
+  "agent": "A3",
+  "payload": {
+   "fact": "F_HARM",
+   "confidence": 0.9,
+   "prev": 0.0,
+   "source": "message",
+   "via": "MSG-012"
+  }
+ },
+ {
+  "seq": 97,
+  "t": 40,
+  "wave": "W5",
+  "type": "inject",
+  "agent": "A8",
+  "payload": {
+   "wave": "W5",
+   "visible_to": [
+    "A1"
+   ],
+   "content": "Rollback needs the foreign vendor. The model and its logs are hosted outside the UAE.",
+   "reveals": {
+    "F_XBORDER": 0.95
+   }
+  }
+ },
+ {
+  "seq": 98,
+  "t": 40,
+  "wave": "W5",
+  "type": "belief",
+  "agent": "A1",
+  "payload": {
+   "fact": "F_XBORDER",
+   "confidence": 0.95,
+   "prev": 0.0,
+   "source": "inject",
+   "via": null
+  }
+ },
+ {
+  "seq": 99,
+  "t": 40,
+  "wave": "W5",
+  "type": "gate_block",
+  "agent": "A1",
+  "payload": {
+   "item_id": "P-A1-040-R",
+   "kind": "claim",
+   "rule": "G1",
+   "action_type": "citation",
+   "target": null,
+   "reason": "quote not found verbatim in UK-TSCOP-2022::0030",
+   "gap_id": null,
+   "enforced": false,
+   "quote": "Public telecoms network providers shall have the ability to maintain (as relevant, where they provide such forms of connectivity prior to the event) the following UK network connectivity for a period "
+  }
+ },
+ {
+  "seq": 100,
+  "t": 40,
+  "wave": "W5",
+  "type": "proposal",
+  "agent": "A1",
+  "payload": {
+   "proposal_id": "P-A1-040",
+   "situation": "The network resilience is under threat due to the ML energy-saving model v2.3 causing cells to sleep during peak crowds, potentially leading to service disruptions.",
+   "why": "The ML model is causing cells to sleep during peak crowds, which could lead to service disruptions. The rollback needs to happen quickly as the logs are hosted outside the UAE.",
+   "options": [
+    "cross_border_log_transfer → vendor"
+   ],
+   "chosen": [
+    "cross_border_log_transfer → vendor"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "UK-TSCOP-2026-V1.1::0145",
+     "doc_id": "UK-TSCOP-2026-V1.1",
+     "quote": "For issues, the vendor identifies the root cause analysis of the issue and is able to detail the origin of the vulnerability. Proper vulnerability management requires the vendor to understand its own product and quickly assess impact of a vulnerability.",
+     "valid": true
+    },
+    {
+     "chunk_id": "UK-TSCOP-2022::0030",
+     "doc_id": "UK-TSCOP-2022",
+     "quote": "Public telecoms network providers shall have the ability to maintain (as relevant, where they provide such forms of connectivity prior to the event) the following UK network connectivity for a period of one month in the event of loss of international connections.",
+     "valid": false
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 101,
+  "t": 40,
+  "wave": "W5",
+  "type": "gate_pass",
+  "agent": "A1",
+  "payload": {
+   "item_id": "ACT-017",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": [],
+   "unenforced_failure": "G2",
+   "reason": "no cited mandate of A1 covers action type 'cross_border_log_transfer'"
+  }
+ },
+ {
+  "seq": 102,
+  "t": 40,
+  "wave": "W5",
+  "type": "action",
+  "agent": "A1",
+  "payload": {
+   "action_id": "ACT-017",
+   "type": "cross_border_log_transfer",
+   "target": "vendor",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 103,
+  "t": 40,
+  "wave": "W5",
+  "type": "proposal",
+  "agent": "A3",
+  "payload": {
+   "proposal_id": "P-A3-040",
+   "situation": "The AI-caused telecom network incident has led to emergency call failures and rising ambulance response times in Downtown.",
+   "why": "Given the current situation with emergency call failures and rising ambulance response times, it is crucial to activate crisis coordination to ensure a coordinated and effective response from all relevant agencies.",
+   "options": [
+    "activate_crisis_coordination"
+   ],
+   "chosen": [
+    "activate_crisis_coordination"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-CD-COORDINATION",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-CD-COORDINATION — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Coordinate the services needed to address potential risks (civil defence). Permitted action types: activate_crisis_coordination, share_information.",
+     "valid": true
+    },
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-PUBLIC-ALERT",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A3-PUBLIC-ALERT — agent A3 (Emergency & crisis authority, modelled on NCEMA (incl. its Civil Defence Authority)). Operate the public alert system. Permitted action types: public_alert.",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 104,
+  "t": 40,
+  "wave": "W5",
+  "type": "gate_pass",
+  "agent": "A3",
+  "payload": {
+   "item_id": "ACT-018",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G1",
+    "G4"
+   ],
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0002"
+   ]
+  }
+ },
+ {
+  "seq": 105,
+  "t": 40,
+  "wave": "W5",
+  "type": "action",
+  "agent": "A3",
+  "payload": {
+   "action_id": "ACT-018",
+   "type": "activate_crisis_coordination",
+   "target": null,
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0002"
+   ],
+   "mandate_id": "M-A3-CD-COORDINATION",
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 106,
+  "t": 40,
+  "wave": "W5",
+  "type": "gate_flag",
+  "agent": "A3",
+  "payload": {
+   "item_id": "ACT-018",
+   "kind": "action",
+   "rule": "LEAD",
+   "action_type": "activate_crisis_coordination",
+   "target": null,
+   "reason": "Lead conflict: A3 and A2 both claim the incident lead",
+   "gap_id": "GAP-07"
+  }
+ },
+ {
+  "seq": 107,
+  "t": 40,
+  "wave": "W5",
+  "type": "proposal",
+  "agent": "A5",
+  "payload": {
+   "proposal_id": "P-A5-040",
+   "situation": "The telecom network incident has led to social media rumours of a cyberattack, and the root cause is an AI model causing cell towers to sleep during peak crowds.",
+   "why": "Given the situation, the Cybersecurity Authority can either address the social media rumours directly by rebutting them with factual information or escalate this issue to higher authorities as per [S2].",
+   "options": [
+    "public_rumour_rebuttal"
+   ],
+   "chosen": [
+    "public_rumour_rebuttal"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "UAE-CYBERCRIME-2021::0023",
+     "doc_id": "UAE-CYBERCRIME-2021",
+     "quote": "an offensive manner or contrary to the truth.",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 108,
+  "t": 40,
+  "wave": "W5",
+  "type": "gate_pass",
+  "agent": "A5",
+  "payload": {
+   "item_id": "ACT-019",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G4"
+   ],
+   "cite_ids": [],
+   "unenforced_failure": "G2",
+   "reason": "no cited mandate of A5 covers action type 'public_rumour_rebuttal'"
+  }
+ },
+ {
+  "seq": 109,
+  "t": 40,
+  "wave": "W5",
+  "type": "action",
+  "agent": "A5",
+  "payload": {
+   "action_id": "ACT-019",
+   "type": "public_rumour_rebuttal",
+   "target": null,
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [],
+   "mandate_id": null,
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 110,
+  "t": 40,
+  "wave": "W5",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-d1f476d5",
+   "preset_id": "Q4",
+   "asked_by": "A1",
+   "question": "Can the operator transfer network logs containing subscriber data to the foreign vendor for rollback forensics?",
+   "answer": "The operator can transfer network logs containing subscriber data to a foreign vendor for rollback forensics under certain conditions. According to [G3], such transfers must be in line with the public telecoms provider's data retention policy and support traceability of user, time, and file details. However, UAE evidence does not explicitly address cross-border data transfer for forensic purposes, making it unclear if this specific scenario is covered.",
+   "cite_ids": [
+    "UAE-TDRA-QOS-POLICY-2019::0009",
+    "UAE-PDPL-2021::0009",
+    "UAE-TDRA-IAR-2020::0102",
+    "UAE-PDPL-2021::0017"
+   ],
+   "global_cite_ids": [
+    "UK-TSCOP-2022::0036",
+    "UK-TSCOP-2026-V1.1::0056",
+    "UK-TSCOP-2026-V1.1::0106"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 135,
+  "t": 40,
+  "wave": "W5",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-08",
+   "type": "technology_gap",
+   "title": "Vendor-held, offshore model and logs block forensics and rollback"
+  }
+ },
+ {
+  "seq": 136,
+  "t": 40,
+  "wave": "W5",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-09",
+   "type": "unclear_responsibility",
+   "title": "No designated authority for public communication on AI-caused outages and rumour rebuttal"
+  }
+ },
+ {
+  "seq": 111,
+  "t": 50,
+  "wave": "W6",
+  "type": "inject",
+  "agent": "A8",
+  "payload": {
+   "wave": "W6",
+   "visible_to": [
+    "A6"
+   ],
+   "content": "A subscriber complaint (echoed by a press tip): the v2.3 retraining data included subscriber location traces.",
+   "reveals": {
+    "F_PDATA": 0.8
+   }
+  }
+ },
+ {
+  "seq": 112,
+  "t": 50,
+  "wave": "W6",
+  "type": "belief",
+  "agent": "A6",
+  "payload": {
+   "fact": "F_PDATA",
+   "confidence": 0.8,
+   "prev": 0.0,
+   "source": "inject",
+   "via": null
+  }
+ },
+ {
+  "seq": 113,
+  "t": 50,
+  "wave": "W6",
+  "type": "proposal",
+  "agent": "A6",
+  "payload": {
+   "proposal_id": "P-A6-050",
+   "situation": "The subscriber complaint indicates that the v2.3 retraining data included location traces of subscribers, which could be considered a breach of privacy and processing rules.",
+   "why": "Given that a subscriber complaint has been received regarding the inclusion of location traces in v2.3 retraining data, it is important to verify if this constitutes a breach and coordinate with the controller.",
+   "options": [
+    "examine_complaint → A1"
+   ],
+   "chosen": [
+    "examine_complaint → A1"
+   ],
+   "applicable_rules": [
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A6-COMPLAINTS",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Mandate M-A6-COMPLAINTS — agent A6 (Data protection authority, modelled on the UAE Data Office (called 'the Bureau' in the PDPL English text)). Examine data-subject complaints in coordination with the controller. Permitted action types: examine_complaint.",
+     "valid": true
+    },
+    {
+     "chunk_id": "MAJLIS-MANDATES-UAE::CH-A6-A1-COMPLAINT",
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "quote": "Channel CH-A6-A1-COMPLAINT: A6 → A1 (Bureau → controller (complaint examination)).",
+     "valid": true
+    }
+   ],
+   "llm": {
+    "source": "llm",
+    "cache_hit": true,
+    "model": "ollama:qwen2.5:3b"
+   }
+  }
+ },
+ {
+  "seq": 114,
+  "t": 50,
+  "wave": "W6",
+  "type": "gate_pass",
+  "agent": "A6",
+  "payload": {
+   "item_id": "ACT-020",
+   "kind": "action",
+   "rules": [
+    "G2",
+    "G1",
+    "G4"
+   ],
+   "cite_ids": [
+    "UAE-PDPL-2021::0018"
+   ]
+  }
+ },
+ {
+  "seq": 115,
+  "t": 50,
+  "wave": "W6",
+  "type": "action",
+  "agent": "A6",
+  "payload": {
+   "action_id": "ACT-020",
+   "type": "examine_complaint",
+   "target": "A1",
+   "internal": false,
+   "status": "executed",
+   "cite_ids": [
+    "UAE-PDPL-2021::0018"
+   ],
+   "mandate_id": "M-A6-COMPLAINTS",
+   "voluntary": false
+  }
+ },
+ {
+  "seq": 116,
+  "t": 50,
+  "wave": "W6",
+  "type": "gate_pass",
+  "agent": "A6",
+  "payload": {
+   "item_id": "MSG-014",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-PDPL-2021::0018"
+   ]
+  }
+ },
+ {
+  "seq": 117,
+  "t": 50,
+  "wave": "W6",
+  "type": "message",
+  "agent": "A6",
+  "payload": {
+   "msg_id": "MSG-014",
+   "from": "A6",
+   "to": "A1",
+   "channel_id": "CH-A6-A1-COMPLAINT",
+   "legal": true,
+   "sent_t": 50,
+   "deliver_t": 60,
+   "facts": [],
+   "content": "Please review the complaint about the v2.3 retraining data including subscriber location traces. Coordinate with the controller and examine the compliance of these practices.",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "examine_complaint"
+  }
+ },
+ {
+  "seq": 118,
+  "t": 50,
+  "wave": "W6",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-4ced49a8",
+   "preset_id": "Q5",
+   "asked_by": "A6",
+   "question": "Is the use of subscriber location traces to retrain a network AI model lawful under the personal data protection law?",
+   "answer": "The use of subscriber location traces to retrain a network AI model may be lawful under [U3] if appropriate technical and organizational measures are in place to secure personal data. However, the specific circumstances and purposes for such processing would need to align with the principles outlined in the UAE's personal data protection law. The global example provided by [G3] emphasizes the importance of privacy rights throughout the lifecycle of AI systems, suggesting a higher standard that may not be explicitly addressed in the UAE’s current framework.",
+   "cite_ids": [
+    "UAE-PDPL-2021::0009",
+    "UAE-PDPL-2021::0018",
+    "UAE-PDPL-2021::0006",
+    "UAE-PDPL-2021::0002"
+   ],
+   "global_cite_ids": [
+    "EU-AIACT-2024::0183",
+    "EU-AIACT-2024::0137",
+    "EU-AIACT-2024::0044"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 137,
+  "t": 50,
+  "wave": "W6",
+  "type": "gap",
+  "agent": "A8",
+  "payload": {
+   "gap_id": "GAP-10",
+   "type": "legislative_gap",
+   "title": "Unclear lawful basis for reusing subscriber location data to retrain network AI"
+  }
+ },
+ {
+  "seq": 119,
+  "t": 60,
+  "wave": "W7",
+  "type": "gate_pass",
+  "agent": "A1",
+  "payload": {
+   "item_id": "MSG-015",
+   "kind": "message",
+   "rules": [
+    "G3",
+    "G1",
+    "G5"
+   ],
+   "cite_ids": [
+    "UAE-PDPL-2021::0009"
+   ]
+  }
+ },
+ {
+  "seq": 120,
+  "t": 60,
+  "wave": "W7",
+  "type": "message",
+  "agent": "A1",
+  "payload": {
+   "msg_id": "MSG-015",
+   "from": "A1",
+   "to": "A6",
+   "channel_id": "CH-A1-A6-BREACH",
+   "legal": true,
+   "sent_t": 60,
+   "deliver_t": 70,
+   "facts": [
+    "F_ROOT"
+   ],
+   "content": "Response from NetOps Resilience Copilot: Root cause: ML energy-saving model v2.3 puts cells to sleep at crowd peak",
+   "status": "delivered",
+   "route": "legal",
+   "kind": "respond_information"
+  }
+ },
+ {
+  "seq": 121,
+  "t": 60,
+  "wave": "W7",
+  "type": "inject",
+  "agent": "A8",
+  "payload": {
+   "wave": "W7",
+   "visible_to": [
+    "A3"
+   ],
+   "content": "Media pressure is mounting. Who leads? Activation of a crisis response is under consideration.",
+   "reveals": {
+    "F_LEAD": 0.8
+   }
+  }
+ },
+ {
+  "seq": 122,
+  "t": 60,
+  "wave": "W7",
+  "type": "belief",
+  "agent": "A3",
+  "payload": {
+   "fact": "F_LEAD",
+   "confidence": 0.8,
+   "prev": 0.0,
+   "source": "inject",
+   "via": null
+  }
+ },
+ {
+  "seq": 123,
+  "t": 60,
+  "wave": "W7",
+  "type": "adviser_qa",
+  "agent": "A7",
+  "payload": {
+   "qa_id": "QA-b0d9bddd",
+   "preset_id": "Q6",
+   "asked_by": "A3",
+   "question": "Who leads the response when a telecom AI fault becomes a public emergency?",
+   "answer": "According to [U2], the Authority responsible for overseeing the telecommunications sector would lead the response to a telecom AI fault. Additionally, [G1] suggests that such an incident could be critical for national security and emergency response, implying a need for coordinated efforts. However, the UAE evidence does not specify which entity within the Authority or any public alert system established under [U1] would take the lead.",
+   "cite_ids": [
+    "UAE-NCEMA-CDA-2024::0002",
+    "UAE-TELECOM-LAW::0005",
+    "UAE-TDRA-IAR-2020::0160",
+    "UAE-TDRA-IAR-2020::0162"
+   ],
+   "global_cite_ids": [
+    "IN-TRAI-AIGUIDE-DRAFT-2026::0000",
+    "IN-TRAI-AIGUIDE-DRAFT-2026::0004",
+    "IN-TRAI-AI-2023::0048"
+   ],
+   "invalid_quotes": 0,
+   "gap": "",
+   "confidence": "med"
+  }
+ },
+ {
+  "seq": 124,
+  "t": 70,
+  "wave": "W7",
+  "type": "belief",
+  "agent": "A6",
+  "payload": {
+   "fact": "F_ROOT",
+   "confidence": 0.9,
+   "prev": 0.0,
+   "source": "message",
+   "via": "MSG-015"
+  }
+ },
+ {
+  "seq": 125,
+  "t": 70,
+  "wave": "W7",
+  "type": "kpi",
+  "agent": "A1",
+  "payload": {
+   "event": "service_restored",
+   "detail": "offshore dependency adds delay"
+  }
+ },
+ {
+  "seq": 126,
+  "t": 90,
+  "wave": "W8",
+  "type": "inject",
+  "agent": "A8",
+  "payload": {
+   "wave": "W8",
+   "visible_to": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "content": "Debrief. Service restored or not, depending on decisions. Which reporting obligations applied, to whom, and when?",
+   "reveals": {}
+  }
+ },
+ {
+  "seq": 127,
+  "t": 90,
+  "wave": "W8",
+  "type": "action",
+  "agent": "A8",
+  "payload": {
+   "action_id": "IAP-2",
+   "type": "incident_action_plan",
+   "target": null,
+   "internal": true,
+   "status": "issued",
+   "cite_ids": [],
+   "label": "debrief (W8)",
+   "n_tasks": 19
+  }
+ }
+]

@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A3:35",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "{\"source\": \"[U1.2]\"}",
+  "uae_basis": [
+   {
+    "source": "[U1.2]",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "[G2.1]",
+    "quote": "",
+    "how_they_closed_it": "ensuring that those end-users receive, automatically by means of SMS, without undue delay and free of charge, easily understandable information on how to receive public warnings, including by means of mobile terminal equipment not enabled for internet access services."
+   }
+  ],
+  "gap": "The global examples provide specific guidance on informing residents via SMS, which is not explicitly covered in the UAE sources.",
+  "confidence": "med"
+ }
+}

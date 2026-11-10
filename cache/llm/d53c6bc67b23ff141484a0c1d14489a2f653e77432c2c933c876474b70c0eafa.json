@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:rumour_mandate",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "A global policy recommendation could be: Establish a dedicated entity within existing cyber authorities or create an independent body to handle public communication regarding AI-driven outages and false cyberattack rumours, ensuring they can inform the public about significant incidents after consulting with relevant entities and requiring them to do so if necessary. This aligns with [G1] EU-NIS2-2022 Article 23(7) which allows for such public disclosure in case of a significant incident.",
+  "rationale": "This recommendation addresses the gap by providing a clear authority responsible for public communication, mirroring the EU's approach as outlined in [G1]."
+ }
+}

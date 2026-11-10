@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A5:20",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "[U1] Protection against malware should be based on malware detection and repair software, security awareness, and appropriate system access and change management controls. [G2] You understand the different steps a capable and well-resourced threat actor would need to take to reach the probable target(s).",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "quote": "files using steganography. Protection against malware should be based on malware detection and repair software, security awareness, and appropriate system access and change management controls.",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G2",
+    "quote": "You understand the different steps a capable and well-resourced threat actor would need to take to reach the probable target(s).",
+    "how_they_closed_it": "By understanding these steps, entities can identify and justify measures at each step to reduce the likelihood of threats reaching their targets."
+   }
+  ],
+  "gap": "There is no specific guidance provided in either source for verifying social media claims or securing a network.",
+  "confidence": "med"
+ }
+}

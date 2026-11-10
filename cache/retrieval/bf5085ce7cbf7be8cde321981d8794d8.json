@@ -1,0 +1,1 @@
+{"query": "What is the most appropriate initial step in addressing this network incident?", "k": 3, "collections": ["kb_global_examples"], "mode": "hybrid", "hits": [{"chunk_id": "UK-TSCOP-2026-V1.1::0164", "score": 0.032258, "rank": 1}, {"chunk_id": "UK-TSCOP-2026-V1.1::0167", "score": 0.030366, "rank": 2}, {"chunk_id": "UK-TSCOP-2022::0135", "score": 0.029412, "rank": 3}]}

@@ -1,0 +1,1 @@
+{"query": "What is the best course of action for rectifying this incident and preventing future occurrences?", "k": 2, "collections": ["kb_mandates"], "mode": "hybrid", "hits": [{"chunk_id": "MAJLIS-MANDATES-UAE::M-A3-PUBLIC-ALERT", "score": 0.032258, "rank": 1}, {"chunk_id": "MAJLIS-MANDATES-UAE::M-A3-CD-COORDINATION", "score": 0.031099, "rank": 2}]}

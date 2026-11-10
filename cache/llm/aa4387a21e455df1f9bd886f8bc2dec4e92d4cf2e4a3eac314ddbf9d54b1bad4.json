@@ -1,0 +1,30 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A1:0",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "{\"source\": \"U1.2\"}",
+  "uae_basis": [
+   {
+    "source": "U1.2",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1.1",
+    "quote": "",
+    "how_they_closed_it": "have a formal process for investigating causes."
+   },
+   {
+    "source": "G1.3",
+    "quote": "",
+    "how_they_closed_it": "Your root cause analysis is comprehensive, covering organisational process issues, as well as vulnerabilities in your networks, systems or software."
+   }
+  ],
+  "gap": "The global examples emphasize the need to conduct a formal and comprehensive root cause analysis, which is not explicitly stated in the UAE sources.",
+  "confidence": "med"
+ }
+}

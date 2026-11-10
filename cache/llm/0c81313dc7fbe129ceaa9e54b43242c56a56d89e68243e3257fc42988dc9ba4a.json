@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:offshore_model_logs",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Adopting a local vendor model for critical telecom networks' AI-driven operations and ensuring logs are stored within the country will facilitate faster rollback of faulty models, enabling quicker forensic analysis and compliance with EU-AIACT-2024 Article 12(1) and UK-TSCOP-2026-V1.1 para 2.70 requirements for traceability and rollback ease.",
+  "rationale": "[G1] EU-AIACT-2024 Article 12(1): 'High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system' — ensuring logs are stored locally aligns with this requirement, enhancing traceability and forensic capabilities."
+ }
+}

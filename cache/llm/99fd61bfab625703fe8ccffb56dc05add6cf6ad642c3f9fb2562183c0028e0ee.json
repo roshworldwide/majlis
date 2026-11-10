@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:offshore_model_logs",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Adopting a local vendor model for critical telecom networks' AI-driven operations and ensuring logs are hosted within the country would facilitate easier rollback of faulty models, aligning with EU-AIACT-2024 Article 12(1) which mandates technical recording of events over the system's lifetime to support traceability.",
+  "rationale": "[G1] emphasizes the importance of logging for high-risk AI systems to ensure traceability and compliance. By following this recommendation, telecom operators can better manage their AI-driven operations within their borders, enhancing both security and operational efficiency."
+ }
+}

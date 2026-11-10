@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A1:15",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "[U1.2] The operator is required to notify any authority about an AI-caused network incident within a deadline that aligns with the requirements of the CSIRT reporting structure established by the entity.",
+  "uae_basis": [
+   {
+    "source": "U1.2",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G2.1",
+    "quote": "",
+    "how_they_closed_it": "National competent authorities shall immediately notify the Commission of any serious incident, whether or not they have taken action on it, in accordance with Article 20 of Regulation (EU) 2019/1020."
+   }
+  ],
+  "gap": "The global examples do not provide specific deadlines for notification which are present in the UAE sources.",
+  "confidence": "med"
+ }
+}

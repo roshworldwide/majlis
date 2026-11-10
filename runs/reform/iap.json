@@ -1,0 +1,305 @@
+[
+ {
+  "iap_id": "IAP-1",
+  "t": 90,
+  "label": "debrief (W8)",
+  "tasks": [
+   {
+    "who": "A1",
+    "what": "ml_safe_mode",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UK-TSCOP-2026-V1.1",
+      "chunk_id": "UK-TSCOP-2026-V1.1::0028",
+      "article": "para 2.70",
+      "page": 5,
+      "quote": "how easy it would be to revert back to a manual process",
+      "url": "https://www.gov.uk/government/publications/revised-telecommunications-security-code-of-practice-2026-version-11/telecommunications-security-code-of-practice-2026-version-11",
+      "title": "Telecommunications Security Code of Practice, Version 1.1 (July 2026)"
+     },
+     {
+      "doc_id": "UK-TSCOP-2026-V1.1",
+      "chunk_id": "UK-TSCOP-2026-V1.1::0028",
+      "article": "para 2.71",
+      "page": 5,
+      "quote": "any automated processes shall ensure the resilience of the network is retained and there is a named business and operational owner",
+      "url": "https://www.gov.uk/government/publications/revised-telecommunications-security-code-of-practice-2026-version-11/telecommunications-security-code-of-practice-2026-version-11",
+      "title": "Telecommunications Security Code of Practice, Version 1.1 (July 2026)"
+     },
+     {
+      "doc_id": "EU-EECC-2018",
+      "chunk_id": "EU-EECC-2018::0243",
+      "article": "Article 108",
+      "page": 146,
+      "quote": "Member States shall take all necessary measures to ensure the fullest possible availability of voice communications services and internet access services provided over public electronic communications networks in the event of catastrophic network breakdown",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L1972",
+      "title": "Directive (EU) 2018/1972 of the European Parliament and of the Council of 11 December 2018 establishing the European Electronic Communications Code (Recast)"
+     }
+    ],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A1",
+    "what": "request_vendor_rollback",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A1",
+    "what": "notify_incident → A2",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "EU-NIS2-2022",
+      "chunk_id": "EU-NIS2-2022::0089",
+      "article": "Article 23(4)(a)",
+      "page": 49,
+      "quote": "without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+      "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)"
+     },
+     {
+      "doc_id": "EU-AIACT-2024",
+      "chunk_id": "EU-AIACT-2024::0203",
+      "article": "Article 73(3)",
+      "page": 101,
+      "quote": "shall be provided immediately, and not later than two days after the provider or, where applicable, the deployer becomes aware of that incident",
+      "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+      "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)"
+     },
+     {
+      "doc_id": "US-47CFR-PART4",
+      "chunk_id": "US-47CFR-PART4::0012",
+      "article": "§ 4.9(h)(4)",
+      "page": 1,
+      "quote": "shall provide a 911 outage notification to a potentially affected 911 special facility as soon as possible, but no later than within 30 minutes of discovering",
+      "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-4",
+      "title": "47 CFR Part 4 - Disruptions to Communications"
+     }
+    ],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A1",
+    "what": "notify_incident → A3",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "EU-NIS2-2022",
+      "chunk_id": "EU-NIS2-2022::0089",
+      "article": "Article 23(4)(a)",
+      "page": 49,
+      "quote": "without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+      "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)"
+     },
+     {
+      "doc_id": "EU-AIACT-2024",
+      "chunk_id": "EU-AIACT-2024::0203",
+      "article": "Article 73(3)",
+      "page": 101,
+      "quote": "shall be provided immediately, and not later than two days after the provider or, where applicable, the deployer becomes aware of that incident",
+      "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+      "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)"
+     },
+     {
+      "doc_id": "US-47CFR-PART4",
+      "chunk_id": "US-47CFR-PART4::0012",
+      "article": "§ 4.9(h)(4)",
+      "page": 1,
+      "quote": "shall provide a 911 outage notification to a potentially affected 911 special facility as soon as possible, but no later than within 30 minutes of discovering",
+      "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-4",
+      "title": "47 CFR Part 4 - Disruptions to Communications"
+     }
+    ],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A1",
+    "what": "notify_incident → A4",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "EU-NIS2-2022",
+      "chunk_id": "EU-NIS2-2022::0089",
+      "article": "Article 23(4)(a)",
+      "page": 49,
+      "quote": "without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+      "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)"
+     },
+     {
+      "doc_id": "EU-AIACT-2024",
+      "chunk_id": "EU-AIACT-2024::0203",
+      "article": "Article 73(3)",
+      "page": 101,
+      "quote": "shall be provided immediately, and not later than two days after the provider or, where applicable, the deployer becomes aware of that incident",
+      "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+      "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)"
+     },
+     {
+      "doc_id": "US-47CFR-PART4",
+      "chunk_id": "US-47CFR-PART4::0012",
+      "article": "§ 4.9(h)(4)",
+      "page": 1,
+      "quote": "shall provide a 911 outage notification to a potentially affected 911 special facility as soon as possible, but no later than within 30 minutes of discovering",
+      "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-4",
+      "title": "47 CFR Part 4 - Disruptions to Communications"
+     }
+    ],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A1",
+    "what": "notify_incident → A5",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "EU-NIS2-2022",
+      "chunk_id": "EU-NIS2-2022::0089",
+      "article": "Article 23(4)(a)",
+      "page": 49,
+      "quote": "without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+      "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)"
+     },
+     {
+      "doc_id": "EU-AIACT-2024",
+      "chunk_id": "EU-AIACT-2024::0203",
+      "article": "Article 73(3)",
+      "page": 101,
+      "quote": "shall be provided immediately, and not later than two days after the provider or, where applicable, the deployer becomes aware of that incident",
+      "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+      "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)"
+     },
+     {
+      "doc_id": "US-47CFR-PART4",
+      "chunk_id": "US-47CFR-PART4::0012",
+      "article": "§ 4.9(h)(4)",
+      "page": 1,
+      "quote": "shall provide a 911 outage notification to a potentially affected 911 special facility as soon as possible, but no later than within 30 minutes of discovering",
+      "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-4",
+      "title": "47 CFR Part 4 - Disruptions to Communications"
+     }
+    ],
+    "by_when": "T+0"
+   },
+   {
+    "who": "A2",
+    "what": "issue_directive → A1",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 12",
+      "page": 8,
+      "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+      "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+     }
+    ],
+    "by_when": "T+5"
+   },
+   {
+    "who": "A2",
+    "what": "notify_incident → A3",
+    "status": "done",
+    "legal_basis": [],
+    "by_when": "T+5"
+   },
+   {
+    "who": "A3",
+    "what": "share_information → A4",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-NCEMA-CDA-2024",
+      "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+      "article": "Article 3(12)",
+      "page": 1,
+      "quote": "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned Entities",
+      "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+      "title": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority"
+     }
+    ],
+    "by_when": "T+5"
+   },
+   {
+    "who": "A2",
+    "what": "share_information → A5",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-TELECOM-LAW",
+      "chunk_id": "UAE-TELECOM-LAW::0005",
+      "article": "Article 12",
+      "page": 8,
+      "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+      "title": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+     }
+    ],
+    "by_when": "T+20"
+   },
+   {
+    "who": "A2",
+    "what": "claim_incident_lead",
+    "status": "blocked (G2) — needs legal basis",
+    "legal_basis": [],
+    "by_when": "T+120"
+   },
+   {
+    "who": "A5",
+    "what": "investigate_cyber_incident → A1",
+    "status": "blocked (G2) — needs legal basis",
+    "legal_basis": [],
+    "by_when": "T+120"
+   },
+   {
+    "who": "A5",
+    "what": "public_rumour_rebuttal",
+    "status": "blocked (G2) — needs legal basis",
+    "legal_basis": [],
+    "by_when": "T+120"
+   },
+   {
+    "who": "A6",
+    "what": "examine_complaint → A1",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-PDPL-2021",
+      "chunk_id": "UAE-PDPL-2021::0018",
+      "article": "Article 24(2)",
+      "page": 26,
+      "quote": "shall examine such complaints in coordination with the Controller and the Processor",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+      "title": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data"
+     }
+    ],
+    "by_when": "T+50"
+   },
+   {
+    "who": "A3",
+    "what": "activate_crisis_coordination",
+    "status": "done",
+    "legal_basis": [
+     {
+      "doc_id": "UAE-NCEMA-CDA-2024",
+      "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+      "article": "Article 3(12)",
+      "page": 1,
+      "quote": "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned Entities",
+      "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+      "title": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority"
+     }
+    ],
+    "by_when": "T+60"
+   }
+  ],
+  "service_restored_estimate": 5
+ }
+]

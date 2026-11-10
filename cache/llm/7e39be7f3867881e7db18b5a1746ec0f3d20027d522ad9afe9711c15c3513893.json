@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:operator_ems_channel",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "A global channel should be established for AI-driven network operators to promptly notify emergency dispatch services of any faults affecting 911 or similar emergency call delivery, mirroring the requirement in [G1] US-47CFR-PART4 § 4.9(h)(4) which mandates notification within 30 minutes of discovering an outage.",
+  "rationale": "This recommendation aligns with existing global standards and practices by ensuring that AI-driven network operators have a clear, timely channel to inform emergency services about potential disruptions in emergency call delivery, thereby closing the coordination gap identified."
+ }
+}

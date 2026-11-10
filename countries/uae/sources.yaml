@@ -1,0 +1,233 @@
+# UAE national corpus - MAJLIS knowledge base (ITU AI for Good Lab Hackathon: UAE)
+# Collected 2026-11-10 with curl, honest UA "Mozilla/5.0 (compatible; MAJLIS-collector/0.1; research)".
+# Hosts uaelegislation.gov.ae and ai.gov.ae return 403 to automated clients; u.ae media paths now 404
+# and government.ae fails TLS hostname verification. Where needed, files were fetched from Internet Archive
+# raw snapshots (id_) of the official URL; `url` = official URL, `fetch_url` = snapshot actually downloaded.
+# Titles/dates below are as printed in the downloaded documents (English translations; Arabic prevails).
+
+- doc_id: UAE-AI-STRAT-2031
+  title: "UAE National Strategy for Artificial Intelligence 2031"
+  issuer: "UAE Government - Minister of State for Artificial Intelligence (UAE AI Office)"
+  country: UAE
+  doc_type: strategy
+  document_category: UAE_Strategies
+  date: "unknown"
+  url: "https://u.ae/-/media/AI-publications/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf"
+  fetch_url: "https://web.archive.org/web/20250407064934id_/https://u.ae/-/media/AI-publications/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated"
+  verified: "25-page PDF (13.5 MB); running header 'UAE NATIONAL STRATEGY FOR ARTIFICIAL INTELLIGENCE 2031'; contents list 'Eight Strategic Objectives' and Ministerial Foreword by the Minister of State for AI."
+  notes: "No publication date printed (PDF metadata: created 2018-11-26, modified 2021-07-13). Official u.ae URL now returns 404; snapshot used. Relevant sections: Objective 2 (AI in priority sectors incl. resources & energy), Objective 7 (data sharing, secure data infrastructure), Objective 8 'Ensure strong governance and effective regulation' (National Governance Review). Strategy-level only: no binding rules on AI-incident notification or pre-deployment validation of AI/ML model updates. Arabic version: https://u.ae/-/media/AI-publications/Ar-UAE-National-Strategy-for-Artificial-Intelligence-2031-AR-(1).pdf (not downloaded)."
+
+- doc_id: UAE-TELECOM-LAW
+  title: "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications"
+  issuer: "UAE Federal Government (President of the UAE); regulator: Telecommunications and Digital Government Regulatory Authority (TDRA)"
+  country: UAE
+  doc_type: law
+  document_category: UAE_Legislation
+  date: "2003-11-15"
+  url: "https://uaelegislation.gov.ae/en/legislations/1132/download"
+  fetch_url: "https://web.archive.org/web/20250529093130id_/https://uaelegislation.gov.ae/en/legislations/1132/download"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated (official English translation; Arabic text prevails)"
+  verified: "34-page consolidated English text from the UAE Legislation portal; heading 'Federal Decree-Law No. (3) of 2003 Regulating Telecommunications'; signed 'Issued by Us at the Presidential Palace in Abu Dhabi, On: 20 Ramadan 1424 A.H., Corresponding: 15 November 2003 AD'; repealed articles marked '(Repealed by Federal Decree-Law No. 5 of 2008)'; regulator named 'The General Authority for Regulating the Telecommunications Sector and the Digital Government' (post-2020 name)."
+  notes: "Consolidated text (PDF created 2024-10-03). Pointers: Art. 2-3 High Committee overseeing the sector (policy; directives 'in the interest of national security or international relations'; licences); Art. 10 Board of Directors competences (implementing regulations, sector policy, national-security directives after Cabinet approval, issue/suspend licences); Art. 13 Authority objectives (quality and efficient services; Licensees comply with performance quality standards); Art. 14 Authority solely responsible for regulations on interconnection, service terms and quality assurance standards (para 3), equipment, numbering, spectrum (para 7), and digital-government functions (paras 13-21, incl. para 19 coordination on readiness to address risks and threats); Art. 46 Coordination Committee on spectrum (Armed Forces, Ministry of Interior, State Security Service, National Media Council); Part Nine (Art. 71-80) penalties. The English text contains NO occurrence of 'emergency' or 'disaster', NO outage/incident-reporting duty and NO provision on AI/automated network operation or validation of AI/ML model updates; such duties would sit in licences/TDRA regulations. Alternative official edition: TDRA consolidated 2022 English booklet 'Federal Law by Decree No. (3) of 2003 regarding the Organization of the Telecommunications Sector, as amended' (https://u.ae/-/media/Resources/TDRA-telecom-law_Final_english_o.pdf, snapshot https://web.archive.org/web/20250929185143id_/https://u.ae/-/media/Resources/TDRA-telecom-law_Final_english_o.pdf) - downloaded and verified (47 pp., footnotes cite amendments by Federal Law by Decree No. (5) of 2008 and No. (23) of 2020), but only pp. 1-12 have extractable text (rest outlined; needs OCR)."
+
+- doc_id: UAE-PDPL-2021
+  title: "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data"
+  issuer: "UAE Federal Government (President of the UAE); supervisory authority: UAE Data Office ('the Bureau')"
+  country: UAE
+  doc_type: law
+  document_category: UAE_Legislation
+  date: "2021-09-20"
+  url: "https://uaelegislation.gov.ae/en/legislations/1972/download"
+  fetch_url: "https://web.archive.org/web/20260907034008id_/https://www.uaelegislation.gov.ae/en/legislations/1972/download"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated (official English translation; Arabic text prevails)"
+  verified: "29-page English text; heading 'Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data'; 'Issued by us at the Presidency Palace in Abu Dhabi: On: 13 Safar 1443 AH, Corresponding: 20 September 2021AD'; Art. 31 in force as of 02 January 2022."
+  notes: "Pointers: Art. 2(1) territorial scope; Art. 2(2) exclusions (government data and governmental entities, security/judicial authorities, health data and banking/credit data with own legislation, free-zone entities with own data-protection law); Art. 3 Bureau power of exemption; Art. 4 processing without consent (public interest, public health, protecting the data subject's interests, legal obligations, etc.); Art. 5 processing controls; Art. 6 consent conditions; Art. 7-8 controller/processor obligations; Art. 9 breach notification - controller notifies the Bureau and the data subject within the period set by the Executive Regulations, processor notifies controller as soon as aware; Art. 10-12 DPO; Art. 18 right to object to automated decisions incl. profiling, with human review on request (Art. 18(4)); Art. 20 security of processing; Art. 21 data protection impact assessment; Art. 22-23 cross-border transfer (adequate protection / exceptions); Art. 24 complaints to the Bureau; Art. 26 administrative penalties; Art. 28 Executive Regulation by Cabinet. Breach deadline delegated to Executive Regulations (not verified whether issued). No AI-specific incident notification or model-validation provision. Official Arabic edition also on government.ae (not fetched: TLS hostname mismatch)."
+
+- doc_id: UAE-CYBERCRIME-2021
+  title: "Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrimes"
+  issuer: "UAE Federal Government (President of the UAE)"
+  country: UAE
+  doc_type: law
+  document_category: UAE_Legislation
+  date: "2021-09-20"
+  url: "https://uaelegislation.gov.ae/en/legislations/1526/download"
+  fetch_url: "https://web.archive.org/web/20260816170304id_/https://uaelegislation.gov.ae/en/legislations/1526/download"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated (official English translation; Arabic text prevails)"
+  verified: "36-page English text; heading 'Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrimes'; 'Issued by us at the Presidential Palace in Abu Dhabi: On: 13 Safar, 1443 A.H. Corresponding to: 20 September, 2021 A.D.'; preamble cites Federal Decree-Law No. (5) of 2012 Concerning Countering Cybercrimes."
+  notes: "Pointers: Art. 1 definitions incl. 'False Data' and 'Cyberattacks'; Art. 5 'Harm to Information System of Government Entity and Critical Facility' (wilful harm/interruption/disruption of IS or network of government entities or critical facilities: temporary imprisonment, AED 500,000-3,000,000; cyberattack = aggravating circumstance); Art. 52 'Spreading Rumors and False News' - para 1 min. 1 year + AED 100,000; para 2 aggravated (min. 2 years + AED 200,000) if 'committed during epidemics, crises, emergencies or disasters' or inciting public opinion against UAE authorities. No incident-reporting obligation on operators found. The English text shows no 2024 amendment footnotes; a reported amendment by Federal Law No. (5) of 2024 (law-firm sources) is NOT reflected/verified here. u.ae page on this law: https://u.ae/en/information-and-services/justice-safety-and-the-law/cyber-safety-and-digital-security/law-on-combatting-rumours-and-cybercrimes (not fetched)."
+
+- doc_id: UAE-NCEMA-CDA-2024
+  title: "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority"
+  issuer: "UAE Federal Government (President of the UAE)"
+  country: UAE
+  doc_type: law
+  document_category: UAE_Legislation
+  date: "2024-10-01"
+  url: "https://uaelegislation.gov.ae/en/legislations/2771"
+  fetch_url: "https://web.archive.org/web/20250415091237id_/https://uaelegislation.gov.ae/en/legislations/2771"
+  format: html
+  language: en
+  license_note: "Official public document; portal states 'Copyright 2025 Ministry of Cabinet Affairs. All rights reserved.'; English is a translation, Arabic prevails"
+  verified: "Legislation-portal page (snapshot 2025-04-15) with full English text; heading 'Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence Authority'; metadata: Issued Date 01 Oct 2024, Effective Date 15 Oct 2024, Official Gazette No. 785 dated 14 Oct 2024, Legislation State 'Active' (at snapshot date)."
+  notes: "CORRECTION: this is NOT a reorganisation of NCEMA itself - it establishes a Civil Defence Authority (CDA) within NCEMA (Art. 2), with NCEMA replacing the Ministry of Interior's Civil Defence Authority (Art. 2(2)); repeals Federal Law No. (9) of 2004 and No. (23) of 2006 (Art. 16). Pointers: Art. 1 defines NCEMA as 'National Emergency, Crisis and Disaster Management Authority'; Art. 3 CDA competences (21 items); Art. 4 Director General (e.g. recommends to the NCEMA Chairman the announcement of a disaster; sets priority of implementation during emergencies); Art. 5(2) in cases of emergency, disaster and risk the NCEMA Chairman may requisition real estate, movable property, transport; Art. 5(6) in disasters the NCEMA Chairman may oblige entities/professionals to keep workers present to ensure continuation of normal life; Art. 6 cooperation duty - competent (local) authorities and concerned entities must provide CDA with requested information and coordinate; Art. 7 coordination with Armed Forces; Art. 13 penalties (aggravated in disasters); Art. 15 NCEMA Chairman issues implementing regulations. The rendered page omits the preamble, so the NCEMA founding law could not be verified from this text. Search results (not verified) indicate Federal Decree-Law No. (8) of 2025 created a 'Federal Authority for Ambulance and Civil Defence' superseding this CDA (portal id 3231; 403, no snapshot) - check status before relying on it."
+
+- doc_id: UAE-HEALTH-ICT-2019
+  title: "Federal Law No. (2) of 2019 Concerning the Use of the Information and Communications Technology in Health Fields"
+  issuer: "UAE Federal Government (President of the UAE); Ministry of Health and Prevention"
+  country: UAE
+  doc_type: law
+  document_category: UAE_Legislation
+  date: "2019-02-06"
+  url: "https://uaelegislation.gov.ae/en/legislations/1209/download"
+  fetch_url: "https://web.archive.org/web/20251126033721id_/https://uaelegislation.gov.ae/en/legislations/1209/download"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated (official English translation; Arabic text prevails)"
+  verified: "15-page English text; heading 'Federal Law No. (2) of 2019 Concerning the Use of the Information and Communications Technology in Health Fields'; signed 'Issued by Us at the Presidential Palace in Abu Dhabi ... Corresponding to: 6 February 2019 AD'; Art. 31 enters into force three months after publication."
+  notes: "Linked from the u.ae 'Data protection laws' page. Pointers: Art. 2 scope; Art. 4 obligations when using ICT in health; Art. 5-8, 14-15 central health information system; Art. 10 coordination between the Ministry and health authorities; Art. 12 storage of health data inside the State; Art. 13 storage/transfer outside the State only in cases set by resolution; Art. 16 confidentiality of patient information and exceptions; Art. 20 retention of health data; Art. 24 penalty for violating Art. 13. Relevant to PDPL Art. 2(2)(e) exclusion of health data. No AI-specific provisions."
+
+- doc_id: UAE-TDRA-QOS-POLICY-2019
+  title: "Regulatory Policy - Quality of Service (QoS) Policy, Version 2.0"
+  issuer: "Telecommunications Regulatory Authority (TRA), now TDRA"
+  country: UAE
+  doc_type: policy
+  document_category: UAE_Sector_Regulation
+  date: "2019-09-24"
+  url: "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/5-Quality-of-Service-Regulatory-QoS-Policy.ashx"
+  fetch_url: "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/5-Quality-of-Service-Regulatory-QoS-Policy.ashx"
+  format: pdf
+  language: en
+  license_note: "Cover states 'Copyright (c) 2019 Telecommunications Regulatory Authority (TRA)'; redistribution terms not stated"
+  verified: "37-page scanned PDF fetched live from tdra.gov.ae (HTTP 200); page 1 rendered and read: 'Regulatory Policy / Quality of Service (QoS) Policy / Version 2.0 / Issued: 24 Sep. 2019 / Copyright 2019 Telecommunications Regulatory Authority (TRA)'."
+  notes: "IMAGE-ONLY PDF (no text layer; 37 page images) - needs OCR before ingestion; article/KPI pointers NOT extracted. Listed under TDRA 'Regulations and Ruling' category 'QOS Regulation' (https://tdra.gov.ae/en/About/regulations-and-ruling). Arabic edition (text layer, same version/date): https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/Quality-of-Service-Regulatory--QoS--Policy-pdf.ashx (identical file also at .../AR/fileQuality-of-Service-Regulatory--QoS--Policy-pdf.ashx); its contents list KPIs of the QoS policy, legal references and key principles. Whether it covers network-outage reporting or emergency-call KPIs is unverified (OCR needed)."
+
+- doc_id: UAE-TDRA-IAR-2020
+  title: "UAE Information Assurance Regulation, Version 1.1"
+  issuer: "Telecommunications Regulatory Authority (TRA), now TDRA"
+  country: UAE
+  doc_type: regulation
+  document_category: UAE_Sector_Regulation
+  date: "2020-03"
+  url: "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx"
+  fetch_url: "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated"
+  verified: "247-page English PDF fetched live from tdra.gov.ae; cover 'UAE Information Assurance Regulation Version 1.1 March 2020'; s.1.1 Background: TRA developed the UAE IA Regulation as a critical element of the National Information Assurance Framework (NIAF)."
+  notes: "Applicability (s.1.1 Background): 'All UAE government entities and other entities identified as critical by TRA are obligated to implement' its requirements; others voluntary (see also s.2.1 Scope). Pointers: s.2.3 'Entity, Sector, and National Contexts' - entities report key information to sector regulators, sector regulators consolidate/analyse and share with TRA to form sector and national views of risk and incidents; s.3.3 applicability of controls; s.3.4 prioritisation (P1-P4); s.3.5 key stakeholder roles (sector regulators submit sector status reports to TRA); control family T8 'Information Security Incident Management' - T8.1 policy, T8.2.1 incident response plan, T8.2.3 incident classification, T8.3 'Information Security Events and Weaknesses Reporting' (T8.3.2: entity shall report information security events through appropriate channels and establish a reporting approach that accounts for sector and national requirements). No fixed reporting deadline seen in the excerpts read; no AI/ML-specific controls or AI-incident notification. Note: post-2020 the national cybersecurity mandate sits with the UAE Cybersecurity Council; whether this TDRA-era regulation remains in force was not verified."
+
+- doc_id: UAE-TDRA-LICENSING-REGS-2023
+  title: "Licensing Regulations (Issue Date: 14 March 2023)"
+  issuer: "Telecommunications and Digital Government Regulatory Authority (TDRA)"
+  country: UAE
+  doc_type: regulation
+  document_category: UAE_Sector_Regulation
+  date: "2023-03-14"
+  url: "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/Licensing-Regulations---EN.ashx"
+  fetch_url: "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/Licensing-Regulations---EN.ashx"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated"
+  verified: "14-page scanned PDF fetched live from tdra.gov.ae; page 1 rendered and read: TDRA logo, 'Licensing Regulations', 'Issue Date: 14 March 2023', 'Telecommunications and Digital Government Regulatory Authority (TDRA)'. PDF metadata title: 'Resolution No 9 of 2023 on approval of licensing Regulations.pdf' (resolution number seen only in metadata, not verified in text)."
+  notes: "IMAGE-ONLY PDF (no text layer) - needs OCR; article pointers NOT extracted. Probably replaces Resolution No. (7) of 2008 (see UAE-TDRA-LICENSING-REGS-2008) - supersession not verified. Arabic version path: https://tdra.gov.ae/-/media/About/regulations-and-ruling/AR/Licensing-Regulations---AR.ashx (not fetched)."
+
+- doc_id: UAE-TDRA-LICENSING-REGS-2008
+  title: "Resolution No. (7) of 2008 Regarding the Licensing Regulations"
+  issuer: "Telecommunications Regulatory Authority (TRA), now TDRA"
+  country: UAE
+  doc_type: regulation
+  document_category: UAE_Sector_Regulation
+  date: "2008-08-31"
+  url: "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/Resolution-7--Licensing-Regulations--2008--EN-pdf.ashx"
+  fetch_url: "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/Resolution-7--Licensing-Regulations--2008--EN-pdf.ashx"
+  format: pdf
+  language: en
+  license_note: "Document states 'Copyright (c) 2005 Telecommunications Regulatory Authority - All rights reserved'"
+  verified: "13-page English text PDF from tdra.gov.ae; heading 'Resolution No. (7) of 2008 Regarding the Licensing Regulations'; footnote 'Published in the Official Gazette - Edition 483 - August 2008 - Published on 31 August 2008' (date field = gazette publication date)."
+  notes: "Historical text-layer version of the licensing regulations; likely superseded by the 14 March 2023 Licensing Regulations (UAE-TDRA-LICENSING-REGS-2023) - not verified. Article pointers not extracted (time)."
+
+- doc_id: UAE-AI-CHARTER-2024
+  title: "The UAE Charter for the Development & Use of Artificial Intelligence"
+  issuer: "UAE Artificial Intelligence Office (ai.gov.ae)"
+  country: UAE
+  doc_type: charter
+  document_category: UAE_Strategies
+  date: "2024-07"
+  url: "https://ai.gov.ae/wp-content/uploads/2024/07/UAEAI-Methaq-EN2-3.pdf"
+  fetch_url: "https://web.archive.org/web/20250716163943id_/https://ai.gov.ae/wp-content/uploads/2024/07/UAEAI-Methaq-EN2-3.pdf"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated"
+  verified: "6-page English PDF; cover 'The UAE Charter for the Development & Use of Artificial Intelligence - July 2024'; states it aligns with the UAE Strategy for Artificial Intelligence (leading nation in AI by 2031) and lists 12 general principles. ai.gov.ae returns 403 to automated clients; Wayback raw snapshot used (availability API pointed to 20250728014103, which redirected to the 20250716163943 capture)."
+  notes: "Non-binding guiding framework (no articles, no enforcement mechanism). Principles: 1 Strengthening Human-Machine Ties; 2 Safety ('encourages modifying or removing systems that pose risks'); 3 Algorithmic Bias; 4 Data Privacy; 5 Transparency; 6 Human Oversight; 7 Governance and Accountability; 8 Technological Excellence; 9 Human Commitment; 10 Peaceful Coexistence with AI; 11 Promoting AI Awareness for an Inclusive Future; 12 Commitment to Treaties and Applicable Laws. NO AI-incident notification duty and NO pre-deployment validation/testing requirement for AI/ML model updates. u.ae summary page (200 OK): https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence"
+
+- doc_id: UAE-DOH-AI-POLICY-2018
+  title: "Policy on Use of Artificial Intelligence (AI) in the Healthcare Sector of the Emirate of Abu Dhabi"
+  issuer: "Department of Health - Abu Dhabi (DOH), Healthcare Policy and Standards, Strategy Division"
+  country: UAE
+  doc_type: policy
+  document_category: UAE_Sector_Regulation
+  date: "2018-04-30"
+  url: "https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx"
+  fetch_url: "https://web.archive.org/web/20251007014819id_/https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated"
+  verified: "11-page English PDF; cover 'Policy on Use of Artificial Intelligence (AI) in the Healthcare Sector of the Emirate of Abu Dhabi - Department of Health (DOH) April 2018'; document control table: Ref. Policy/AI/0.9, Version 0.9, Publication Date 30 April 2018. doh.gov.ae failed TLS handshake for automated client; Wayback raw snapshot used."
+  notes: "Version 0.9 (2018) - may have been superseded by later DoH AI standards (not verified). Pointers: s.7.1.2.1.3 'auditable validation statements' for AI solutions; s.7.1.2.4 AI systems subject to audits and examination; s.7.2.5 owning entities conduct regular audits of AI functionality and report to DOH as needed; s.9 Monitoring and Evaluation framework covering DOH-licensed providers. Health-sector only (Abu Dhabi); no telecom-network or emergency-call provisions."
+
+- doc_id: UAE-ENERGY-STRAT-2050
+  title: "Updated UAE Energy Strategy 2050"
+  issuer: "UAE Government - Ministry of Energy and Infrastructure (MoEI) (per u.ae hosting path 'MoEI-recent-docs'; issuer not printed in text extracted)"
+  country: UAE
+  doc_type: strategy
+  document_category: UAE_Strategies
+  date: "2023-07"
+  url: "https://u.ae/-/media/MoEI-recent-docs/Updated-UAE-Energy-Strategy-2050-Eng.pdf"
+  fetch_url: "https://web.archive.org/web/20240517205243id_/https://u.ae/-/media/MoEI-recent-docs/Updated-UAE-Energy-Strategy-2050-Eng.pdf"
+  format: pdf
+  language: en
+  license_note: "Official public document; redistribution terms not stated"
+  verified: "16-page English PDF (71 MB, mostly graphics); cover text 'Updated UAE Energy Strategy 2050 - July 2023'; headline 'The climate action journey in the energy sector to reach net zero by 2050'. Official u.ae URL now 404; Wayback raw snapshot used."
+  notes: "Energy objective for the scenario (network energy saving). Contents: targets for the year 2030 (e.g. triple renewable capacity; increase share of installed clean energy capacity), 'Achieving Net Zero by 2050', an 'Energy Efficiency' pillar to increase efficiency of energy and water consumption in highly intensive sectors, and enablers linked to the Net Zero 2050 strategy. Figures are in infographic layout - read numeric targets from the PDF directly. No telecom-specific or AI-specific provisions seen; does not address trade-offs between energy saving and service availability."
+
+# SKIPPED:
+# - UAE-DATAOFFICE-2021 (Federal Decree-Law No. (44) of 2021 on the Emirates/UAE Data Office): official page
+#   https://uaelegislation.gov.ae/en/legislations/2433 (+ /download) returns 403; no Internet Archive snapshot of either;
+#   the u.ae data-protection page links only to ai.gov.ae (403; archived copy had no document link). Not verified.
+#   (Search snippets give issue date 20 Sep 2021, Official Gazette No. 712 - UNVERIFIED.)
+# - UAE-NCEMA-LAW (Federal Decree-Law No. (2) of 2011 establishing NCEMA, as amended): no portal ID found; ncema.gov.ae
+#   connection timeout; full text not retrieved. The number "2/2011" appears only in citations seen in search snippets
+#   (Dubai legislation portal, 2024/2025 federal decree-laws) - UNVERIFIED. The claimed "Decree-Law 35/2024 reorganisation"
+#   is CORRECTED: it reorganises the Civil Defence Authority within NCEMA (see UAE-NCEMA-CDA-2024), not NCEMA itself.
+# - Federal Decree-Law No. (8) of 2025 (reported Federal Authority for Ambulance and Civil Defence, said to supersede the
+#   35/2024 CDA): uaelegislation.gov.ae/en/legislations/3231 -> 403, no snapshot. UNVERIFIED.
+# - NCEMA standard AE/SCNS/NCEMA 7000:2021 (Business Continuity Management): ncema.gov.ae unreachable; only copies found on
+#   enec.gov.ae / enec.ae (state-owned company, not the issuer; copy reportedly states distribution reserved to NCEMA). Not registered.
+# - UAE National Cybersecurity Strategy 2019: u.ae page links https://www.tra.gov.ae/userfiles/assets/PvFNAE8d.pdf, which now
+#   redirects to tdra.gov.ae and returns a 103-page organisational information-security policy (anti-virus, password, internet
+#   usage sub-policies) - NOT the strategy; https://tdra.gov.ae/en/national-cybersecurity-strategy -> error 500; MOHRE page
+#   mentions "(PDF 18.7 MB)" but archived HTML has no link; mohre.gov.ae live times out. Not retrieved.
+# - UAE Cybersecurity Council establishing instrument: csc.gov.ae TLS failure; u.ae CSC page 404; secondary sources describe a
+#   Cabinet decision of Nov 2020 (UNVERIFIED). No official federal instrument imposing cyber-incident reporting on telecom /
+#   critical-infrastructure entities was retrieved; closest verified text is UAE-TDRA-IAR-2020 (T8.3, critical entities).
+# - TDRA instruments on emergency calls/services, network-outage or incident reporting: none among 285 archived file names
+#   under tdra.gov.ae/-/media/About/regulations-and-ruling/ (no 'emergency', 'outage' or 'incident' in names); the live
+#   regulations page pages 103 items client-side (not fully crawled). TDRA service page https://tdra.gov.ae/en/Services/report-a-cyber-incident
+#   (200 OK, fetched) describes only a VOLUNTARY, free cyber-incident response service for the Government Sector (UAE Pass login,
+#   3-90 working days) - not a mandatory reporting obligation; not registered as a source.
+# - UAE AI Ethics Principles & Guidelines; UAE Generative AI guide (2023); other AI adoption guidelines: ai.gov.ae 403 - not attempted further (time).
+# - UAE Net Zero 2050 document: not attempted (time).
+# - TDRA/WAM notices (2025-2026) on e& / du licence renewal mentioning AI in network operations: not searched (time).
+# - Status checks: Regulatory Intelligence Office (2025) - uaecabinet.ae news 403 and wam.ae article is JS-rendered (no
+#   content for non-browser clients) - UNVERIFIED (search snippets: Cabinet approval April 2025); "National AI System" advisory
+#   Cabinet member (2026), any 2026 federal AI and data authority, DIFC Regulation 10 (difc.ae returns 429) - not checked (time).

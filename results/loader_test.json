@@ -1,0 +1,17 @@
+{
+ "loaded": {
+  "kb_mandates": 17,
+  "kb_mandates:top1": "MAJLIS-MANDATES-UAE::M-A2-OVERSIGHT",
+  "kb_uae": 20,
+  "kb_uae:top1": "UAE-AI-STRAT-2031::0012"
+ },
+ "reference_stats": {
+  "kb_main": 0,
+  "kb_framework": 0,
+  "kb_decisions": 0,
+  "kb_usecase": 0
+ },
+ "command": "python scripts/load_into_ituaireadiness.py --collections kb_mandates,kb_uae --limit 20 --persist <scratch>",
+ "reference_commit": "84010da",
+ "note": "Loaded through the reference repo own KnowledgeBase.add_documents + embed_texts (Ollama nomic-embed-text); top1 retrieved via KnowledgeBase.search for: Which authority oversees the telecommunications sector and licensees?"
+}

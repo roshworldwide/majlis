@@ -1,0 +1,206 @@
+# "The Night the Cells Fell Asleep" — FICTIONAL tabletop scenario.
+# Every event, number, latency and KPI below is a SCENARIO PARAMETER chosen by the
+# exercise designer. Nothing here describes a real incident, operator or institution.
+# Agents are simulations built from public mandates; they do not represent or speak
+# for any institution ("modelled on", never "says").
+
+scenario_id: uae_nye_cells
+title: "The Night the Cells Fell Asleep"
+label: "FICTIONAL SIMULATION — events, numbers and outcomes are scenario parameters, not predictions"
+domain: "AI-driven operation of critical telecom networks"
+country: uae
+horizon_min: 90
+clock_origin: "31 Dec, 22:30 (fictional), Downtown Dubai"
+
+params:
+  awareness_threshold: 0.7          # belief confidence at which an agent "knows" a fact
+  no_channel_policy: delay          # delay | drop — what happens to a message with no legal channel
+  informal_latency_min: 35          # informal route (media, personal contacts) when no legal channel exists
+  default_channel_latency_min: 10   # formal channel latency when mandates.yaml gives none
+  vendor_rollback_delay_min: 45     # offshore vendor rollback after request (scenario parameter)
+  xborder_extra_delay_min: 25       # extra delay once offshore-hosting/logs issue surfaces (W5)
+  safe_mode_latency_min: 5          # local ML safe-mode activation time (only exists under RF2)
+  local_rollback_latency_min: 10    # local rollback artefact (only exists under RF3)
+  lead_conflict_threshold_min: 60   # no lead claimed by this time => lead gap
+  kpi:
+    cells_total: 1500               # illustrative hex cell sites in the Downtown cluster
+    cells_asleep_normal_pct: 3.0
+    cells_asleep_peak_pct: 41.0
+    call_setup_success_normal_pct: 99.1
+    call_setup_success_floor_pct: 71.0
+    emergency_call_success_normal_pct: 99.5
+    emergency_call_success_floor_pct: 64.0
+    ambulance_delta_peak_min: 9.0   # added minutes to ambulance response at the worst point
+    onset_min: -5                   # model starts sleeping cells 5 minutes before T+0
+    ramp_min: 20                    # minutes to reach the peak
+
+facts:
+  F_ROOT:    {label: "Root cause: ML energy-saving model v2.3 puts cells to sleep at crowd peak", label_ar: "السبب الجذري: نموذج توفير الطاقة v2.3 يُنيم الخلايا في ذروة الحشود"}
+  F_EMERG:   {label: "Emergency calls from Downtown are failing to connect", label_ar: "تعثّر مكالمات الطوارئ من وسط المدينة"}
+  F_RUMOUR:  {label: "Rumour: 'cyberattack on the network' (false)", label_ar: "شائعة: هجوم سيبراني على الشبكة (كاذبة)"}
+  F_HARM:    {label: "Ambulance response times rising in Downtown", label_ar: "ارتفاع زمن استجابة الإسعاف"}
+  F_XBORDER: {label: "Rollback needs the foreign vendor; model and logs hosted outside the UAE", label_ar: "التراجع يتطلب المورّد الأجنبي؛ النموذج والسجلات خارج الدولة"}
+  F_PDATA:   {label: "Retraining data included subscriber location traces", label_ar: "بيانات تدريب تضمنت مواقع المشتركين"}
+  F_LEAD:    {label: "Lead authority for the incident is contested or unclear", label_ar: "الجهة القائدة للحادث غير محسومة"}
+
+agents:
+  A1: {name: "NetOps Resilience Copilot", name_ar: "مساعد مرونة عمليات الشبكة", role_type: "R1 innovative solution", modelled_on: "a licensed mobile operator (fictional 'Operator X')", color: "#4CC9F0",
+       collections: [kb_uae, kb_usecase, kb_global_examples], objectives: [service_availability, energy_efficiency]}
+  A2: {name: "Telecom Regulator", name_ar: "جهة تنظيم الاتصالات", role_type: "R3 institutional participant", modelled_on: "TDRA", color: "#E9C46A",
+       collections: [kb_uae, kb_mandates, kb_global_examples], objectives: [service_availability, consumer_protection]}
+  A3: {name: "Emergency & Crisis Authority", name_ar: "هيئة الطوارئ والأزمات", role_type: "R3 institutional participant", modelled_on: "NCEMA", color: "#E9C46A",
+       collections: [kb_uae, kb_mandates], objectives: [public_safety]}
+  A4: {name: "Health & Ambulance Authority", name_ar: "هيئة الصحة والإسعاف", role_type: "R3 institutional participant", modelled_on: "an emirate-level health authority and ambulance service", color: "#E9C46A",
+       collections: [kb_uae, kb_mandates], objectives: [public_safety, patient_outcomes]}
+  A5: {name: "Cybersecurity Authority", name_ar: "هيئة الأمن السيبراني", role_type: "R3 institutional participant", modelled_on: "the UAE Cybersecurity Council", color: "#E9C46A",
+       collections: [kb_uae, kb_mandates], objectives: [cyber_resilience, public_trust]}
+  A6: {name: "Data Protection Authority", name_ar: "هيئة حماية البيانات", role_type: "R3 institutional participant", modelled_on: "the UAE Data Office", color: "#E9C46A",
+       collections: [kb_uae, kb_mandates], objectives: [privacy]}
+  A7: {name: "Policy & Legal Adviser", name_ar: "المستشار القانوني والسياساتي", role_type: "R2 policy & legal adviser", modelled_on: "an independent adviser drawing on UAE and global instruments", color: "#9D7CFF",
+       collections: [kb_uae, kb_mandates, kb_global_examples, kb_usecase], objectives: []}
+  A8: {name: "Coordinator (MLFO)", name_ar: "المنسّق (MLFO)", role_type: "R4 multi-agent coordination", modelled_on: "the Y.3172 ML Function Orchestrator role", color: "#9D7CFF",
+       collections: [], objectives: []}
+
+# Waves: sequenced, chunked, uneven. visible_to = who receives the inject.
+# reveals = belief confidence each recipient gains for each fact.
+waves:
+  - id: W0
+    t: 0
+    visible_to: [A1]
+    hidden_fact: F_ROOT
+    content: >
+      Network KPIs, Downtown cluster: share of cells in energy-saving sleep rising fast; call-setup success falling.
+      Change log: ML energy-saving model v2.3 deployed T-48h.
+    reveals: {F_ROOT: 0.4}
+    telemetry:
+      kpi_window_min: [-30, -25, -20, -15, -10, -5, 0]
+      cells_asleep_pct: [3.0, 3.1, 3.0, 3.2, 3.1, 9.5, 18.0]
+      call_setup_success_pct: [99.1, 99.0, 99.1, 99.0, 99.1, 95.2, 89.4]
+      traffic_index: [1.00, 1.08, 1.17, 1.29, 1.42, 1.61, 1.83]
+      change_log:
+        - {t: -2880, item: "ML energy-saving model v2.3 deployed (vendor-managed)", component: "RAN energy-saving ML"}
+        - {t: -10080, item: "Core firmware patch 7.1.4", component: "core"}
+  - id: W1
+    t: 10
+    condition: degraded
+    visible_to: [A4]
+    hidden_fact: F_EMERG
+    content: >
+      Emergency-call volume from Downtown is far below forecast while the crowd peaks. Cause unknown.
+    reveals: {F_EMERG: 0.8}
+  - id: W2
+    t: 15
+    condition: degraded
+    visible_to: [A1]
+    hidden_fact: F_ROOT
+    content: >
+      Customer complaints spike. Correlation of the KPI drop with model v2.3 sleep decisions confirmed.
+    reveals: {F_ROOT: 0.95}
+  - id: W3
+    t: 20
+    visible_to: [A5, A2]
+    hidden_fact: F_RUMOUR
+    content: >
+      Social-media rumours of a "cyberattack on the network" are spreading.
+    reveals: {F_RUMOUR: 0.9}
+  - id: W4
+    t: 30
+    condition: degraded
+    visible_to: [A4]
+    hidden_fact: F_HARM
+    content: >
+      Ambulance response times are rising in Downtown.
+    reveals: {F_HARM: 0.9}
+  - id: W5
+    t: 40
+    condition: {no_reform: RF3}
+    visible_to: [A1]
+    hidden_fact: F_XBORDER
+    content: >
+      Rollback needs the foreign vendor. The model and its logs are hosted outside the UAE.
+    reveals: {F_XBORDER: 0.95}
+  - id: W6
+    t: 50
+    visible_to: [A6]
+    hidden_fact: F_PDATA
+    content: >
+      A subscriber complaint (echoed by a press tip): the v2.3 retraining data included subscriber location traces.
+    reveals: {F_PDATA: 0.8}
+  - id: W7
+    t: 60
+    visible_to: [A3]
+    hidden_fact: F_LEAD
+    content: >
+      Media pressure is mounting. Who leads? Activation of a crisis response is under consideration.
+    reveals: {F_LEAD: 0.8}
+  - id: W8
+    t: 90
+    visible_to: [A1, A2, A3, A4, A5, A6, A7, A8]
+    content: >
+      Debrief. Service restored or not, depending on decisions. Which reporting obligations applied, to whom, and when?
+    reveals: {}
+
+# Playbook = the exercise's standard operating procedures (SOPs) per role.
+# The engine proposes these options deterministically when their conditions hold;
+# the LLM writes the situation assessment, rationale, citations and messages;
+# the P-node gate decides what is allowed. The experimental variable is the legal
+# framework (mandates, channels, reform pack), not the LLM.
+playbook:
+  # --- A1 operator copilot ---------------------------------------------------
+  # (A1's root-cause analysis runs automatically on the W0 telemetry inject: SRC→C→PP→M, see coordinator._rca)
+  - {id: PB-A1-KEEP-ESAVE, agent: A1, when: {knows: [F_ROOT], no_reform: RF2}, action: {type: keep_ml_energy_saving, internal: true, promotes: [energy_efficiency], harms: [service_availability, public_safety]}}
+  - {id: PB-A1-SAFE-MODE, agent: A1, when: {knows: [F_ROOT], reform: RF2}, action: {type: ml_safe_mode, internal: true, promotes: [service_availability, public_safety]}}
+  - {id: PB-A1-ROLLBACK, agent: A1, when: {knows: [F_ROOT]}, action: {type: request_vendor_rollback, internal: true}}
+  # Without a notification duty the operator notifies the regulator voluntarily, once the root cause is confirmed (>=0.95).
+  - {id: PB-A1-NOTIFY-REG, agent: A1, when: {knows: [F_ROOT], min_conf: 0.95, no_reform: RF1}, action: {type: notify_incident, target: A2, facts: [F_ROOT]}}
+  # The copilot recommends warning emergency services because emergency-call delivery is at risk.
+  - {id: PB-A1-NOTIFY-EMS, agent: A1, when: {knows: [F_ROOT], no_reform: RF1}, action: {type: notify_incident, target: A4, facts: [F_ROOT]}}
+  # RF1 flash notice: at awareness, to regulator, crisis authority, cyber authority and emergency services.
+  - {id: PB-A1-FLASH-A2, agent: A1, when: {knows: [F_ROOT], reform: RF1}, action: {type: notify_incident, target: A2, facts: [F_ROOT]}}
+  - {id: PB-A1-FLASH-A3, agent: A1, when: {knows: [F_ROOT], reform: RF1}, action: {type: notify_incident, target: A3, facts: [F_ROOT]}}
+  - {id: PB-A1-FLASH-A4, agent: A1, when: {knows: [F_ROOT], reform: RF1}, action: {type: notify_incident, target: A4, facts: [F_ROOT]}}
+  - {id: PB-A1-FLASH-A5, agent: A1, when: {knows: [F_ROOT], reform: RF1}, action: {type: notify_incident, target: A5, facts: [F_ROOT]}}
+  - {id: PB-A1-XBORDER, agent: A1, when: {knows: [F_XBORDER]}, action: {type: cross_border_log_transfer, target: vendor}}
+  # --- A2 telecom regulator ----------------------------------------------------
+  - {id: PB-A2-RFI, agent: A2, when: {knows_any: [F_RUMOUR, F_EMERG], not_knows: [F_ROOT]}, action: {type: request_information, target: A1, facts: []}}
+  - {id: PB-A2-DIRECTIVE, agent: A2, when: {knows: [F_ROOT]}, action: {type: issue_directive, target: A1, facts: [F_ROOT]}}
+  - {id: PB-A2-INFORM-A3, agent: A2, when: {knows: [F_ROOT]}, action: {type: notify_incident, target: A3, facts: [F_ROOT]}}
+  - {id: PB-A2-INFORM-A5, agent: A2, when: {knows: [F_ROOT, F_RUMOUR]}, action: {type: share_information, target: A5, facts: [F_ROOT]}}
+  - {id: PB-A2-LEAD, agent: A2, when: {knows: [F_ROOT], min_t: 20}, action: {type: claim_incident_lead, claims_lead: true}}
+  # --- A3 crisis authority --------------------------------------------------------
+  - {id: PB-A3-RFI, agent: A3, when: {knows_any: [F_EMERG, F_HARM], not_knows: [F_ROOT]}, action: {type: request_information, target: A2, facts: []}}
+  - {id: PB-A3-LEAD, agent: A3, when: {knows_any: [F_HARM, F_LEAD]}, action: {type: activate_crisis_coordination, claims_lead: true}}
+  - {id: PB-A3-INFORM-A4, agent: A3, when: {knows: [F_ROOT]}, action: {type: share_information, target: A4, facts: [F_ROOT]}}
+  # --- A4 health & ambulance ------------------------------------------------------
+  - {id: PB-A4-NOTIFY-A3, agent: A4, when: {knows: [F_EMERG]}, action: {type: notify_incident, target: A3, facts: [F_EMERG]}}
+  - {id: PB-A4-ASK-OPERATOR, agent: A4, when: {knows: [F_EMERG], not_knows: [F_ROOT]}, action: {type: query_status, target: A1, facts: [F_EMERG]}}
+  - {id: PB-A4-FEEDBACK-OP, agent: A4, when: {knows: [F_EMERG], reform: RF1}, action: {type: notify_incident, target: A1, facts: [F_EMERG]}}
+  - {id: PB-A4-HARM-A3, agent: A4, when: {knows: [F_HARM]}, action: {type: notify_incident, target: A3, facts: [F_HARM]}}
+  - {id: PB-A4-SURGE, agent: A4, when: {knows: [F_HARM]}, action: {type: ambulance_surge_deployment, internal: true, promotes: [public_safety]}}
+  # --- A5 cybersecurity --------------------------------------------------------------
+  - {id: PB-A5-INVESTIGATE, agent: A5, when: {knows: [F_RUMOUR]}, action: {type: investigate_cyber_incident, target: A1}}
+  - {id: PB-A5-REBUT, agent: A5, when: {knows: [F_RUMOUR, F_ROOT]}, action: {type: public_rumour_rebuttal, claims: "not a cyberattack"}}
+  # --- A6 data protection --------------------------------------------------------------
+  - {id: PB-A6-INQUIRY, agent: A6, when: {knows: [F_PDATA]}, action: {type: examine_complaint, target: A1, facts: []}}
+
+adviser_questions:
+  - {id: Q1, wave: W2, as: A1, question: "Is the operator required to notify any authority about an AI-caused network incident, and within what deadline?"}
+  - {id: Q2, wave: W3, as: A5, question: "Who has the mandate to publicly rebut false rumours of a cyberattack during a network outage?"}
+  - {id: Q3, wave: W4, as: A4, question: "Through which legal channel can the ambulance service obtain network-status information from the operator during an emergency?"}
+  - {id: Q4, wave: W5, as: A1, question: "Can the operator transfer network logs containing subscriber data to the foreign vendor for rollback forensics?"}
+  - {id: Q5, wave: W6, as: A6, question: "Is the use of subscriber location traces to retrain a network AI model lawful under the personal data protection law?"}
+  - {id: Q6, wave: W7, as: A3, question: "Who leads the response when a telecom AI fault becomes a public emergency?"}
+
+# Expected outcomes (written before the run; compared with actual in report §g).
+expected:
+  baseline:
+    - "A1 identifies the ML model as root cause before customer complaints (copilot RCA)"
+    - "A4 learns the root cause late or never: no legal operator-to-emergency-service channel"
+    - "At least one action is blocked by the P node for lack of a citable mandate"
+    - "Energy-efficiency vs availability conflict is flagged"
+    - "Lead authority contested or unclear"
+  reform:
+    - "Flash notice (RF1) delivers the root cause to A2, A3, A4, A5 within minutes"
+    - "Mass-event safe-mode (RF2) restores service without waiting for the vendor"
+    - "Local rollback artefact (RF3) removes the offshore dependency"
+    - "Lead ambiguity remains (not addressed by RF1-RF3)"

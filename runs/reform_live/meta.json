@@ -1,0 +1,39 @@
+{
+ "run_id": "reform_live",
+ "scenario": "uae_nye_cells",
+ "reform": [
+  "RF1",
+  "RF2",
+  "RF3"
+ ],
+ "gate": true,
+ "llm": "ollama:qwen2.5:3b",
+ "llm_adviser": "ollama:qwen2.5:7b",
+ "llm_stats": {
+  "calls": 7,
+  "cache_hits": 7,
+  "live_calls": 0,
+  "repairs": 0,
+  "fallbacks": 0,
+  "seconds": 0.0
+ },
+ "llm_adviser_stats": {
+  "calls": 13,
+  "cache_hits": 13,
+  "live_calls": 0,
+  "repairs": 0,
+  "fallbacks": 0,
+  "seconds": 0.0
+ },
+ "retrieval_stats": {
+  "queries": 46,
+  "cache_hits": 46,
+  "misses": 0
+ },
+ "audit_root": "b343d2552bc5dc7560a76f184f45df96e6526447860cc3de2b1c1a7328e44fd6",
+ "audit_entries": 167,
+ "label": "FICTIONAL SIMULATION — events, numbers and outcomes are scenario parameters, not predictions",
+ "mandates_loaded": 11,
+ "channels_loaded": 14,
+ "registry_rejected": []
+}

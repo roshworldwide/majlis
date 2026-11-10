@@ -1,0 +1,3 @@
+# Reviewed false positive: a public file-download URL parameter ("token=…") inside a footnote of the
+# African Union Continental AI Strategy (reference corpus), pointing to Rwanda's published AI policy PDF.
+kb/export/chunks.jsonl:generic-api-key:1987

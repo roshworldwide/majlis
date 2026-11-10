@@ -1,0 +1,6 @@
+:root { --bg0:#04060C; --bg1:#0A1222; --gold:#E9C46A; --gold-deep:#C9A24A; --cyan:#4CC9F0; --green:#2EE6A6; --red:#FF4D6D; --violet:#9D7CFF; --text:#E8EEF7; --muted:#9FB0C8; }
+* { box-sizing: border-box; }
+html, body, #root { margin:0; height:100%; background: linear-gradient(180deg, var(--bg0), var(--bg1)); color: var(--text); font-family: Inter, system-ui, sans-serif; }
+.boot { position:fixed; inset:0; display:flex; flex-direction:column; gap:12px; align-items:center; justify-content:center; color: var(--muted); font-size:16px; }
+.app { position:fixed; inset:0; overflow:hidden; }
+.stage { position:absolute; inset:0; }

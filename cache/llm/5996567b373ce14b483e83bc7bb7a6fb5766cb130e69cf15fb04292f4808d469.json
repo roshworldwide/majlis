@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A5:20",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "{\"source\": \"U1.2\"}",
+  "uae_basis": [
+   {
+    "source": "U1.2",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1.1",
+    "quote": "",
+    "how_they_closed_it": "<one capable and well-resourced threat actor would need to take steps such as identifying the target, understanding network architecture, and exploiting vulnerabilities to reach a social media claim."
+   }
+  ],
+  "gap": "<The UAE sources do not provide specific guidance on verifying social media claims or securing networks against cyber threats.",
+  "confidence": "med"
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:ai_incident_notification",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "The UAE should adopt a notification duty for AI-caused incidents in critical telecom networks, modeled after EU-NIS2-2022 Article 23(4)(a), requiring operators to notify authorities without undue delay and within 24 hours of becoming aware of such an incident. This mirrors the EU's requirement for early warnings and timely notifications, ensuring accountability and enabling swift response measures.",
+  "rationale": "[G1] EU-NIS2-2022 Article 23(4)(a) states that 'without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning' should be provided. This example underscores the importance of swift notification to authorities for AI-driven incidents affecting critical telecom networks."
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A3:5",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "{\"source\": \"[U1.2]\"}",
+  "uae_basis": [
+   {
+    "source": "[U1.2]",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "[G1.1]",
+    "quote": "",
+    "how_they_closed_it": "Member State shall identify capabilities, assets and procedures that can be deployed in the case of a crisis for the purposes of this Directive."
+   }
+  ],
+  "gap": "UAE examples do not provide specific guidance on activating crisis coordination services.",
+  "confidence": "med"
+ }
+}

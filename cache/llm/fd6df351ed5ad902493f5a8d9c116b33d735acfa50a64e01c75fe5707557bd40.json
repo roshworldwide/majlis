@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:incident_lead",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "A global framework should be established where a designated lead authority is appointed for AI-driven critical telecom network failures. This lead authority could be a combination of the telecom regulator and crisis management authorities, ensuring that in cases of public safety emergencies due to AI faults, there is clear responsibility and coordination among relevant entities [G1].",
+  "rationale": "The EU-NIS2-2022 Article 1(2)(a) example highlights the need for designated competent authorities and cyber crisis management authorities. By applying a similar principle of designating a lead authority in AI-driven emergencies, we can address the gap of unclear responsibility and ensure that public safety is prioritized."
+ }
+}

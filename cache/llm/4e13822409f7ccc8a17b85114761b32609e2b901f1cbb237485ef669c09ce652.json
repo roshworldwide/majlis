@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A2:25",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "{\"source\": \"[U1.2]\"}",
+  "uae_basis": [
+   {
+    "source": "[U1.2]",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "[G1.3]",
+    "quote": "",
+    "how_they_closed_it": "D2 Lessons Learned When an incident occurs, steps are taken to understand its root causes and to ensure remediating action is taken to protect against future incidents."
+   }
+  ],
+  "gap": "",
+  "confidence": "med"
+ }
+}

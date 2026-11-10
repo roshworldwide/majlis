@@ -1,0 +1,592 @@
+{
+ "n_questions": 61,
+ "k": 5,
+ "dense_backend": "nomic-embed-text",
+ "unreachable_gold": [],
+ "retrievers": {
+  "bm25": {
+   "hit@1": 0.852,
+   "hit@3": 0.934,
+   "hit@5": 0.984,
+   "mrr": 0.902,
+   "hit@5_by_layer": {
+    "uae": 1.0,
+    "global": 0.964,
+    "itu": 1.0
+   }
+  },
+  "dense": {
+   "hit@1": 0.77,
+   "hit@3": 0.803,
+   "hit@5": 0.918,
+   "mrr": 0.817,
+   "hit@5_by_layer": {
+    "uae": 0.88,
+    "global": 0.964,
+    "itu": 0.875
+   }
+  },
+  "hybrid": {
+   "hit@1": 0.803,
+   "hit@3": 0.934,
+   "hit@5": 0.951,
+   "mrr": 0.872,
+   "hit@5_by_layer": {
+    "uae": 0.92,
+    "global": 0.964,
+    "itu": 1.0
+   }
+  }
+ },
+ "per_question": [
+  {
+   "id": "Q01",
+   "layer": "uae",
+   "question": "Which authority is responsible for overseeing the telecommunications sector and licensees?",
+   "bm25_rank": 1,
+   "dense_rank": 4,
+   "hybrid_rank": 2,
+   "hybrid_top1": "UAE-TELECOM-LAW::0004"
+  },
+  {
+   "id": "Q02",
+   "layer": "uae",
+   "question": "Who issues regulations on terms and quality assurance standards for services provided to subscribers by licensees?",
+   "bm25_rank": 1,
+   "dense_rank": null,
+   "hybrid_rank": null,
+   "hybrid_top1": "UAE-TDRA-QOS-POLICY-2019::0004"
+  },
+  {
+   "id": "Q03",
+   "layer": "uae",
+   "question": "Telecom authority objective to ensure licensees comply with performance quality standards",
+   "bm25_rank": 1,
+   "dense_rank": null,
+   "hybrid_rank": 10,
+   "hybrid_top1": "UAE-TDRA-QOS-POLICY-2019::0004"
+  },
+  {
+   "id": "Q04",
+   "layer": "uae",
+   "question": "Who may issue general guidelines for the telecommunication sector based on national security after Cabinet approval?",
+   "bm25_rank": 1,
+   "dense_rank": null,
+   "hybrid_rank": 4,
+   "hybrid_top1": "IN-TCSR-AMEND-2025::0007"
+  },
+  {
+   "id": "Q05",
+   "layer": "uae",
+   "question": "Functions of the High Committee overseeing the telecommunications sector",
+   "bm25_rank": 4,
+   "dense_rank": 1,
+   "hybrid_rank": 3,
+   "hybrid_top1": "UAE-TELECOM-LAW::0005"
+  },
+  {
+   "id": "Q06",
+   "layer": "uae",
+   "question": "When must a controller notify the Data Office (Bureau) of a personal data breach?",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-PDPL-2021::0009"
+  },
+  {
+   "id": "Q07",
+   "layer": "uae",
+   "question": "To which data does the UAE personal data protection decree-law not apply, such as government data and health data?",
+   "bm25_rank": 1,
+   "dense_rank": 5,
+   "hybrid_rank": 2,
+   "hybrid_top1": "UAE-PDPL-2021::0001"
+  },
+  {
+   "id": "Q08",
+   "layer": "uae",
+   "question": "Cases where personal data may be processed without the consent of its owner",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-PDPL-2021::0005"
+  },
+  {
+   "id": "Q09",
+   "layer": "uae",
+   "question": "Personal data must be collected for a specific and clear purpose and not processed later incompatibly",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-PDPL-2021::0006"
+  },
+  {
+   "id": "Q10",
+   "layer": "uae",
+   "question": "Cross-border transfer of personal data when a proper protection level is available",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-PDPL-2021::0017"
+  },
+  {
+   "id": "Q11",
+   "layer": "uae",
+   "question": "Transfer of personal data outside the State when an adequate protection level is not available",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-PDPL-2021::0017"
+  },
+  {
+   "id": "Q12",
+   "layer": "uae",
+   "question": "Data subject complaints to the Bureau and their examination with the controller",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-PDPL-2021::0018"
+  },
+  {
+   "id": "Q13",
+   "layer": "uae",
+   "question": "Assessment of the impact of personal data protection before processing",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-PDPL-2021::0016"
+  },
+  {
+   "id": "Q14",
+   "layer": "uae",
+   "question": "Right of the data subject to object to decisions based on automated processing",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-PDPL-2021::0014"
+  },
+  {
+   "id": "Q15",
+   "layer": "uae",
+   "question": "Penalty for spreading false news and rumours, including during crises or emergencies",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-CYBERCRIME-2021::0023"
+  },
+  {
+   "id": "Q16",
+   "layer": "uae",
+   "question": "Competences of the Civil Defence Authority established in NCEMA",
+   "bm25_rank": 3,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-NCEMA-CDA-2024::0002"
+  },
+  {
+   "id": "Q17",
+   "layer": "uae",
+   "question": "Duty of the competent authority and concerned entities to provide information to the Civil Defence Authority",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-NCEMA-CDA-2024::0005"
+  },
+  {
+   "id": "Q18",
+   "layer": "uae",
+   "question": "NCEMA Chairman decisions to use real estate and means of transportation in emergencies",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-NCEMA-CDA-2024::0004"
+  },
+  {
+   "id": "Q19",
+   "layer": "uae",
+   "question": "How entities report cyber security incidents to sector regulators who escalate to TRA under the UAE IA Regulation",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-TDRA-IAR-2020::0008"
+  },
+  {
+   "id": "Q20",
+   "layer": "uae",
+   "question": "Deadline for licensees to report quarterly quality of service data to the TRA",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-TDRA-QOS-POLICY-2019::0009"
+  },
+  {
+   "id": "Q21",
+   "layer": "uae",
+   "question": "UAE AI charter principle on human oversight of artificial intelligence",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-AI-CHARTER-2024::0000"
+  },
+  {
+   "id": "Q22",
+   "layer": "uae",
+   "question": "Strategic objectives of the UAE National Strategy for Artificial Intelligence 2031",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-AI-STRAT-2031::0002"
+  },
+  {
+   "id": "Q23",
+   "layer": "uae",
+   "question": "Federal law on the use of information and communications technology in health fields",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-HEALTH-ICT-2019::0002"
+  },
+  {
+   "id": "Q24",
+   "layer": "uae",
+   "question": "Abu Dhabi Department of Health policy on the use of artificial intelligence in the healthcare sector",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-DOH-AI-POLICY-2018::0000"
+  },
+  {
+   "id": "Q25",
+   "layer": "uae",
+   "question": "UAE Energy Strategy 2050 target for energy efficiency",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UAE-ENERGY-STRAT-2050::0000"
+  },
+  {
+   "id": "Q26",
+   "layer": "global",
+   "question": "Deadline for an early warning of a significant incident to the CSIRT under NIS2",
+   "bm25_rank": 1,
+   "dense_rank": 2,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-NIS2-2022::0089"
+  },
+  {
+   "id": "Q27",
+   "layer": "global",
+   "question": "Cybersecurity risk-management measures that essential and important entities must take",
+   "bm25_rank": 9,
+   "dense_rank": 4,
+   "hybrid_rank": 6,
+   "hybrid_top1": "EU-NIS2-2022::0027"
+  },
+  {
+   "id": "Q28",
+   "layer": "global",
+   "question": "Supervisory measures and requests for information addressed to essential entities",
+   "bm25_rank": 1,
+   "dense_rank": 5,
+   "hybrid_rank": 2,
+   "hybrid_top1": "EU-NIS2-2022::0103"
+  },
+  {
+   "id": "Q29",
+   "layer": "global",
+   "question": "Reporting of serious incidents by providers of high-risk AI systems and the deadline for critical infrastructure disruption",
+   "bm25_rank": 4,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-AIACT-2024::0203"
+  },
+  {
+   "id": "Q30",
+   "layer": "global",
+   "question": "Human oversight of high-risk AI systems by natural persons",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-AIACT-2024::0125"
+  },
+  {
+   "id": "Q31",
+   "layer": "global",
+   "question": "Record-keeping: automatic recording of events (logs) by high-risk AI systems",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-AIACT-2024::0123"
+  },
+  {
+   "id": "Q32",
+   "layer": "global",
+   "question": "Risk management system for high-risk AI systems",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-AIACT-2024::0118"
+  },
+  {
+   "id": "Q33",
+   "layer": "global",
+   "question": "Obligations of deployers of high-risk AI systems",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-AIACT-2024::0136"
+  },
+  {
+   "id": "Q34",
+   "layer": "global",
+   "question": "Post-market monitoring by providers of high-risk AI systems",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-AIACT-2024::0201"
+  },
+  {
+   "id": "Q35",
+   "layer": "global",
+   "question": "AI regulatory sandboxes established by national competent authorities",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-AIACT-2024::0175"
+  },
+  {
+   "id": "Q36",
+   "layer": "global",
+   "question": "Data and data governance for training, validation and testing data sets of high-risk AI",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-AIACT-2024::0120"
+  },
+  {
+   "id": "Q37",
+   "layer": "global",
+   "question": "Accuracy, robustness and cybersecurity of high-risk AI systems",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-AIACT-2024::0126"
+  },
+  {
+   "id": "Q38",
+   "layer": "global",
+   "question": "Availability of voice and internet access services in the event of catastrophic network breakdown",
+   "bm25_rank": 1,
+   "dense_rank": 4,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-EECC-2018::0243"
+  },
+  {
+   "id": "Q39",
+   "layer": "global",
+   "question": "Emergency communications and the single European emergency number 112",
+   "bm25_rank": 2,
+   "dense_rank": 1,
+   "hybrid_rank": 2,
+   "hybrid_top1": "EU-EECC-2018::0102"
+  },
+  {
+   "id": "Q40",
+   "layer": "global",
+   "question": "Security incidents with significant impact on electronic communications networks notified to the competent authority",
+   "bm25_rank": 1,
+   "dense_rank": 10,
+   "hybrid_rank": 1,
+   "hybrid_top1": "EU-EECC-2018::0162"
+  },
+  {
+   "id": "Q41",
+   "layer": "global",
+   "question": "Notification of 911 special facilities within 30 minutes of discovering an outage",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "US-47CFR-PART4::0011"
+  },
+  {
+   "id": "Q42",
+   "layer": "global",
+   "question": "Definition of an outage that potentially affects a 911 special facility",
+   "bm25_rank": 4,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "US-47CFR-PART4::0004"
+  },
+  {
+   "id": "Q43",
+   "layer": "global",
+   "question": "Annual 911 reliability certification by covered 911 service providers",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "US-47CFR-9-19::0004"
+  },
+  {
+   "id": "Q44",
+   "layer": "global",
+   "question": "UK duty of providers to inform OFCOM of a security compromise",
+   "bm25_rank": 3,
+   "dense_rank": 2,
+   "hybrid_rank": 2,
+   "hybrid_top1": "UK-TSA-2021::0011"
+  },
+  {
+   "id": "Q45",
+   "layer": "global",
+   "question": "UK telecommunications security duties of public electronic communications providers",
+   "bm25_rank": 2,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UK-TSA-2021::0001"
+  },
+  {
+   "id": "Q46",
+   "layer": "global",
+   "question": "Telecommunication entity must report a security incident within six hours to the Central Government",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "IN-TCSR-2024::0018"
+  },
+  {
+   "id": "Q47",
+   "layer": "global",
+   "question": "Report major network outages affecting a district for more than four hours to TRAI",
+   "bm25_rank": 1,
+   "dense_rank": 4,
+   "hybrid_rank": 1,
+   "hybrid_top1": "IN-TRAI-OUTAGE-2023::0001"
+  },
+  {
+   "id": "Q48",
+   "layer": "global",
+   "question": "Common framework for reporting AI incidents across jurisdictions",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "OECD-AIINC-2025::0006"
+  },
+  {
+   "id": "Q49",
+   "layer": "global",
+   "question": "Assess how easy it would be to revert automated network processes back to a manual process",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "UK-TSCOP-2026-V1.1::0028"
+  },
+  {
+   "id": "Q50",
+   "layer": "global",
+   "question": "AI risk management framework functions govern, map, measure and manage",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "NIST-AI-RMF-1.0::0029"
+  },
+  {
+   "id": "Q51",
+   "layer": "global",
+   "question": "TRAI draft guidelines on responsible use of artificial intelligence in telecom networks",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "IN-TRAI-AIGUIDE-DRAFT-2026::0000"
+  },
+  {
+   "id": "Q52",
+   "layer": "global",
+   "question": "Level of human involvement in AI-augmented decision-making (human-in-the-loop, over-the-loop)",
+   "bm25_rank": 2,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "SG-PDPC-MAIGF-2020::0013"
+  },
+  {
+   "id": "Q53",
+   "layer": "global",
+   "question": "OECD Recommendation of the Council on Artificial Intelligence principles",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "OECD-AI-REC::0000"
+  },
+  {
+   "id": "Q54",
+   "layer": "itu",
+   "question": "Definition of the ML sandbox for training, testing and evaluating ML pipelines before deploying them in a live network",
+   "bm25_rank": 1,
+   "dense_rank": 5,
+   "hybrid_rank": 3,
+   "hybrid_top1": "ITU-T-Y3181::0008"
+  },
+  {
+   "id": "Q55",
+   "layer": "itu",
+   "question": "Machine learning function orchestrator managing nodes of the machine learning pipeline",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "REF-ITU-T-Y-3172-SUMMARY::0000"
+  },
+  {
+   "id": "Q56",
+   "layer": "itu",
+   "question": "Architectural framework for machine learning sandbox in future networks including IMT-2020",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "ITU-T-Y3181::0002"
+  },
+  {
+   "id": "Q57",
+   "layer": "itu",
+   "question": "Framework for evaluating intelligence levels of future networks including IMT-2020",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "ITU-T-Y3173::0002"
+  },
+  {
+   "id": "Q58",
+   "layer": "itu",
+   "question": "AI Readiness metric Action Latency in the impacts of humans in AI integration dimension",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "ITU-AIREADY-DIMENSIONS::d09"
+  },
+  {
+   "id": "Q59",
+   "layer": "itu",
+   "question": "AI Readiness metrics Policy Sandbox and Policy Extrapolation",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "ITU-AIREADY-DIMENSIONS::d10"
+  },
+  {
+   "id": "Q60",
+   "layer": "itu",
+   "question": "AI Readiness digital infrastructure metrics uptime and network quality",
+   "bm25_rank": 1,
+   "dense_rank": 1,
+   "hybrid_rank": 1,
+   "hybrid_top1": "ITU-AIREADY-DIMENSIONS::d13"
+  },
+  {
+   "id": "Q61",
+   "layer": "itu",
+   "question": "AI Readiness collaboration with AI metric incident action plans supported",
+   "bm25_rank": 1,
+   "dense_rank": 6,
+   "hybrid_rank": 2,
+   "hybrid_top1": "REF-AI-READY-FRAMEWORK-2025::0021"
+  }
+ ]
+}

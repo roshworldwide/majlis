@@ -1,0 +1,1469 @@
+[
+ {
+  "qa_id": "QA-8b68423c",
+  "asked_by": "A1",
+  "t": 0,
+  "wave": "W0",
+  "question": "What is the recommended course of action given our current capabilities and the need for a comprehensive root cause analysis?",
+  "answer": "Given our current capabilities, a comprehensive root cause analysis should be initiated as per [U3] and [G1], which involves collecting data, consulting with vendors, partners, and experts. This process should also consider alternative scenarios to ensure all potential vulnerabilities are addressed, aligning with the guidance in [G2].",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "chunk_id": "UAE-PDPL-2021::0018",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "shall examine such complaints in coordination with the Controller and the Processor",
+    "article": "Article 24, Article 25",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 24",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U2",
+    "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+    "doc_id": "UAE-NCEMA-CDA-2024",
+    "quote": "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned Entities",
+    "article": "Article 3",
+    "how": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Article 3",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U3",
+    "chunk_id": "UAE-TDRA-IAR-2020::0071",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "Root cause for the non-conformity for which the following activities have to be performed - - Collect data - Get expert advice - Consult with vendors, partners and associates The corrective action(s) identified should be implemented within an appropriate timeframe and prioritized based on the risk treatment plan (see",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U4",
+    "chunk_id": "UAE-TDRA-IAR-2020::0161",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "Organizational missions, business functions, strategies, goals, and objectives for incident response help to determine the structure of incident response capabilities.",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "chunk_id": "UK-TSCOP-2022::0137",
+    "doc_id": "UK-TSCOP-2022",
+    "quote": "Your root cause analysis is comprehensive, covering organisational process issues, as well as vulnerabilities in your networks, systems or software.",
+    "article": "Annex C",
+    "how": "Telecommunications Security Code of Practice (December 2022) Annex C",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "G2",
+    "chunk_id": "UK-TSCOP-2026-V1.1::0166",
+    "doc_id": "UK-TSCOP-2026-V1.1",
+    "quote": "Your analysis considers what could have happened under plausible, alternative circumstances (e.g. 'what if' / 'if only' scenarios).",
+    "article": "Annex C",
+    "how": "Telecommunications Security Code of Practice, Version 1.1 (July 2026) Annex C",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "G3",
+    "chunk_id": "UK-TSCOP-2026-V1.1::0053",
+    "doc_id": "UK-TSCOP-2026-V1.1",
+    "quote": "With this information, it becomes possible for analysts to build a chain of events, establish the root cause of incidents, and prevent a recurrence of that incident.",
+    "article": "Annex C",
+    "how": "Telecommunications Security Code of Practice, Version 1.1 (July 2026) Annex C",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "gap": "",
+  "confidence": "high",
+  "llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "6a6ac6feeac7cffc",
+   "tag": "adviser:A1:0",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "retrieval": {
+   "uae": [
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A6-COMPLAINTS",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A6-COMPLAINTS",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.03126
+    },
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-CD-COORDINATION",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A3-CD-COORDINATION",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+     "score": 0.0311
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0071",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 90,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.03068
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0161",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 198,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.02983
+    }
+   ],
+   "global": [
+    {
+     "doc_id": "UK-TSCOP-2022",
+     "chunk_id": "UK-TSCOP-2022::0137",
+     "title": "Telecommunications Security Code of Practice (December 2022)",
+     "page": 132,
+     "article": "Annex C",
+     "url": "https://assets.publishing.service.gov.uk/media/6384d09ed3bf7f7eba1f286c/E02781980_Telecommunications_Security_CoP_Accessible.pdf",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "UK-TSCOP-2026-V1.1",
+     "chunk_id": "UK-TSCOP-2026-V1.1::0166",
+     "title": "Telecommunications Security Code of Practice, Version 1.1 (July 2026)",
+     "page": 153,
+     "article": "Annex C",
+     "url": "https://www.gov.uk/government/publications/revised-telecommunications-security-code-of-practice-2026-version-11/telecommunications-security-code-of-practice-2026-version-11",
+     "score": 0.03002
+    },
+    {
+     "doc_id": "UK-TSCOP-2026-V1.1",
+     "chunk_id": "UK-TSCOP-2026-V1.1::0053",
+     "title": "Telecommunications Security Code of Practice, Version 1.1 (July 2026)",
+     "page": 5,
+     "article": "Annex C",
+     "url": "https://www.gov.uk/government/publications/revised-telecommunications-security-code-of-practice-2026-version-11/telecommunications-security-code-of-practice-2026-version-11",
+     "score": 0.02837
+    }
+   ]
+  },
+  "redacted": [],
+  "preset_id": null
+ },
+ {
+  "qa_id": "QA-749afa5f",
+  "asked_by": "A2",
+  "t": 5,
+  "wave": "W0",
+  "question": "Should we also consider issuing a directive to A1 regarding the immediate cessation of this model until further notice?",
+  "answer": "Given that the UAE Information Assurance Regulation [U1] emphasizes the need for immediate reporting of cyber security issues to sector regulators, it would be prudent to issue a directive to A1 requesting an immediate cessation of the model until further notice. This aligns with the global practice seen in Directive (EU) 2018/1972 [G2], which mandates swift action in response to potential risks. However, UAE sources do not explicitly mandate such a directive, making this recommendation more advisory than mandatory.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "chunk_id": "UAE-TDRA-IAR-2020::0008",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "entities are required to submit UAE IA Regulation implementation progress and key cyber security information to sector regulators",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U2",
+    "chunk_id": "UAE-PDPL-2021::0018",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "shall examine such complaints in coordination with the Controller and the Processor",
+    "article": "Article 24, Article 25",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 24",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U3",
+    "chunk_id": "UAE-HEALTH-ICT-2019::0009",
+    "doc_id": "UAE-HEALTH-ICT-2019",
+    "quote": "Article (29) Issuing the Executive Regulation of the Law The Cabinet shall issue the Executive Regulation of this Law, upon the proposal of the Minister, within six months as of the date of its publication.",
+    "article": "Article 28, Article 29, Article 30, Article 31",
+    "how": "Federal Law No. (2) of 2019 Concerning the Use of the Information and  Article 28",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U4",
+    "chunk_id": "UAE-TDRA-IAR-2020::0057",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "In serious cases of misconduct the process should allow for instant removal of duties, access rights and privileges, and for immediate escorting out of the site, if necessary Objective Performance Indicator Automation Guidance Relevant Threats and Vulnerabilities To ensure that employees, contractors and third party",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "chunk_id": "EU-NIS2-2022::0057",
+    "doc_id": "EU-NIS2-2022",
+    "quote": "The Commission, with the assistance of the European Union Agency for Cybersecurity (ENISA), shall without undue delay provide guidelines and templates regarding the obligations laid down in this paragraph.",
+    "article": "Article 3",
+    "how": "Directive (EU) 2022/2555 of the European Parliament and of the Council Article 3",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G2",
+    "chunk_id": "EU-EECC-2018::0239",
+    "doc_id": "EU-EECC-2018",
+    "quote": "Where an end-user has the right to terminate a contract for a publicly available electronic communications service, other than a number-independent interpersonal communications service, before the end of the agreed contract period pursuant to this Directive or to other provisions of Union or national law, no",
+    "article": "Article 105",
+    "how": "Directive (EU) 2018/1972 of the European Parliament and of the Council Article 105",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "G3",
+    "chunk_id": "EU-EECC-2018::0062",
+    "doc_id": "EU-EECC-2018",
+    "quote": "Transition arrangements established by the national regulatory authority should consider the extent and timing of regulatory oversight of pre-existing agreements, once the notice period starts.",
+    "article": "",
+    "how": "Directive (EU) 2018/1972 of the European Parliament and of the Council",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "gap": "",
+  "confidence": "med",
+  "llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "cc066d6980f99a6d",
+   "tag": "adviser:A2:5",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "retrieval": {
+   "uae": [
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::CH-A1-A2-IA-REPORT",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "CH-A1-A2-IA-REPORT",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.03227
+    },
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::CH-A6-A1-COMPLAINT",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "CH-A6-A1-COMPLAINT",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.03178
+    },
+    {
+     "doc_id": "UAE-HEALTH-ICT-2019",
+     "chunk_id": "UAE-HEALTH-ICT-2019::0009",
+     "title": "Federal Law No. (2) of 2019 Concerning the Use of the Information and Communications Technology in Health Fields",
+     "page": 14,
+     "article": "Article 28",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1209/download",
+     "score": 0.02807
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0057",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 65,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.02655
+    }
+   ],
+   "global": [
+    {
+     "doc_id": "EU-NIS2-2022",
+     "chunk_id": "EU-NIS2-2022::0057",
+     "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)",
+     "page": 31,
+     "article": "Article 3",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+     "score": 0.02727
+    },
+    {
+     "doc_id": "EU-EECC-2018",
+     "chunk_id": "EU-EECC-2018::0239",
+     "title": "Directive (EU) 2018/1972 of the European Parliament and of the Council of 11 December 2018 establishing the European Electronic Communications Code (Recast)",
+     "page": 143,
+     "article": "Article 105",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L1972",
+     "score": 0.02592
+    },
+    {
+     "doc_id": "EU-EECC-2018",
+     "chunk_id": "EU-EECC-2018::0062",
+     "title": "Directive (EU) 2018/1972 of the European Parliament and of the Council of 11 December 2018 establishing the European Electronic Communications Code (Recast)",
+     "page": 1,
+     "article": "",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L1972",
+     "score": 0.02573
+    }
+   ]
+  },
+  "redacted": [],
+  "preset_id": null
+ },
+ {
+  "qa_id": "QA-89891f8e",
+  "asked_by": "A3",
+  "t": 5,
+  "wave": "W0",
+  "question": "Should we also consider activating crisis coordination services for this incident?",
+  "answer": "Based on [U1], activating crisis coordination services for this incident would be advisable as it aligns with the requirement to prepare and coordinate necessary services. Additionally, considering external entities such as service providers and supply chain members for information sharing, as mentioned in [U3], could enhance response efforts. However, UAE sources do not explicitly mention crisis coordination services specifically.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+    "doc_id": "UAE-NCEMA-CDA-2024",
+    "quote": "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned Entities",
+    "article": "Article 3",
+    "how": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Article 3",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U2",
+    "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+    "doc_id": "UAE-NCEMA-CDA-2024",
+    "quote": "Establish a public alert system to warn residents of potential risks",
+    "article": "Article 3",
+    "how": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Article 3",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U3",
+    "chunk_id": "UAE-TDRA-IAR-2020::0161",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "As part of a comprehensive incident response capability, entities consider the coordination and sharing of information with external entities, including, for example, external service providers and entities involved in the supply chain for organizational information systems. • Physical security members • Human",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U4",
+    "chunk_id": "UAE-TDRA-IAR-2020::0159",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "The entity should consider the following: a.",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "chunk_id": "EU-NIS2-2022::0069",
+    "doc_id": "EU-NIS2-2022",
+    "quote": "Each Member State shall adopt a national large-scale cybersecurity incident and crisis response plan where the objectives of and arrangements for the management of large-scale cybersecurity incidents and crises are set out.",
+    "article": "Article 9",
+    "how": "Directive (EU) 2022/2555 of the European Parliament and of the Council Article 9",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G2",
+    "chunk_id": "EU-NIS2-2022::0080",
+    "doc_id": "EU-NIS2-2022",
+    "quote": "EU-CyCLONe shall be composed of the representatives of Member States' cyber crisis management authorities as well as, in cases where a potential or ongoing large-scale cybersecurity incident has or is likely to have a significant impact on services and activities falling within the scope of this Directive, the",
+    "article": "Article 16",
+    "how": "Directive (EU) 2022/2555 of the European Parliament and of the Council Article 16",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G3",
+    "chunk_id": "UK-TSCOP-2022::0136",
+    "doc_id": "UK-TSCOP-2022",
+    "quote": "Incident response exercises are not routinely carried out or are carried out in an ad-hoc way.",
+    "article": "Annex C",
+    "how": "Telecommunications Security Code of Practice (December 2022) Annex C",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "gap": "",
+  "confidence": "med",
+  "llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "047f058d68f4ff89",
+   "tag": "adviser:A3:5",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "retrieval": {
+   "uae": [
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-CD-COORDINATION",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A3-CD-COORDINATION",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-PUBLIC-ALERT",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A3-PUBLIC-ALERT",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+     "score": 0.03226
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0161",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 198,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0159",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 190,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.03151
+    }
+   ],
+   "global": [
+    {
+     "doc_id": "EU-NIS2-2022",
+     "chunk_id": "EU-NIS2-2022::0069",
+     "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)",
+     "page": 37,
+     "article": "Article 9",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+     "score": 0.03128
+    },
+    {
+     "doc_id": "EU-NIS2-2022",
+     "chunk_id": "EU-NIS2-2022::0080",
+     "title": "Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive)",
+     "page": 45,
+     "article": "Article 16",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+     "score": 0.02921
+    },
+    {
+     "doc_id": "UK-TSCOP-2022",
+     "chunk_id": "UK-TSCOP-2022::0136",
+     "title": "Telecommunications Security Code of Practice (December 2022)",
+     "page": 132,
+     "article": "Annex C",
+     "url": "https://assets.publishing.service.gov.uk/media/6384d09ed3bf7f7eba1f286c/E02781980_Telecommunications_Security_CoP_Accessible.pdf",
+     "score": 0.02879
+    }
+   ]
+  },
+  "redacted": [],
+  "preset_id": null
+ },
+ {
+  "qa_id": "QA-b0e7c72a",
+  "asked_by": "A1",
+  "t": 15,
+  "wave": "W2",
+  "question": "Is the operator required to notify any authority about an AI-caused network incident, and within what deadline?",
+  "answer": "According to [U3], the operator is required to establish a Computer Security Incident Response Team (CSIRT) responsible for managing incidents. However, there is no explicit requirement in the UAE sources provided that mandates notification of any authority about an AI-caused network incident or specifies a deadline for such notifications. In contrast, [G2] from EU regulations requires immediate notification of serious incidents to the Commission, indicating a gap in specific notification requirements within the UAE context.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "chunk_id": "UAE-TDRA-QOS-POLICY-2019::0009",
+    "doc_id": "UAE-TDRA-QOS-POLICY-2019",
+    "quote": "The QoS data shall be reported to the TRA no later than thirty (30) calendar days following the end of the reporting quarter",
+    "article": "Annex A",
+    "how": "Regulatory Policy - Quality of Service (QoS) Policy, Version 2.0 Annex A",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U2",
+    "chunk_id": "UAE-PDPL-2021::0009",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "notify the Bureau of such breach or violation and the investigation rights within the period and in accordance with the measures and requirements set by the Executive Regulations",
+    "article": "Article 9",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 9",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U3",
+    "chunk_id": "UAE-TDRA-IAR-2020::0160",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "Normally individuals that are expert in firewalls, routers and IDSs that sits at the edge of the network. • Network administrators Control Sub-Control The entity shall establish a Computer Security Incident Response Team (CSIRT) in charge of the incident management and response plan.",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U4",
+    "chunk_id": "UAE-TDRA-IAR-2020::0102",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "Control Sub-Control The entity shall log system administrator and system operator activities.",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "chunk_id": "EU-AIACT-2024::0214",
+    "doc_id": "EU-AIACT-2024",
+    "quote": "Where the market surveillance authority considers that the non-compliance is not restricted to its national territory, it shall inform the Commission and the other Member States without undue delay of the results of the evaluation and of the actions which it has required the operator to take.",
+    "article": "Article 79",
+    "how": "Regulation (EU) 2024/1689 of the European Parliament and of the Counci Article 79",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G2",
+    "chunk_id": "EU-AIACT-2024::0204",
+    "doc_id": "EU-AIACT-2024",
+    "quote": "National competent authorities shall immediately notify the Commission of any serious incident, whether or not they have taken action on it, in accordance with Article 20 of Regulation (EU) 2019/1020.",
+    "article": "Article 73",
+    "how": "Regulation (EU) 2024/1689 of the European Parliament and of the Counci Article 73",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "G3",
+    "chunk_id": "OECD-AIINC-2025::0017",
+    "doc_id": "OECD-AIINC-2025",
+    "quote": "The AI system may function as intended, but its malicious use causes an incident.",
+    "article": "",
+    "how": "Towards a common reporting framework for AI incidents (OECD Artificial",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "gap": "The UAE evidence does not specify a mandatory notification requirement or deadline for AI-caused network incidents, unlike the global examples provided.",
+  "confidence": "med",
+  "llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "04c109133b3c9457",
+   "tag": "adviser:A1:15",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "retrieval": {
+   "uae": [
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A1-QOS-REPORTING",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A1-QOS-REPORTING",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/5-Quality-of-Service-Regulatory-QoS-Policy.ashx",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::CH-A1-A6-BREACH",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "CH-A1-A6-BREACH",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.032
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0160",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 198,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.03128
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0102",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 127,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.02986
+    }
+   ],
+   "global": [
+    {
+     "doc_id": "EU-AIACT-2024",
+     "chunk_id": "EU-AIACT-2024::0214",
+     "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)",
+     "page": 106,
+     "article": "Article 79",
+     "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+     "score": 0.02776
+    },
+    {
+     "doc_id": "EU-AIACT-2024",
+     "chunk_id": "EU-AIACT-2024::0204",
+     "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)",
+     "page": 101,
+     "article": "Article 73",
+     "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+     "score": 0.02663
+    },
+    {
+     "doc_id": "OECD-AIINC-2025",
+     "chunk_id": "OECD-AIINC-2025::0017",
+     "title": "Towards a common reporting framework for AI incidents (OECD Artificial Intelligence Papers, No. 34)",
+     "page": 25,
+     "article": "",
+     "url": "https://www.oecd.org/en/publications/towards-a-common-reporting-framework-for-ai-incidents_f326d4ac-en.html",
+     "score": 0.02578
+    }
+   ]
+  },
+  "redacted": [],
+  "preset_id": "Q1"
+ },
+ {
+  "qa_id": "QA-4779338e",
+  "asked_by": "A5",
+  "t": 20,
+  "wave": "W3",
+  "question": "Who has the mandate to publicly rebut false rumours of a cyberattack during a network outage?",
+  "answer": "[U3] Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrimes provides a framework for addressing false rumors but does not explicitly mandate who should publicly rebut them during a network outage. The Cybersecurity Authority [A5] at T+20 may have the authority to do so, given its role in cybersecurity, but this is not clearly stated.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+    "doc_id": "UAE-NCEMA-CDA-2024",
+    "quote": "Establish a public alert system to warn residents of potential risks",
+    "article": "Article 3",
+    "how": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Article 3",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U2",
+    "chunk_id": "UAE-PDPL-2021::0009",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "the Bureau shall verify the reasons for the violation to ensure the integrity of the security measures taken",
+    "article": "Article 9",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 9",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U3",
+    "chunk_id": "UAE-CYBERCRIME-2021::0023",
+    "doc_id": "UAE-CYBERCRIME-2021",
+    "quote": "Whoever uses the information network or any ITE to announce, disseminate, redisseminate, circulate, or recirculate false news or data, or false, tendentious, misleading or erroneous rumors or reports, or rumors or reports contrary to what has been announced officially, or broadcasts any provocative advertisements that",
+    "article": "Article 51, Article 52",
+    "how": "Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrim Article 51",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U4",
+    "chunk_id": "UAE-CYBERCRIME-2021::0004",
+    "doc_id": "UAE-CYBERCRIME-2021",
+    "quote": "The notices issued by the competent authorities to an information network broker through which illegal content or false data is published.",
+    "article": "Article 1",
+    "how": "Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrim Article 1",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "chunk_id": "UK-TSCOP-2026-V1.1::0053",
+    "doc_id": "UK-TSCOP-2026-V1.1",
+    "quote": "5.24 Analysts will need to be sufficiently skilled in understanding network and attacker behaviour.",
+    "article": "Annex C",
+    "how": "Telecommunications Security Code of Practice, Version 1.1 (July 2026) Annex C",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G2",
+    "chunk_id": "US-47CFR-PART4::0013",
+    "doc_id": "US-47CFR-PART4",
+    "quote": "All cable, satellite, wireless, wireline, interconnected VoIP, and covered 988 service providers shall notify any official at a 988 special facility who has been designated by the affected 988 special facility as the provider's contact person(s) for communications outages at the facility of any outage that potentially",
+    "article": "§ 4.9",
+    "how": "47 CFR Part 4 - Disruptions to Communications § 4.9",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G3",
+    "chunk_id": "US-47CFR-PART4::0015",
+    "doc_id": "US-47CFR-PART4",
+    "quote": "The Notification and the Initial and Final Communications Outage Reports are to be submitted electronically to the Commission.",
+    "article": "§ 4.11",
+    "how": "47 CFR Part 4 - Disruptions to Communications § 4.11",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "gap": "",
+  "confidence": "med",
+  "llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "6f96309257c758f2",
+   "tag": "adviser:A5:20",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "retrieval": {
+   "uae": [
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-PUBLIC-ALERT",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A3-PUBLIC-ALERT",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+     "score": 0.03227
+    },
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A6-BREACH",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A6-BREACH",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.03151
+    },
+    {
+     "doc_id": "UAE-CYBERCRIME-2021",
+     "chunk_id": "UAE-CYBERCRIME-2021::0023",
+     "title": "Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrimes",
+     "page": 27,
+     "article": "Article 51",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1526/download",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "UAE-CYBERCRIME-2021",
+     "chunk_id": "UAE-CYBERCRIME-2021::0004",
+     "title": "Federal Decree-Law No. (34) of 2021 On Countering Rumors and Cybercrimes",
+     "page": 7,
+     "article": "Article 1",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1526/download",
+     "score": 0.0315
+    }
+   ],
+   "global": [
+    {
+     "doc_id": "UK-TSCOP-2026-V1.1",
+     "chunk_id": "UK-TSCOP-2026-V1.1::0053",
+     "title": "Telecommunications Security Code of Practice, Version 1.1 (July 2026)",
+     "page": 5,
+     "article": "Annex C",
+     "url": "https://www.gov.uk/government/publications/revised-telecommunications-security-code-of-practice-2026-version-11/telecommunications-security-code-of-practice-2026-version-11",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "US-47CFR-PART4",
+     "chunk_id": "US-47CFR-PART4::0013",
+     "title": "47 CFR Part 4 - Disruptions to Communications",
+     "page": 1,
+     "article": "§ 4.9",
+     "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-4",
+     "score": 0.03105
+    },
+    {
+     "doc_id": "US-47CFR-PART4",
+     "chunk_id": "US-47CFR-PART4::0015",
+     "title": "47 CFR Part 4 - Disruptions to Communications",
+     "page": 1,
+     "article": "§ 4.11",
+     "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-4",
+     "score": 0.03078
+    }
+   ]
+  },
+  "redacted": [],
+  "preset_id": "Q2"
+ },
+ {
+  "qa_id": "QA-21dcc303",
+  "asked_by": "A4",
+  "t": 30,
+  "wave": "W4",
+  "question": "Through which legal channel can the ambulance service obtain network-status information from the operator during an emergency?",
+  "answer": "The ambulance service can obtain network-status information from the operator during an emergency through the legal channels established by Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Defence [U1]. However, it is not explicitly stated that this law covers real-time network-status information requests in emergencies. The QoS Policy also provides some regulatory framework but focuses more on service standards and quality rather than specific emergency procedures [U3].",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "chunk_id": "UAE-NCEMA-CDA-2024::0005",
+    "doc_id": "UAE-NCEMA-CDA-2024",
+    "quote": "The Competent Authority and the Concerned Entities shall provide CDA with all information or data it requests related to civil defence work and measures",
+    "article": "Article 6, Article 7",
+    "how": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Article 6",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U2",
+    "chunk_id": "UAE-NCEMA-CDA-2024::0005",
+    "doc_id": "UAE-NCEMA-CDA-2024",
+    "quote": "The Competent Authority and the Concerned Entities shall provide CDA with all information or data it requests related to civil defence work and measures",
+    "article": "Article 6, Article 7",
+    "how": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Article 6",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U3",
+    "chunk_id": "UAE-TDRA-QOS-POLICY-2019::0004",
+    "doc_id": "UAE-TDRA-QOS-POLICY-2019",
+    "quote": "(3) of 2003, as amended, grants the TRA the authority to issue Regulations with respect to: o \"the conditions, level and scope of services provided by the Licensees to subscribers, universal service and emergency services including the standards and quality of the provided services, terms of supply, the handling of",
+    "article": "Annex D",
+    "how": "Regulatory Policy - Quality of Service (QoS) Policy, Version 2.0 Annex D",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U4",
+    "chunk_id": "UAE-TDRA-IAR-2020::0087",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "1) be tested for any malfunctioning 2) ensure protection and uninterrupted power supply on information systems 3) provide emergency lighting in case of main power failure 4) have up-to-date utilities maintenance logs The entity shall protect power and telecommunication cabling carrying data or supporting information",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "chunk_id": "EU-EECC-2018::0103",
+    "doc_id": "EU-EECC-2018",
+    "quote": "This might not be always possible, for example when the location is not available on the handset or through the interpersonal communications service used, or when it is not technically feasible to obtain that information.",
+    "article": "",
+    "how": "Directive (EU) 2018/1972 of the European Parliament and of the Council",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G2",
+    "chunk_id": "EU-EECC-2018::0101",
+    "doc_id": "EU-EECC-2018",
+    "quote": "Where the number-based interpersonal communications service is not provided over a connection which is managed to give a specified quality of service, the service provider might not be able to ensure that emergency calls made through their service are routed to the most appropriate PSAP with the same reliability.",
+    "article": "",
+    "how": "Directive (EU) 2018/1972 of the European Parliament and of the Council",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G3",
+    "chunk_id": "EU-EECC-2018::0102",
+    "doc_id": "EU-EECC-2018",
+    "quote": "To that end, citizens should be made fully aware, when travelling in any Member State, in particular through information provided in international bus terminals, train stations, ports or airports and in telephone directories, end-user and billing material, that the single European emergency number '112' can be used as",
+    "article": "",
+    "how": "Directive (EU) 2018/1972 of the European Parliament and of the Council",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "gap": "",
+  "confidence": "med",
+  "llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "53f555881382286a",
+   "tag": "adviser:A4:30",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "retrieval": {
+   "uae": [
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-INFORMATION",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A3-INFORMATION",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::CH-A2-A3-CDA-INFO",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "CH-A2-A3-CDA-INFO",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+     "score": 0.0315
+    },
+    {
+     "doc_id": "UAE-TDRA-QOS-POLICY-2019",
+     "chunk_id": "UAE-TDRA-QOS-POLICY-2019::0004",
+     "title": "Regulatory Policy - Quality of Service (QoS) Policy, Version 2.0",
+     "page": 7,
+     "article": "Annex D",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/5-Quality-of-Service-Regulatory-QoS-Policy.ashx",
+     "score": 0.02885
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0087",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 98,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.02869
+    }
+   ],
+   "global": [
+    {
+     "doc_id": "EU-EECC-2018",
+     "chunk_id": "EU-EECC-2018::0103",
+     "title": "Directive (EU) 2018/1972 of the European Parliament and of the Council of 11 December 2018 establishing the European Electronic Communications Code (Recast)",
+     "page": 1,
+     "article": "",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L1972",
+     "score": 0.03227
+    },
+    {
+     "doc_id": "EU-EECC-2018",
+     "chunk_id": "EU-EECC-2018::0101",
+     "title": "Directive (EU) 2018/1972 of the European Parliament and of the Council of 11 December 2018 establishing the European Electronic Communications Code (Recast)",
+     "page": 1,
+     "article": "",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L1972",
+     "score": 0.03125
+    },
+    {
+     "doc_id": "EU-EECC-2018",
+     "chunk_id": "EU-EECC-2018::0102",
+     "title": "Directive (EU) 2018/1972 of the European Parliament and of the Council of 11 December 2018 establishing the European Electronic Communications Code (Recast)",
+     "page": 1,
+     "article": "",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L1972",
+     "score": 0.03105
+    }
+   ]
+  },
+  "redacted": [],
+  "preset_id": "Q3"
+ },
+ {
+  "qa_id": "QA-d1f476d5",
+  "asked_by": "A1",
+  "t": 40,
+  "wave": "W5",
+  "question": "Can the operator transfer network logs containing subscriber data to the foreign vendor for rollback forensics?",
+  "answer": "The operator can transfer network logs containing subscriber data to a foreign vendor for rollback forensics under certain conditions. According to [G3], such transfers must be in line with the public telecoms provider's data retention policy and support traceability of user, time, and file details. However, UAE evidence does not explicitly address cross-border data transfer for forensic purposes, making it unclear if this specific scenario is covered.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "chunk_id": "UAE-TDRA-QOS-POLICY-2019::0009",
+    "doc_id": "UAE-TDRA-QOS-POLICY-2019",
+    "quote": "The QoS data shall be reported to the TRA no later than thirty (30) calendar days following the end of the reporting quarter",
+    "article": "Annex A",
+    "how": "Regulatory Policy - Quality of Service (QoS) Policy, Version 2.0 Annex A",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U2",
+    "chunk_id": "UAE-PDPL-2021::0009",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "the Bureau shall verify the reasons for the violation to ensure the integrity of the security measures taken",
+    "article": "Article 9",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 9",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U3",
+    "chunk_id": "UAE-TDRA-IAR-2020::0102",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "System administrator and operator logs should be reviewed on a regular basis.",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U4",
+    "chunk_id": "UAE-PDPL-2021::0017",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "Article (23) Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Proper Protection Level is not Available 1.",
+    "article": "Article 22, Article 23",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 22",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "chunk_id": "UK-TSCOP-2022::0036",
+    "doc_id": "UK-TSCOP-2022",
+    "quote": "3.13 Further general advice on the use of cross domain solutions and on data transfer can be found on the NCSC website.21 SIM security 3.14 The intent of the SIM security measures within this code of practice is to ensure that an at-scale compromise of SIM cards cannot be used to disrupt the UK's telecommunications",
+    "article": "Annex C",
+    "how": "Telecommunications Security Code of Practice (December 2022) Annex C",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G2",
+    "chunk_id": "UK-TSCOP-2026-V1.1::0056",
+    "doc_id": "UK-TSCOP-2026-V1.1",
+    "quote": "Retaining equipment logs for 13 months 5.43 The retention of logging data ensures that if there is a security compromise it is possible to identify any changes in the network that may have contributed to the compromise.",
+    "article": "Annex C",
+    "how": "Telecommunications Security Code of Practice, Version 1.1 (July 2026) Annex C",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G3",
+    "chunk_id": "UK-TSCOP-2026-V1.1::0106",
+    "doc_id": "UK-TSCOP-2026-V1.1",
+    "quote": "Transfer logs shall be retained in accordance with the public telecoms provider's data retention policy and must support traceability of user, time, and file details.",
+    "article": "Annex C",
+    "how": "Telecommunications Security Code of Practice, Version 1.1 (July 2026) Annex C",
+    "cited_in_answer": true,
+    "valid": true
+   }
+  ],
+  "gap": "",
+  "confidence": "med",
+  "llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "4d6165ec8fbf221e",
+   "tag": "adviser:A1:40",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "retrieval": {
+   "uae": [
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A1-QOS-REPORTING",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A1-QOS-REPORTING",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/5-Quality-of-Service-Regulatory-QoS-Policy.ashx",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A6-BREACH",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A6-BREACH",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.032
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0102",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 127,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.03227
+    },
+    {
+     "doc_id": "UAE-PDPL-2021",
+     "chunk_id": "UAE-PDPL-2021::0017",
+     "title": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data",
+     "page": 25,
+     "article": "Article 22",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.03009
+    }
+   ],
+   "global": [
+    {
+     "doc_id": "UK-TSCOP-2022",
+     "chunk_id": "UK-TSCOP-2022::0036",
+     "title": "Telecommunications Security Code of Practice (December 2022)",
+     "page": 6,
+     "article": "Annex C",
+     "url": "https://assets.publishing.service.gov.uk/media/6384d09ed3bf7f7eba1f286c/E02781980_Telecommunications_Security_CoP_Accessible.pdf",
+     "score": 0.03084
+    },
+    {
+     "doc_id": "UK-TSCOP-2026-V1.1",
+     "chunk_id": "UK-TSCOP-2026-V1.1::0056",
+     "title": "Telecommunications Security Code of Practice, Version 1.1 (July 2026)",
+     "page": 5,
+     "article": "Annex C",
+     "url": "https://www.gov.uk/government/publications/revised-telecommunications-security-code-of-practice-2026-version-11/telecommunications-security-code-of-practice-2026-version-11",
+     "score": 0.03009
+    },
+    {
+     "doc_id": "UK-TSCOP-2026-V1.1",
+     "chunk_id": "UK-TSCOP-2026-V1.1::0106",
+     "title": "Telecommunications Security Code of Practice, Version 1.1 (July 2026)",
+     "page": 84,
+     "article": "Annex C",
+     "url": "https://www.gov.uk/government/publications/revised-telecommunications-security-code-of-practice-2026-version-11/telecommunications-security-code-of-practice-2026-version-11",
+     "score": 0.02904
+    }
+   ]
+  },
+  "redacted": [],
+  "preset_id": "Q4"
+ },
+ {
+  "qa_id": "QA-4ced49a8",
+  "asked_by": "A6",
+  "t": 50,
+  "wave": "W6",
+  "question": "Is the use of subscriber location traces to retrain a network AI model lawful under the personal data protection law?",
+  "answer": "The use of subscriber location traces to retrain a network AI model may be lawful under [U3] if appropriate technical and organizational measures are in place to secure personal data. However, the specific circumstances and purposes for such processing would need to align with the principles outlined in the UAE's personal data protection law. The global example provided by [G3] emphasizes the importance of privacy rights throughout the lifecycle of AI systems, suggesting a higher standard that may not be explicitly addressed in the UAE’s current framework.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "chunk_id": "UAE-PDPL-2021::0009",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "the Bureau shall verify the reasons for the violation to ensure the integrity of the security measures taken",
+    "article": "Article 9",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 9",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U2",
+    "chunk_id": "UAE-PDPL-2021::0018",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "shall examine such complaints in coordination with the Controller and the Processor",
+    "article": "Article 24, Article 25",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 24",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U3",
+    "chunk_id": "UAE-PDPL-2021::0006",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "Personal Data shall be kept securely, including protecting it from any violation, penetration, or illegal or unauthorized processing through the development and use of appropriate technical and organizational measures and procedures in accordance with the laws and legislation in force in this regard.",
+    "article": "Article 5",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 5",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U4",
+    "chunk_id": "UAE-PDPL-2021::0002",
+    "doc_id": "UAE-PDPL-2021",
+    "quote": "A set of technical and organizational measures, procedures and processes specified in accordance with provisions of this Decree by Law which maintain the protection of privacy, confidentiality, integrity and availability of Personal Data Pseudonymisation :",
+    "article": "Article 1",
+    "how": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Pe Article 1",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "chunk_id": "EU-AIACT-2024::0183",
+    "doc_id": "EU-AIACT-2024",
+    "quote": "Article 59 Further processing of personal data for developing certain AI systems in the public interest in the AI regulatory sandbox 1.",
+    "article": "Article 59",
+    "how": "Regulation (EU) 2024/1689 of the European Parliament and of the Counci Article 59",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G2",
+    "chunk_id": "EU-AIACT-2024::0137",
+    "doc_id": "EU-AIACT-2024",
+    "quote": "If the authorisation requested pursuant to the first subparagraph is rejected, the use of the post-remote biometric identification system linked to that requested authorisation shall be stopped with immediate effect and the personal data linked to the use of the high-risk AI system for which the authorisation was",
+    "article": "Article 26",
+    "how": "Regulation (EU) 2024/1689 of the European Parliament and of the Counci Article 26",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G3",
+    "chunk_id": "EU-AIACT-2024::0044",
+    "doc_id": "EU-AIACT-2024",
+    "quote": "(69) The right to privacy and to protection of personal data must be guaranteed throughout the entire lifecycle of the AI system.",
+    "article": "",
+    "how": "Regulation (EU) 2024/1689 of the European Parliament and of the Counci",
+    "cited_in_answer": true,
+    "valid": true
+   }
+  ],
+  "gap": "",
+  "confidence": "med",
+  "llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "41e71f5e225dddfe",
+   "tag": "adviser:A6:50",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "retrieval": {
+   "uae": [
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A6-BREACH",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A6-BREACH",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.03252
+    },
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A6-COMPLAINTS",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A6-COMPLAINTS",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.03252
+    },
+    {
+     "doc_id": "UAE-PDPL-2021",
+     "chunk_id": "UAE-PDPL-2021::0006",
+     "title": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data",
+     "page": 8,
+     "article": "Article 5",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.03178
+    },
+    {
+     "doc_id": "UAE-PDPL-2021",
+     "chunk_id": "UAE-PDPL-2021::0002",
+     "title": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data",
+     "page": 3,
+     "article": "Article 1",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+     "score": 0.03175
+    }
+   ],
+   "global": [
+    {
+     "doc_id": "EU-AIACT-2024",
+     "chunk_id": "EU-AIACT-2024::0183",
+     "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)",
+     "page": 91,
+     "article": "Article 59",
+     "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+     "score": 0.02929
+    },
+    {
+     "doc_id": "EU-AIACT-2024",
+     "chunk_id": "EU-AIACT-2024::0137",
+     "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)",
+     "page": 67,
+     "article": "Article 26",
+     "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+     "score": 0.02715
+    },
+    {
+     "doc_id": "EU-AIACT-2024",
+     "chunk_id": "EU-AIACT-2024::0044",
+     "title": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)",
+     "page": 12,
+     "article": "",
+     "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+     "score": 0.02706
+    }
+   ]
+  },
+  "redacted": [],
+  "preset_id": "Q5"
+ },
+ {
+  "qa_id": "QA-b0d9bddd",
+  "asked_by": "A3",
+  "t": 60,
+  "wave": "W7",
+  "question": "Who leads the response when a telecom AI fault becomes a public emergency?",
+  "answer": "According to [U2], the Authority responsible for overseeing the telecommunications sector would lead the response to a telecom AI fault. Additionally, [G1] suggests that such an incident could be critical for national security and emergency response, implying a need for coordinated efforts. However, the UAE evidence does not specify which entity within the Authority or any public alert system established under [U1] would take the lead.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "chunk_id": "UAE-NCEMA-CDA-2024::0002",
+    "doc_id": "UAE-NCEMA-CDA-2024",
+    "quote": "Establish a public alert system to warn residents of potential risks",
+    "article": "Article 3",
+    "how": "Federal Decree-Law No. (35) of 2024 On the Reorganization of the Civil Article 3",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U2",
+    "chunk_id": "UAE-TELECOM-LAW::0005",
+    "doc_id": "UAE-TELECOM-LAW",
+    "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+    "article": "Article 11, Article 12, Article 13",
+    "how": "Federal Decree-Law No. (3) of 2003 Regulating Telecommunications Article 11",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "U3",
+    "chunk_id": "UAE-TDRA-IAR-2020::0160",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "The entity shall develop an incident response plan encompassing the following:",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "U4",
+    "chunk_id": "UAE-TDRA-IAR-2020::0162",
+    "doc_id": "UAE-TDRA-IAR-2020",
+    "quote": "Entities should participate in sector, national, and international exercises to further test incident response capabilities.",
+    "article": "",
+    "how": "UAE Information Assurance Regulation, Version 1.1",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1",
+    "chunk_id": "IN-TRAI-AIGUIDE-DRAFT-2026::0000",
+    "doc_id": "IN-TRAI-AIGUIDE-DRAFT-2026",
+    "quote": "It is critical not only for social, economic and commercial activities but also for national security and emergency response in the country.",
+    "article": "",
+    "how": "Draft Guidelines on Responsible Use of Artificial Intelligence (AI) in",
+    "cited_in_answer": true,
+    "valid": true
+   },
+   {
+    "source": "G2",
+    "chunk_id": "IN-TRAI-AIGUIDE-DRAFT-2026::0004",
+    "doc_id": "IN-TRAI-AIGUIDE-DRAFT-2026",
+    "quote": "Oversight on the implementation of internal AI policy on telecom 3.6.",
+    "article": "",
+    "how": "Draft Guidelines on Responsible Use of Artificial Intelligence (AI) in",
+    "cited_in_answer": false,
+    "valid": true
+   },
+   {
+    "source": "G3",
+    "chunk_id": "IN-TRAI-AI-2023::0048",
+    "doc_id": "IN-TRAI-AI-2023",
+    "quote": "TSOC coordinates with Computer Emergency Response Team India (CERT-IN), which is the nodal agency to deal with cyber security.",
+    "article": "",
+    "how": "Recommendations on Leveraging Artificial Intelligence and Big Data in",
+    "cited_in_answer": false,
+    "valid": true
+   }
+  ],
+  "gap": "",
+  "confidence": "med",
+  "llm": {
+   "model": "ollama:qwen2.5:7b",
+   "prompt_hash": "297360710e35826a",
+   "tag": "adviser:A3:60",
+   "cache_hit": true,
+   "source": "llm",
+   "repair": false
+  },
+  "retrieval": {
+   "uae": [
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A3-PUBLIC-ALERT",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A3-PUBLIC-ALERT",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2771",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "MAJLIS-MANDATES-UAE",
+     "chunk_id": "MAJLIS-MANDATES-UAE::M-A2-OVERSIGHT",
+     "title": "MAJLIS institutional mandates registry (derived, cited)",
+     "page": 1,
+     "article": "M-A2-OVERSIGHT",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1132/download",
+     "score": 0.03175
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0160",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 198,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.03279
+    },
+    {
+     "doc_id": "UAE-TDRA-IAR-2020",
+     "chunk_id": "UAE-TDRA-IAR-2020::0162",
+     "title": "UAE Information Assurance Regulation, Version 1.1",
+     "page": 198,
+     "article": "",
+     "url": "https://tdra.gov.ae/-/media/About/regulations-and-ruling/EN/UAE-Information-Assurance-Regulation-v1-1-pdf.ashx",
+     "score": 0.02963
+    }
+   ],
+   "global": [
+    {
+     "doc_id": "IN-TRAI-AIGUIDE-DRAFT-2026",
+     "chunk_id": "IN-TRAI-AIGUIDE-DRAFT-2026::0000",
+     "title": "Draft Guidelines on Responsible Use of Artificial Intelligence (AI) in Telecommunication Networks and Provision of Telecommunication Services (Draft Guidelines for Consultation)",
+     "page": 1,
+     "article": "",
+     "url": "https://trai.gov.in/sites/default/files/2026-10/Draft_CP_30102026.pdf",
+     "score": 0.03175
+    },
+    {
+     "doc_id": "IN-TRAI-AIGUIDE-DRAFT-2026",
+     "chunk_id": "IN-TRAI-AIGUIDE-DRAFT-2026::0004",
+     "title": "Draft Guidelines on Responsible Use of Artificial Intelligence (AI) in Telecommunication Networks and Provision of Telecommunication Services (Draft Guidelines for Consultation)",
+     "page": 8,
+     "article": "",
+     "url": "https://trai.gov.in/sites/default/files/2026-10/Draft_CP_30102026.pdf",
+     "score": 0.03068
+    },
+    {
+     "doc_id": "IN-TRAI-AI-2023",
+     "chunk_id": "IN-TRAI-AI-2023::0048",
+     "title": "Recommendations on Leveraging Artificial Intelligence and Big Data in Telecommunication Sector",
+     "page": 73,
+     "article": "",
+     "url": "https://www.trai.gov.in/sites/default/files/2024-09/Recommendation_20072023.pdf",
+     "score": 0.03028
+    }
+   ]
+  },
+  "redacted": [],
+  "preset_id": "Q6"
+ }
+]

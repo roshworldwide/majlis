@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# Raw source documents are re-downloaded by `majlis collect` (licence-safe: we ship metadata + chunks + URLs)
+data/raw/
+data/chroma/
+data/emb_cache/
+# local scratch
+*.log
+report/build/
+runs/_scratch*/
+web/node_modules/
+web/dist/
+web/dist-single/
+web/test-results/
+web/playwright-report/
+runs/skeleton/
+runs/ask/
+runs/play/
+release/
+submission/

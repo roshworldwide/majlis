@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:energy_vs_availability",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "Adopt a safe-mode for declared mass-gathering zones where automated network processes are temporarily halted or modified to prioritize network availability during critical events. This aligns with the UK example's requirement that any automated processes ensure resilience and have an owner, while also addressing EU's commitment to fullest possible availability of services in catastrophic breakdowns.",
+  "rationale": "[G1] UK-TSCOP-2026-V1.1 para 2.70: 'how easy it would be to revert back to a manual process' — This example supports the idea of having an automated rollback mechanism for critical events."
+ }
+}

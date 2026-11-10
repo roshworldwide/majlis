@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A3:35",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "{\"source\": \"[U1.2]\"}",
+  "uae_basis": [
+   {
+    "source": "[U1.2]",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "[G1.1]",
+    "quote": "",
+    "how_they_closed_it": "<one line>services other than mobile number-based interpersonal communications services and other than transmission services used for broadcasting or by mobile application transmitted via internet access services."
+   }
+  ],
+  "gap": "<The UAE examples do not specify the activation of a public alert system, only its operation. The global examples provide more specific guidance on informing the public about such systems.",
+  "confidence": "med"
+ }
+}

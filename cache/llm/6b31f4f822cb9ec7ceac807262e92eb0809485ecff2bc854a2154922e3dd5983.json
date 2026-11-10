@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "reco:operator_ems_channel",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "AI-driven network operators must establish a real-time communication channel with emergency dispatch services to promptly notify them of any faults that degrade emergency call delivery. This notification should be provided no later than 30 minutes after the operator becomes aware of the issue, as mandated by [G1].",
+  "rationale": "This recommendation ensures timely coordination between network operators and emergency services, leveraging existing regulatory frameworks such as those in the US to mandate swift communication during critical incidents."
+ }
+}

@@ -1,0 +1,1074 @@
+{
+ "stats": {
+  "checked": 34,
+  "blocked": 0,
+  "would_block": 6,
+  "flagged": 1,
+  "g1_fail": 5,
+  "g2_fail": 4,
+  "g3_fail": 2,
+  "g4_flag": 1,
+  "g5_fail": 0,
+  "claims_checked": 2,
+  "claims_cited": 2
+ },
+ "verdicts": [
+  {
+   "t": 0,
+   "item_id": "ACT-002",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": "G4",
+   "reason": "conflicts with declared objectives A2:service_availability, A3:public_safety, A4:public_safety",
+   "flagged": true,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": false,
+     "detail": "conflicts with declared objectives A2:service_availability, A3:public_safety, A4:public_safety"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": {
+    "type": "conflicting_objectives",
+    "rule": "G4",
+    "agent": "A1",
+    "action_type": "keep_ml_energy_saving",
+    "target": null,
+    "reason": "conflicts with declared objectives A2:service_availability, A3:public_safety, A4:public_safety"
+   }
+  },
+  {
+   "t": 0,
+   "item_id": "ACT-003",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 0,
+   "item_id": "ACT-004",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 0,
+   "item_id": "MSG-001",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": "G3",
+   "reason": "No legal channel A1→A4 can be cited",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": false,
+     "detail": "no legal channel A1→A4 in the cited corpus"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "unchecked",
+   "latency": 10,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": {
+    "type": "coordination_problem",
+    "rule": "G3",
+    "agent": "A1",
+    "target": "A4",
+    "action_type": "message",
+    "reason": "No legal channel A1→A4 can be cited"
+   }
+  },
+  {
+   "t": 10,
+   "item_id": "ACT-005",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 10,
+   "item_id": "MSG-002",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A4-A3-CDA-INFO (competent/concerned authority → CDA (information, cooperation))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-NCEMA-CDA-2024::0005"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A4-A3-CDA-INFO",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 15,
+   "item_id": "ACT-006",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 15,
+   "item_id": "MSG-003",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A1-A2-IA-REPORT (entity → sector regulator (cyber-security information))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-TDRA-IAR-2020::0008"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A1-A2-IA-REPORT",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 20,
+   "item_id": "ACT-007",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "within M-A2-OVERSIGHT"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-TELECOM-LAW::0005"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 20,
+   "item_id": "MSG-004",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A2-A1-OVERSIGHT (regulator → licensee (oversight, directives))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-TELECOM-LAW::0005"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A2-A1-OVERSIGHT",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 20,
+   "item_id": "ACT-008",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "within M-A3-INFORMATION"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-NCEMA-CDA-2024::0005"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 20,
+   "item_id": "MSG-005",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A3-A2-COORD (CDA → concerned authorities (coordination, information requests))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-NCEMA-CDA-2024::0005"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A3-A2-COORD",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 20,
+   "item_id": "ACT-009",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": "G2",
+   "reason": "no cited mandate of A5 covers action type 'investigate_cyber_incident'",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": false,
+     "detail": "no cited mandate of A5 covers action type 'investigate_cyber_incident'"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": {
+    "type": "unclear_responsibility",
+    "rule": "G2",
+    "agent": "A5",
+    "action_type": "investigate_cyber_incident",
+    "target": "A1",
+    "reason": "no cited mandate of A5 covers action type 'investigate_cyber_incident'"
+   }
+  },
+  {
+   "t": 20,
+   "item_id": "MSG-006",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": "G3",
+   "reason": "No legal channel A5→A1 can be cited",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": false,
+     "detail": "no legal channel A5→A1 in the cited corpus"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "unchecked",
+   "latency": 10,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": {
+    "type": "coordination_problem",
+    "rule": "G3",
+    "agent": "A5",
+    "target": "A1",
+    "action_type": "message",
+    "reason": "No legal channel A5→A1 can be cited"
+   }
+  },
+  {
+   "t": 25,
+   "item_id": "ACT-010",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "within M-A2-OVERSIGHT"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-TELECOM-LAW::0005"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 25,
+   "item_id": "MSG-007",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A2-A1-OVERSIGHT (regulator → licensee (oversight, directives))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-TELECOM-LAW::0005"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A2-A1-OVERSIGHT",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 25,
+   "item_id": "ACT-011",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 25,
+   "item_id": "MSG-008",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A2-A3-CDA-INFO (concerned entity → CDA (information on request / cooperation))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-NCEMA-CDA-2024::0005"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A2-A3-CDA-INFO",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 25,
+   "item_id": "ACT-012",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 25,
+   "item_id": "MSG-009",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A2-A5-ESCALATE (sector regulator → cyber-security parties (escalation))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-TDRA-IAR-2020::0008"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 15,
+   "channel_id": "CH-A2-A5-ESCALATE",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 25,
+   "item_id": "ACT-013",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": "G2",
+   "reason": "no cited mandate of A2 covers action type 'claim_incident_lead'",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": false,
+     "detail": "no cited mandate of A2 covers action type 'claim_incident_lead'"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": {
+    "type": "unclear_responsibility",
+    "rule": "G2",
+    "agent": "A2",
+    "action_type": "claim_incident_lead",
+    "target": null,
+    "reason": "no cited mandate of A2 covers action type 'claim_incident_lead'"
+   }
+  },
+  {
+   "t": 30,
+   "item_id": "MSG-010",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A1-A2-IA-REPORT (entity → sector regulator (cyber-security information))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-TDRA-IAR-2020::0008"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A1-A2-IA-REPORT",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 30,
+   "item_id": "MSG-011",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A2-A3-CDA-INFO (concerned entity → CDA (information on request / cooperation))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-NCEMA-CDA-2024::0005"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A2-A3-CDA-INFO",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 30,
+   "item_id": "ACT-014",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 30,
+   "item_id": "MSG-012",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A4-A3-CDA-INFO (competent/concerned authority → CDA (information, cooperation))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-NCEMA-CDA-2024::0005"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A4-A3-CDA-INFO",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 30,
+   "item_id": "ACT-015",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 35,
+   "item_id": "ACT-016",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "internal operational action (own network), no public power exercised"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 35,
+   "item_id": "MSG-013",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A3-A4-COORD (CDA → competent/concerned authorities (coordination))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-NCEMA-CDA-2024::0002"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A3-A4-COORD",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 40,
+   "item_id": "ACT-017",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": "G2",
+   "reason": "no cited mandate of A1 covers action type 'cross_border_log_transfer'",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": false,
+     "detail": "no cited mandate of A1 covers action type 'cross_border_log_transfer'"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": {
+    "type": "technology_gap",
+    "rule": "G2",
+    "agent": "A1",
+    "action_type": "cross_border_log_transfer",
+    "target": "vendor",
+    "reason": "no cited mandate of A1 covers action type 'cross_border_log_transfer'"
+   }
+  },
+  {
+   "t": 40,
+   "item_id": "ACT-018",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "within M-A3-CD-COORDINATION"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-NCEMA-CDA-2024::0002"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 40,
+   "item_id": "ACT-019",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": "G2",
+   "reason": "no cited mandate of A5 covers action type 'public_rumour_rebuttal'",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": false,
+     "detail": "no cited mandate of A5 covers action type 'public_rumour_rebuttal'"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": {
+    "type": "unclear_responsibility",
+    "rule": "G2",
+    "agent": "A5",
+    "action_type": "public_rumour_rebuttal",
+    "target": null,
+    "reason": "no cited mandate of A5 covers action type 'public_rumour_rebuttal'"
+   }
+  },
+  {
+   "t": 50,
+   "item_id": "ACT-020",
+   "kind": "action",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G2",
+     "ok": true,
+     "detail": "within M-A6-COMPLAINTS"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-PDPL-2021::0018"
+    },
+    {
+     "rule": "G4",
+     "ok": true,
+     "detail": "no objective conflict"
+    }
+   ],
+   "route": "legal",
+   "latency": 0,
+   "channel_id": null,
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 50,
+   "item_id": "MSG-014",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A6-A1-COMPLAINT (Bureau → controller (complaint examination))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-PDPL-2021::0018"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A6-A1-COMPLAINT",
+   "redacted": [],
+   "gap_candidate": null
+  },
+  {
+   "t": 60,
+   "item_id": "MSG-015",
+   "kind": "message",
+   "allowed": true,
+   "enforced": false,
+   "failed_rule": null,
+   "reason": "",
+   "flagged": false,
+   "checks": [
+    {
+     "rule": "G3",
+     "ok": true,
+     "detail": "channel CH-A1-A6-BREACH (controller → Bureau (personal-data breach notification))"
+    },
+    {
+     "rule": "G1",
+     "ok": true,
+     "detail": "quote verified in UAE-PDPL-2021::0009"
+    },
+    {
+     "rule": "G5",
+     "ok": true,
+     "detail": "no uncited normative claims"
+    }
+   ],
+   "route": "legal",
+   "latency": 10,
+   "channel_id": "CH-A1-A6-BREACH",
+   "redacted": [],
+   "gap_candidate": null
+  }
+ ]
+}

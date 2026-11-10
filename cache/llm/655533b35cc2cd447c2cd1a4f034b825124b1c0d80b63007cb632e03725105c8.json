@@ -1,0 +1,13 @@
+{
+ "model": "qwen2.5:7b",
+ "tag": "adviser:A5:20",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "To verify social media claims, it is essential to establish a formal policy prohibiting the use of unauthorized software [U3] and monitoring tools can provide necessary information on potential threats such as abuse of system access/privileges [G1]. Steps to secure the network include identifying all mobile devices and media that hold critical data supporting essential functions [G2], which aligns with the UAE's guidance on protecting against risks associated with external networks [U3]. However, the UAE evidence does not specifically address social media verification processes.",
+  "uae_basis": [],
+  "global_examples": [],
+  "gap": "",
+  "confidence": "med"
+ }
+}

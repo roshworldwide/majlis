@@ -1,0 +1,648 @@
+{
+ "checked": 106,
+ "summary": {
+  "exact (poppler)": 92,
+  "match in original file (PyMuPDF + header stripping; poppler order differs)": 12,
+  "match ignoring punctuation (poppler)": 2
+ },
+ "extractors": "pdftotext (poppler) / BeautifulSoup / tesseract sidecar",
+ "not_found": [],
+ "results": [
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-QOS-POLICY-2019",
+   "quote": "The QoS data shall be reported to the TRA no later than thirty (30) calendar days following the end of the reporting quarter",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TELECOM-LAW",
+   "quote": "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TELECOM-LAW",
+   "quote": "Terms and standards of services provided to subscribers by Licensees including, quality assurance standards for services",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TELECOM-LAW",
+   "quote": "Ensure that Licensees comply with performance quality standards and satisfy the terms of their licenses",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-NCEMA-CDA-2024",
+   "quote": "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned ",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-NCEMA-CDA-2024",
+   "quote": "The Competent Authority and the Concerned Entities shall provide CDA with all information or data it requests related to civil defence work and measures",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-NCEMA-CDA-2024",
+   "quote": "Establish a public alert system to warn residents of potential risks",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-PDPL-2021",
+   "quote": "shall examine such complaints in coordination with the Controller and the Processor",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-PDPL-2021",
+   "quote": "the Bureau shall verify the reasons for the violation to ensure the integrity of the security measures taken",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "entities are required to submit UAE IA Regulation implementation progress and key cyber security information to sector regulators",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "escalate key findings to TRA and other Cyber Security parties",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-NCEMA-CDA-2024",
+   "quote": "The Competent Authority shall coordinate and cooperate with CDA in providing services related to civil defence work and measures whenever necessary",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-PDPL-2021",
+   "quote": "notify the Bureau of such breach or violation and the investigation rights within the period and in accordance with the measures and requirements set by the Executive Regulations",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025",
+   "quote": "service loads. Traditional energysaving methods often struggle with high fault rates, slow emergency response times, and limited operational efficiency, hindering progress toward sustainable digital i",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025",
+   "quote": "savings, and measurable support for carbon neutrality goals all within a scalable framework that can adapt to varied network environments and technologies.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025",
+   "quote": "AI-driven actions enable automated and intelligent network optimization. These include dynamic resource scaling by activating or deactivating radio units and adjusting bandwidth based on demand foreca",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "REF-INNOVATE-FOR-IMPACT-GENEVA-AI-FOR-GOOD-2025",
+   "quote": "AI-Driven Network Optimization: AI-driven actions enable automated and intelligent network optimization. These include dynamic resource scaling by activating or deactivating radio units and adjusting ",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "IN-TCSR-2024",
+   "quote": "(3) Every telecommunication entity shall ensure compliance with the directions and standards, including timelines for their implementation, as may be issued by the Central Government for the preventio",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "data should link administrative actions to network administrators and on to tickets. This applies whether the administrator is internal or employed by a third party. With this information, it becomes ",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "For issues, the vendor identifies the root cause analysis of the issue and is able to detail the origin of the vulnerability. Proper vulnerability management requires the vendor to understand its own ",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-CYBERCRIME-2021",
+   "quote": "an offensive manner or contrary to the truth.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "how easy it would be to revert back to a manual process",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "any automated processes shall ensure the resilience of the network is retained and there is a named business and operational owner",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-EECC-2018",
+   "quote": "Member States shall take all necessary measures to ensure the fullest possible availability of voice communications services and internet access services provided over public electronic communications",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TELECOM-LAW",
+   "quote": "Ensure that the telecommunications sector provides high quality and efficient services to subscribers",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-ENERGY-STRAT-2050",
+   "quote": "Increase efficiency of energy and water consumption in highly intensive sectors in the UAE",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "US-47CFR-PART4",
+   "quote": "shall provide a 911 outage notification to a potentially affected 911 special facility as soon as possible, but no later than within 30 minutes of discovering",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-EECC-2018",
+   "quote": "Member States shall ensure that providers of voice communications services take all necessary measures to ensure uninterrupted access to emergency",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-NIS2-2022",
+   "quote": "without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "shall be provided immediately, and not later than two days after the provider or, where applicable, the deployer becomes aware of that incident",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "IN-TCSR-2024",
+   "quote": "within six hours of becoming aware of a security incident affecting its telecommunication network or telecommunication service, report the same to the Central Government",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "IN-TRAI-OUTAGE-2023",
+   "quote": "continuously for a period of more than four hours, within twenty four hours of their occurrence",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "REF-T-REC-Y-3172-201906-I-PDF-E",
+   "quote": "An ML sandbox is an isolated domain which allows the hosting of separate ML pipelines to train, test and evaluate them before deploying them in a live network",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "ITU-T-Y3181",
+   "quote": "the sandbox subsystem [ITU-T Y.3172] emerges as a promising solution for training, testing, and evaluating the performance of ML models before being deployed in live networks",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "'substantial modification' means a change to an AI system after its placing on the market or putting into service which is not foreseen or planned in the initial conformity assessment",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-NIS2-2022",
+   "quote": "requests for information necessary to assess the cybersecurity risk-management measures adopted by the entity concerned",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSA-2021",
+   "quote": "may by notice (\"an assessment notice\") impose on the provider a duty to do any of the following things",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-NIS2-2022",
+   "quote": "it shall clearly indicate which of those authorities is to serve as the coordinator for the management of",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-NIS2-2022",
+   "quote": "Member States shall ensure coherence with the existing frameworks for general national crisis management",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TELECOM-LAW",
+   "quote": "Issue any general guidelines or instructions related to the Telecommunication Sector, based upon the requirements of the national security or international relations, after being approved by the Cabin",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "how easy it would be to roll back a failed change",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-PDPL-2021",
+   "quote": "Personal Data may be transferred to outside of the State in the following cases approved by the Bureau",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-NIS2-2022",
+   "quote": "may, after consulting the entity concerned, inform the public about the significant incident or require the entity to do so",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-EECC-2018",
+   "quote": "public warnings are transmitted by providers of mobile number-based interpersonal communications services to the end-users concerned",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-CYBERCRIME-2021",
+   "quote": "false news or data, or false, tendentious, misleading or erroneous rumors or reports",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "Training, validation and testing data sets shall be subject to data governance and management practices appropriate",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "data collection processes and the origin of data, and in the case of personal data, the original purpose of the data collection",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-PDPL-2021",
+   "quote": "It shall not be processed at any later time in a manner incompatible with such purpose. However, it may be processed if the purpose is similar or close to the purpose for which this data is collected",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-AI-STRAT-2031",
+   "quote": "Objective 4 explains how the UAE will take steps to increase the amount of government experimentation with AI to improve the lives of its citizens.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "Root cause for the non-conformity for which the following activities have to be performed - - Collect data - Get expert advice - Consult with vendors, partners and associates The corrective action(s) ",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "IN-TRAI-AI-2023",
+   "quote": "MLOps can help the telecom industry to automate and scale the ML lifecycle from data collection and preparation to model training and validation to model deployment and monitoring.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "IN-TRAI-AI-2023",
+   "quote": "What steps or measures do you suggest to encourage active participation at international level and setting up of such programs.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2022",
+   "quote": "D2.a Incident Root Cause Analysis When an incident occurs, steps must be taken to understand its root causes and ensure appropriate remediating action is taken.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "Normally individuals that are expert in firewalls, routers and IDSs that sits at the edge of the network. • Network administrators Control Sub-Control The entity shall establish a Computer Security In",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "Incident information can be obtained from a variety of sources including, for example, incident reports, incident response teams, audit monitoring, network monitoring, physical access monitoring, and ",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "All people in your organisation, from the most senior to the most junior, follow appropriate cyber security training paths.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "You wait until a severe or high-profile incident has occurred before you take steps to improve.",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2022",
+   "quote": "All people in your organisation, from the most senior to the most junior, follow appropriate cyber security training paths.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "Control Sub-Control The entity shall log system administrator and system operator activities.",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "Where the market surveillance authority considers that the non-compliance is not restricted to its national territory, it shall inform the Commission and the other Member States without undue delay of",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "National competent authorities shall immediately notify the Commission of any serious incident, whether or not they have taken action on it, in accordance with Article 20 of Regulation (EU) 2019/1020.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "OECD-AIINC-2025",
+   "quote": "The AI system may function as intended, but its malicious use causes an incident.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "The following guidance should be considered: a. establishing a formal policy prohibiting the use of unauthorized software; b. establishing a formal policy to protect against risks associated with obta",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "Monitoring tools can provide such information. • Abuse of system access/privileges • Backdoor or Command and Control • Disable or interfere with security controls • Tampering in network utilities T5.5",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "You identify and justify what measures can be used at each step to reduce the likelihood of the threat actor reaching the probable target(s) or achieving their objective(s).",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "You have identified all mobile devices and media that hold data important to the operation of network and information systems supporting your essential function(s).",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-CYBERCRIME-2021",
+   "quote": "Whoever uses the information network or any ITE to announce, disseminate, redisseminate, circulate, or recirculate false news or data, or false, tendentious, misleading or erroneous rumors or reports,",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-CYBERCRIME-2021",
+   "quote": "The notices issued by the competent authorities to an information network broker through which illegal content or false data is published.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "5.24 Analysts will need to be sufficiently skilled in understanding network and attacker behaviour.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "US-47CFR-PART4",
+   "quote": "All cable, satellite, wireless, wireline, interconnected VoIP, and covered 988 service providers shall notify any official at a 988 special facility who has been designated by the affected 988 special",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "US-47CFR-PART4",
+   "quote": "The Notification and the Initial and Final Communications Outage Reports are to be submitted electronically to the Commission.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "Here are some of the primary responsibilities of the CSIRT: • Develop incident policy, plan, and procedures • Response to incidents and minimizing the impact • Investigate incidents and determine the ",
+   "result": "match ignoring punctuation (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "Results of the assessment and decision should be recorded in detail for the purpose of future reference and verification.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2022",
+   "quote": "D2 Lessons Learned When an incident occurs, steps are taken to understand its root causes and to ensure appropriate remediating action is taken to protect against future incidents.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "Principle D2 Lessons Learned When an incident occurs, steps are taken to understand its causes and to ensure remediating action is taken to protect against future incidents.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-QOS-POLICY-2019",
+   "quote": "(3) of 2003, as amended, grants the TRA the authority to issue Regulations with respect to: o \"the conditions, level and scope of services provided by the Licensees to subscribers, universal service a",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "1) be tested for any malfunctioning 2) ensure protection and uninterrupted power supply on information systems 3) provide emergency lighting in case of main power failure 4) have up-to-date utilities ",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-EECC-2018",
+   "quote": "This might not be always possible, for example when the location is not available on the handset or through the interpersonal communications service used, or when it is not technically feasible to obt",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-EECC-2018",
+   "quote": "Where the number-based interpersonal communications service is not provided over a connection which is managed to give a specified quality of service, the service provider might not be able to ensure ",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-EECC-2018",
+   "quote": "To that end, citizens should be made fully aware, when travelling in any Member State, in particular through information provided in international bus terminals, train stations, ports or airports and ",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "1) assess the potential consequences that would result if the identified risks were to materialize by assessing the consequences of losses of confidentiality, integrity or availability 2) assess the r",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "When selecting risk treatment options, the entity should consider the expectations of the sector and national level.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "NIST-AI-RMF-1.0",
+   "quote": "Documenting residual risks will call for the system provider to fully consider the risks of deploying the AI product and will inform end users about potential negative impacts of interacting with the ",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-EECC-2018",
+   "quote": "In order to inform end-users entering a Member State of the existence of such a public warning system, that Member State should ensure that those end-users receive, automatically by means of SMS, with",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "NIST-AI-RMF-1.0",
+   "quote": "Policies and resources should be prioritized based on the assessed risk level and potential impact of an AI system.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "System administrator and operator logs should be reviewed on a regular basis.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-PDPL-2021",
+   "quote": "Article (23) Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Proper Protection Level is not Available 1.",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2022",
+   "quote": "3.13 Further general advice on the use of cross domain solutions and on data transfer can be found on the NCSC website.21 SIM security 3.14 The intent of the SIM security measures within this code of ",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "Retaining equipment logs for 13 months 5.43 The retention of logging data ensures that if there is a security compromise it is possible to identify any changes in the network that may have contributed",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "Transfer logs shall be retained in accordance with the public telecoms provider's data retention policy and must support traceability of user, time, and file details.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-PDPL-2021",
+   "quote": "Personal Data shall be kept securely, including protecting it from any violation, penetration, or illegal or unauthorized processing through the development and use of appropriate technical and organi",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-PDPL-2021",
+   "quote": "A set of technical and organizational measures, procedures and processes specified in accordance with provisions of this Decree by Law which maintain the protection of privacy, confidentiality, integr",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "Article 59 Further processing of personal data for developing certain AI systems in the public interest in the AI regulatory sandbox 1.",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "If the authorisation requested pursuant to the first subparagraph is rejected, the use of the post-remote biometric identification system linked to that requested authorisation shall be stopped with i",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "EU-AIACT-2024",
+   "quote": "(69) The right to privacy and to protection of personal data must be guaranteed throughout the entire lifecycle of the AI system.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "The entity shall develop an incident response plan encompassing the following:",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "Entities should participate in sector, national, and international exercises to further test incident response capabilities.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "IN-TRAI-AIGUIDE-DRAFT-2026",
+   "quote": "It is critical not only for social, economic and commercial activities but also for national security and emergency response in the country.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "IN-TRAI-AIGUIDE-DRAFT-2026",
+   "quote": "Oversight on the implementation of internal AI policy on telecom 3.6.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "IN-TRAI-AI-2023",
+   "quote": "TSOC coordinates with Computer Emergency Response Team India (CERT-IN), which is the nodal agency to deal with cyber security.",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2022",
+   "quote": "statements are true You are not usually able to resolve incidents to a root cause. You do not have a formal process for investigating causes.",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "IN-TRAI-AI-2023",
+   "quote": "is essential to enhance the capabilities of the current systems using AI/ML based tools for centralised monitoring and taking proactive actions to prevent possible threats. Therefore, the Authority is",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UK-TSCOP-2026-V1.1",
+   "quote": "Proactive security monitoring 5.23 Analysis of monitoring data is sometimes viewed solely as a reactive exercise based upon configured alerting, or as a response to an incident. Public telecoms provid",
+   "result": "exact (poppler)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "Control Sub-Control The entity shall develop a plan to guide incident response activities. The entity shall develop an incident response plan encompassing the following: 1) processes and procedures fo",
+   "result": "match in original file (PyMuPDF + header stripping; poppler order differs)"
+  },
+  {
+   "from": "replay",
+   "doc_id": "UAE-TDRA-IAR-2020",
+   "quote": "be involved if the attach was originated by an employee • Communication might be involved to become the public face for incidents that became public.",
+   "result": "match ignoring punctuation (poppler)"
+  }
+ ]
+}

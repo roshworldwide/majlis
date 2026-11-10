@@ -1,0 +1,1 @@
+{"query": "report incident affecting network within hours licensee", "k": 3, "collections": ["kb_uae"], "mode": "hybrid", "hits": [{"chunk_id": "UAE-TDRA-LICENSING-REGS-2008::0004", "score": 0.030282, "rank": 1}, {"chunk_id": "UAE-TDRA-QOS-POLICY-2019::0008", "score": 0.029958, "rank": 2}, {"chunk_id": "UAE-TDRA-IAR-2020::0161", "score": 0.027673, "rank": 3}]}

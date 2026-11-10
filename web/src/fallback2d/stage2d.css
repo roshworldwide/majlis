@@ -1,0 +1,70 @@
+/* 2D Experience stage — sits behind the DOM overlay, inside the safe area. */
+.stage2d {
+  position: absolute;
+  top: 56px;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+  overflow: visible;
+  contain: layout;
+}
+@media (min-width: 1100px) {
+  .stage2d { left: 190px; }
+}
+.stage2d .s2d-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.stage2d .s2d-agent,
+.stage2d .s2d-hit,
+.stage2d .s2d-star {
+  pointer-events: auto;
+  cursor: pointer;
+}
+.stage2d .s2d-agent:focus { outline: none; }
+.stage2d .s2d-agent:focus-visible > circle:nth-of-type(2) {
+  stroke: #E9C46A;
+  stroke-width: 3;
+}
+.stage2d .s2d-agent:hover .s2d-agent-label { fill: #FFFFFF; }
+.stage2d text {
+  font-family: Inter, 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+  user-select: text;
+  direction: ltr; /* keep label anchoring stable when the page switches to Arabic */
+}
+.stage2d .s2d-agent-label {
+  font-size: var(--s2d-label, 14px);
+  font-weight: 500;
+  fill: #D3DEEE;
+  paint-order: stroke;
+  stroke: rgba(4, 6, 12, 0.9);
+  stroke-width: 3.5px;
+  stroke-linejoin: round;
+}
+.stage2d .s2d-agent-id {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: var(--s2d-id, 12px);
+  font-weight: 500;
+}
+.stage2d .s2d-shield-label {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 15px;
+  fill: rgba(76, 201, 240, 0.75);
+  letter-spacing: 0.12em;
+}
+.stage2d .s2d-inscription {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 500;
+  fill: #E9C46A;
+  paint-order: stroke;
+  stroke: rgba(4, 6, 12, 0.85);
+  stroke-width: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage2d * { transition: none !important; animation: none !important; }
+}

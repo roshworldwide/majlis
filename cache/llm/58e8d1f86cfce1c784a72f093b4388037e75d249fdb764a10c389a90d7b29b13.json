@@ -1,0 +1,35 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A3:60",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "{\"source\": \"U1.2\"}",
+  "uae_basis": [
+   {
+    "source": "U1.2",
+    "quote": "",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G1.1",
+    "quote": "",
+    "how_they_closed_it": "<one line>"
+   },
+   {
+    "source": "G2.1",
+    "quote": "",
+    "how_they_closed_it": "<one line>"
+   },
+   {
+    "source": "G3.1",
+    "quote": "",
+    "how_they_closed_it": "<one line>"
+   }
+  ],
+  "gap": "<The UAE sources do not provide specific details on who leads the response in case of a telecom AI fault becoming a public emergency, focusing more on incident management and training rather than immediate response structures.>",
+  "confidence": "med"
+ }
+}

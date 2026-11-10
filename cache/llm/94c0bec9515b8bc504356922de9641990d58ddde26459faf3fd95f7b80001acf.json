@@ -1,0 +1,25 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "adviser:A1:15",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "answer": "[U1] The UAE Information Assurance Regulation mandates the establishment of a Computer Security Incident Response Team (CSIRT) to manage incidents. [G2] European regulations require operators to notify national competent authorities about serious AI-related incidents without undue delay.",
+  "uae_basis": [
+   {
+    "source": "U1",
+    "quote": "The entity shall establish a CSIRT in charge of the incident management and response plan.",
+    "how_they_closed_it": ""
+   }
+  ],
+  "global_examples": [
+   {
+    "source": "G2",
+    "quote": "National competent authorities shall immediately notify the Commission of any serious incident, whether or not they have taken action on it, in accordance with Article 20 of Regulation (EU) 2019/1020.",
+    "how_they_closed_it": "Operators are required to report AI incidents promptly to national competent authorities."
+   }
+  ],
+  "gap": "The regulations do not specify the authority or deadline for notifying external bodies in the UAE context.",
+  "confidence": "med"
+ }
+}

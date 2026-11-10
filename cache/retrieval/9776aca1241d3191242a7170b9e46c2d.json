@@ -1,0 +1,1 @@
+{"query": "Should we also consider activating the public alert system to inform the public about this issue?", "k": 2, "collections": ["kb_mandates"], "mode": "hybrid", "hits": [{"chunk_id": "MAJLIS-MANDATES-UAE::M-A3-PUBLIC-ALERT", "score": 0.032787, "rank": 1}, {"chunk_id": "MAJLIS-MANDATES-UAE::M-A2-OVERSIGHT", "score": 0.029287, "rank": 2}]}

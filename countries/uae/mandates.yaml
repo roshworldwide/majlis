@@ -1,0 +1,132 @@
+# Institutional mandates and legal channels for the UAE layer.
+# RULE: if it cannot be cited, it is not in this file. Every quote below is verified
+# verbatim (after whitespace/quote normalisation) against kb/export/chunks.jsonl at load
+# time; entries that fail are rejected and logged. Absences are gap evidence.
+# Agents are SIMULATIONS "modelled on" public mandates; they do not speak for any institution.
+
+institutions:
+  A1: {role: "Licensed mobile operator (fictional 'Operator X')", modelled_on: "a licensed mobile operator"}
+  A2: {role: "Telecom regulator", modelled_on: "TDRA"}
+  A3: {role: "Emergency & crisis authority", modelled_on: "NCEMA (incl. its Civil Defence Authority)"}
+  A4: {role: "Health & ambulance authority", modelled_on: "an emirate-level health authority and ambulance service",
+       note: "no ambulance-dispatch or emergency-call instrument found in the ingested public corpus (as of 10 Nov 2026)"}
+  A5: {role: "Cybersecurity authority", modelled_on: "the UAE Cybersecurity Council",
+       note: "establishing instrument not found in the ingested public corpus (as of 10 Nov 2026); no mandate can be cited"}
+  A6: {role: "Data protection authority", modelled_on: "the UAE Data Office (called 'the Bureau' in the PDPL English text)",
+       note: "Federal Decree-Law 44/2021 not retrievable (403, no snapshot); powers cited from the PDPL only"}
+
+mandates:
+  - mandate_id: M-A1-QOS-REPORTING
+    agent: A1
+    title: "Report quality-of-service indicators (incl. network availability) to the regulator on a regular basis"
+    action_types: [periodic_qos_reporting]
+    legal_basis:
+      - {doc_id: UAE-TDRA-QOS-POLICY-2019, article: "Section 8 (OCR)", quote: "The QoS data shall be reported to the TRA no later than thirty (30) calendar days following the end of the reporting quarter"}
+  - mandate_id: M-A2-OVERSIGHT
+    agent: A2
+    title: "Oversee the telecommunications sector and licensees"
+    action_types: [request_information, issue_directive, share_information]
+    legal_basis:
+      - {doc_id: UAE-TELECOM-LAW, article: "Article 12", quote: "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations"}
+  - mandate_id: M-A2-QOS-STANDARDS
+    agent: A2
+    title: "Set service and quality-assurance standards for licensees"
+    action_types: [issue_directive]
+    legal_basis:
+      - {doc_id: UAE-TELECOM-LAW, article: "Article 14(3)", quote: "Terms and standards of services provided to subscribers by Licensees including, quality assurance standards for services"}
+      - {doc_id: UAE-TELECOM-LAW, article: "Article 13(3)", quote: "Ensure that Licensees comply with performance quality standards and satisfy the terms of their licenses"}
+  - mandate_id: M-A3-CD-COORDINATION
+    agent: A3
+    title: "Coordinate the services needed to address potential risks (civil defence)"
+    action_types: [activate_crisis_coordination, share_information]
+    legal_basis:
+      - {doc_id: UAE-NCEMA-CDA-2024, article: "Article 3(12)", quote: "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned Entities"}
+  - mandate_id: M-A3-INFORMATION
+    agent: A3
+    title: "Obtain information from the competent and concerned authorities"
+    action_types: [request_information]
+    legal_basis:
+      - {doc_id: UAE-NCEMA-CDA-2024, article: "Article 6(1)", quote: "The Competent Authority and the Concerned Entities shall provide CDA with all information or data it requests related to civil defence work and measures"}
+  - mandate_id: M-A3-PUBLIC-ALERT
+    agent: A3
+    title: "Operate the public alert system"
+    action_types: [public_alert]
+    legal_basis:
+      - {doc_id: UAE-NCEMA-CDA-2024, article: "Article 3(8)", quote: "Establish a public alert system to warn residents of potential risks"}
+  - mandate_id: M-A6-COMPLAINTS
+    agent: A6
+    title: "Examine data-subject complaints in coordination with the controller"
+    action_types: [examine_complaint]
+    legal_basis:
+      - {doc_id: UAE-PDPL-2021, article: "Article 24(2)", quote: "shall examine such complaints in coordination with the Controller and the Processor"}
+  - mandate_id: M-A6-BREACH
+    agent: A6
+    title: "Verify the reasons for a notified personal-data breach"
+    action_types: [verify_breach]
+    legal_basis:
+      - {doc_id: UAE-PDPL-2021, article: "Article 9(4)", quote: "the Bureau shall verify the reasons for the violation to ensure the integrity of the security measures taken"}
+
+channels:
+  - channel_id: CH-A1-A2-IA-REPORT
+    from: A1
+    to: A2
+    type: "entity → sector regulator (cyber-security information)"
+    latency_min: 10
+    legal_basis:
+      - {doc_id: UAE-TDRA-IAR-2020, article: "Section 2.3", quote: "entities are required to submit UAE IA Regulation implementation progress and key cyber security information to sector regulators"}
+  - channel_id: CH-A2-A1-OVERSIGHT
+    from: A2
+    to: A1
+    type: "regulator → licensee (oversight, directives)"
+    latency_min: 10
+    legal_basis:
+      - {doc_id: UAE-TELECOM-LAW, article: "Article 12", quote: "The Authority is responsible for overseeing the telecommunications sector and Licensees in accordance with this Decree-Law and its implementing regulations"}
+  - channel_id: CH-A2-A5-ESCALATE
+    from: A2
+    to: A5
+    type: "sector regulator → cyber-security parties (escalation)"
+    latency_min: 15
+    legal_basis:
+      - {doc_id: UAE-TDRA-IAR-2020, article: "Section 2.3", quote: "escalate key findings to TRA and other Cyber Security parties"}
+  - channel_id: CH-A2-A3-CDA-INFO
+    from: A2
+    to: A3
+    type: "concerned entity → CDA (information on request / cooperation)"
+    latency_min: 10
+    legal_basis:
+      - {doc_id: UAE-NCEMA-CDA-2024, article: "Article 6(1)", quote: "The Competent Authority and the Concerned Entities shall provide CDA with all information or data it requests related to civil defence work and measures"}
+  - channel_id: CH-A4-A3-CDA-INFO
+    from: A4
+    to: A3
+    type: "competent/concerned authority → CDA (information, cooperation)"
+    latency_min: 10
+    legal_basis:
+      - {doc_id: UAE-NCEMA-CDA-2024, article: "Article 6(2)", quote: "The Competent Authority shall coordinate and cooperate with CDA in providing services related to civil defence work and measures whenever necessary"}
+  - channel_id: CH-A3-A4-COORD
+    from: A3
+    to: A4
+    type: "CDA → competent/concerned authorities (coordination)"
+    latency_min: 10
+    legal_basis:
+      - {doc_id: UAE-NCEMA-CDA-2024, article: "Article 3(12)", quote: "Preparing and coordinating medical, social, engineering, administrative, educational and other services necessary to address potential risks in coordination with the Competent Authority and Concerned Entities"}
+  - channel_id: CH-A3-A2-COORD
+    from: A3
+    to: A2
+    type: "CDA → concerned authorities (coordination, information requests)"
+    latency_min: 10
+    legal_basis:
+      - {doc_id: UAE-NCEMA-CDA-2024, article: "Article 6(1)", quote: "The Competent Authority and the Concerned Entities shall provide CDA with all information or data it requests related to civil defence work and measures"}
+  - channel_id: CH-A1-A6-BREACH
+    from: A1
+    to: A6
+    type: "controller → Bureau (personal-data breach notification)"
+    latency_min: 10
+    legal_basis:
+      - {doc_id: UAE-PDPL-2021, article: "Article 9(1)", quote: "notify the Bureau of such breach or violation and the investigation rights within the period and in accordance with the measures and requirements set by the Executive Regulations"}
+  - channel_id: CH-A6-A1-COMPLAINT
+    from: A6
+    to: A1
+    type: "Bureau → controller (complaint examination)"
+    latency_min: 10
+    legal_basis:
+      - {doc_id: UAE-PDPL-2021, article: "Article 24(2)", quote: "shall examine such complaints in coordination with the Controller and the Processor"}

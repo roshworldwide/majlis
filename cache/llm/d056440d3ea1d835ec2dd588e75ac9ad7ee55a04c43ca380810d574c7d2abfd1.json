@@ -1,0 +1,10 @@
+{
+ "model": "qwen2.5:3b",
+ "tag": "reco:operator_ems_channel",
+ "source": "llm",
+ "repair": false,
+ "output": {
+  "recommendation": "A domain-level policy recommendation would be for network operators and emergency services to establish a formal notification channel. This should include requiring network operators to notify emergency dispatch centers within 30 minutes of detecting any outage affecting emergency call delivery, mirroring the requirement in [G1], US-47CFR-PART4 § 4.9(h)(4). Additionally, it would be beneficial for emergency services to have a direct query mechanism into the network status, as suggested by [G2], EU-EECC-2018 Article 108.",
+  "rationale": "This recommendation ensures that when AI-driven faults degrade emergency-call delivery, the operator with knowledge of the cause can promptly notify emergency dispatch centers. It also allows for a direct query into network status by emergency services, thereby reducing time-to-awareness and improving overall service reliability."
+ }
+}

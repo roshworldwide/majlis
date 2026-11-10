@@ -1,0 +1,2 @@
+[console_scripts]
+majlis = majlis.cli:app
